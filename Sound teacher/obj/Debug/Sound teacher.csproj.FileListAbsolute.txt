@@ -7,3 +7,4 @@ D:\VisualProjects\Sound teacher\Sound teacher\obj\Debug\Sound_teacher.Properties
 D:\VisualProjects\Sound teacher\Sound teacher\obj\Debug\Sound teacher.csproj.GenerateResource.Cache
 D:\VisualProjects\Sound teacher\Sound teacher\obj\Debug\Sound teacher.exe
 D:\VisualProjects\Sound teacher\Sound teacher\obj\Debug\Sound teacher.pdb
+D:\VisualProjects\Sound teacher\Sound teacher\obj\Debug\Sound_teacher.FormFretBoard.resources

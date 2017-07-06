@@ -30,14 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             this.buttonChangeSound = new System.Windows.Forms.Button();
-            this.pictureBoxSound = new System.Windows.Forms.PictureBox();
             this.timerPictures = new System.Windows.Forms.Timer(this.components);
             this.labelSoundTimeLeft = new System.Windows.Forms.Label();
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.numericUpDownChangeSound = new System.Windows.Forms.NumericUpDown();
             this.buttonOpenFretBoard = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSound)).BeginInit();
+            this.pictureBoxSound = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownChangeSound)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSound)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonChangeSound
@@ -49,16 +49,6 @@
             this.buttonChangeSound.Text = "Start!";
             this.buttonChangeSound.UseVisualStyleBackColor = true;
             this.buttonChangeSound.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // pictureBoxSound
-            // 
-            this.pictureBoxSound.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBoxSound.Image = global::Sound_teacher.Properties.Resources.A;
-            this.pictureBoxSound.Location = new System.Drawing.Point(12, 33);
-            this.pictureBoxSound.Name = "pictureBoxSound";
-            this.pictureBoxSound.Size = new System.Drawing.Size(216, 264);
-            this.pictureBoxSound.TabIndex = 2;
-            this.pictureBoxSound.TabStop = false;
             // 
             // timerPictures
             // 
@@ -110,6 +100,17 @@
             this.buttonOpenFretBoard.TabIndex = 6;
             this.buttonOpenFretBoard.Text = "Open fretboard";
             this.buttonOpenFretBoard.UseVisualStyleBackColor = true;
+            this.buttonOpenFretBoard.Click += new System.EventHandler(this.buttonOpenFretBoard_Click);
+            // 
+            // pictureBoxSound
+            // 
+            this.pictureBoxSound.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBoxSound.Image = global::Sound_teacher.Properties.Resources.A;
+            this.pictureBoxSound.Location = new System.Drawing.Point(12, 33);
+            this.pictureBoxSound.Name = "pictureBoxSound";
+            this.pictureBoxSound.Size = new System.Drawing.Size(216, 264);
+            this.pictureBoxSound.TabIndex = 2;
+            this.pictureBoxSound.TabStop = false;
             // 
             // MainForm
             // 
@@ -123,9 +124,9 @@
             this.Controls.Add(this.buttonChangeSound);
             this.Controls.Add(this.progressBar1);
             this.Name = "MainForm";
-            this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSound)).EndInit();
+            this.Text = "Sound Teacher";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownChangeSound)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSound)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

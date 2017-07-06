@@ -58,5 +58,11 @@ namespace Sound_teacher
             progressBar1.PerformStep();
             
         }
+
+        private void buttonOpenFretBoard_Click(object sender, EventArgs e)
+        {
+            FormFretBoard fretBoardWindow = new FormFretBoard();
+            fretBoardWindow.Show();
+        }
     }
 }
