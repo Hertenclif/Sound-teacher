@@ -126,6 +126,42 @@
   <ItemGroup>
     <None Include="resources\Fretboard.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\AisSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\ASmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\BSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\CisSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\CSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\DisSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\DSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\ESmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\FisSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\FSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\GisSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\GSmall.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

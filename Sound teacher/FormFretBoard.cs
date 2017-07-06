@@ -15,6 +15,18 @@ namespace Sound_teacher
         public FormFretBoard()
         {
             InitializeComponent();
+            foreach (Control x in this.Controls)
+            {
+                if (x is TextBox)
+                {
+                    ((TextBox)x).Text = String.Empty;
+                }
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //foreach ()
         }
     }
 }
