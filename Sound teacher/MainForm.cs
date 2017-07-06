@@ -50,6 +50,9 @@ namespace Sound_teacher
                 previousSound = currentSound;
                 pictureBoxSound.Image = (Image)Properties.Resources.ResourceManager.GetObject(soundImageNames[currentSound]);
                 timeLeft = System.Convert.ToInt32(numericUpDownChangeSound.Value);
+              //  PassSoundSingleton.getInstance().PassDataSingleton();
+                PassSoundSingleton.getInstance().sound = currentSound;
+                PassSoundSingleton.getInstance().change = true;
                 progressBar1.Maximum = timeLeft + 1;
                 progressBar1.Value = 1;
             }
