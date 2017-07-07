@@ -30,10 +30,26 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormFretBoard));
-            this.button1 = new System.Windows.Forms.Button();
-            this.labelDev1 = new System.Windows.Forms.Label();
-            this.labelDev2 = new System.Windows.Forms.Label();
+            this.buttonFretBoardStartStop = new System.Windows.Forms.Button();
             this.timerFretBoardChangeImages = new System.Windows.Forms.Timer(this.components);
+            this.comboBoxSoundChoice = new System.Windows.Forms.ComboBox();
+            this.labelDisplayScale = new System.Windows.Forms.Label();
+            this.groupBoxFretBoardSounds = new System.Windows.Forms.GroupBox();
+            this.checkBoxFretBoardGis = new System.Windows.Forms.CheckBox();
+            this.checkBoxFretBoardFis = new System.Windows.Forms.CheckBox();
+            this.checkBoxFretBoardDis = new System.Windows.Forms.CheckBox();
+            this.checkBoxFretBoardNone = new System.Windows.Forms.CheckBox();
+            this.checkBoxFretBoardAll = new System.Windows.Forms.CheckBox();
+            this.checkBoxFretBoardCis = new System.Windows.Forms.CheckBox();
+            this.checkBoxFretBoardAis = new System.Windows.Forms.CheckBox();
+            this.checkBoxFretBoardG = new System.Windows.Forms.CheckBox();
+            this.checkBoxFretBoardF = new System.Windows.Forms.CheckBox();
+            this.checkBoxFretBoardE = new System.Windows.Forms.CheckBox();
+            this.checkBoxFretBoardD = new System.Windows.Forms.CheckBox();
+            this.checkBoxFretBoardC = new System.Windows.Forms.CheckBox();
+            this.checkBoxFretBoardB = new System.Windows.Forms.CheckBox();
+            this.checkBoxFretBoardA = new System.Windows.Forms.CheckBox();
+            this.labelDisplaySounds = new System.Windows.Forms.Label();
             this.pictureBox_54 = new System.Windows.Forms.PictureBox();
             this.pictureBox_45 = new System.Windows.Forms.PictureBox();
             this.pictureBox_44 = new System.Windows.Forms.PictureBox();
@@ -185,6 +201,8 @@
             this.pictureBox_11 = new System.Windows.Forms.PictureBox();
             this.pictureBox_10 = new System.Windows.Forms.PictureBox();
             this.labelFretboardImage = new System.Windows.Forms.Label();
+            this.timerCheckAdditional = new System.Windows.Forms.Timer(this.components);
+            this.groupBoxFretBoardSounds.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_54)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_45)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_44)).BeginInit();
@@ -337,44 +355,244 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_10)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // buttonFretBoardStartStop
             // 
-            this.button1.Location = new System.Drawing.Point(82, 443);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 149;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // labelDev1
-            // 
-            this.labelDev1.AutoSize = true;
-            this.labelDev1.Location = new System.Drawing.Point(192, 443);
-            this.labelDev1.Name = "labelDev1";
-            this.labelDev1.Size = new System.Drawing.Size(38, 13);
-            this.labelDev1.TabIndex = 151;
-            this.labelDev1.Text = "Sound";
-            // 
-            // labelDev2
-            // 
-            this.labelDev2.AutoSize = true;
-            this.labelDev2.Location = new System.Drawing.Point(374, 443);
-            this.labelDev2.Name = "labelDev2";
-            this.labelDev2.Size = new System.Drawing.Size(85, 13);
-            this.labelDev2.TabIndex = 152;
-            this.labelDev2.Text = "SoundNameTag";
+            this.buttonFretBoardStartStop.Location = new System.Drawing.Point(15, 415);
+            this.buttonFretBoardStartStop.Name = "buttonFretBoardStartStop";
+            this.buttonFretBoardStartStop.Size = new System.Drawing.Size(145, 57);
+            this.buttonFretBoardStartStop.TabIndex = 149;
+            this.buttonFretBoardStartStop.Text = "Start!";
+            this.buttonFretBoardStartStop.UseVisualStyleBackColor = true;
+            this.buttonFretBoardStartStop.Click += new System.EventHandler(this.button1_Click);
             // 
             // timerFretBoardChangeImages
             // 
             this.timerFretBoardChangeImages.Tick += new System.EventHandler(this.timerFretBoardChangeImages_Tick);
             // 
+            // comboBoxSoundChoice
+            // 
+            this.comboBoxSoundChoice.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxSoundChoice.FormattingEnabled = true;
+            this.comboBoxSoundChoice.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.comboBoxSoundChoice.Items.AddRange(new object[] {
+            "Off",
+            "A",
+            "A#",
+            "B",
+            "C",
+            "C#",
+            "D",
+            "D#",
+            "E",
+            "F",
+            "F#",
+            "G",
+            "G#"});
+            this.comboBoxSoundChoice.Location = new System.Drawing.Point(251, 415);
+            this.comboBoxSoundChoice.Name = "comboBoxSoundChoice";
+            this.comboBoxSoundChoice.Size = new System.Drawing.Size(66, 21);
+            this.comboBoxSoundChoice.TabIndex = 151;
+            this.comboBoxSoundChoice.SelectedIndexChanged += new System.EventHandler(this.comboBoxSoundChoice_SelectedIndexChanged);
+            // 
+            // labelDisplayScale
+            // 
+            this.labelDisplayScale.AutoSize = true;
+            this.labelDisplayScale.Location = new System.Drawing.Point(173, 418);
+            this.labelDisplayScale.Name = "labelDisplayScale";
+            this.labelDisplayScale.Size = new System.Drawing.Size(72, 13);
+            this.labelDisplayScale.TabIndex = 152;
+            this.labelDisplayScale.Text = "Display scale:";
+            // 
+            // groupBoxFretBoardSounds
+            // 
+            this.groupBoxFretBoardSounds.Controls.Add(this.checkBoxFretBoardGis);
+            this.groupBoxFretBoardSounds.Controls.Add(this.checkBoxFretBoardFis);
+            this.groupBoxFretBoardSounds.Controls.Add(this.checkBoxFretBoardDis);
+            this.groupBoxFretBoardSounds.Controls.Add(this.checkBoxFretBoardNone);
+            this.groupBoxFretBoardSounds.Controls.Add(this.checkBoxFretBoardAll);
+            this.groupBoxFretBoardSounds.Controls.Add(this.checkBoxFretBoardCis);
+            this.groupBoxFretBoardSounds.Controls.Add(this.checkBoxFretBoardAis);
+            this.groupBoxFretBoardSounds.Controls.Add(this.checkBoxFretBoardG);
+            this.groupBoxFretBoardSounds.Controls.Add(this.checkBoxFretBoardF);
+            this.groupBoxFretBoardSounds.Controls.Add(this.checkBoxFretBoardE);
+            this.groupBoxFretBoardSounds.Controls.Add(this.checkBoxFretBoardD);
+            this.groupBoxFretBoardSounds.Controls.Add(this.checkBoxFretBoardC);
+            this.groupBoxFretBoardSounds.Controls.Add(this.checkBoxFretBoardB);
+            this.groupBoxFretBoardSounds.Controls.Add(this.checkBoxFretBoardA);
+            this.groupBoxFretBoardSounds.Location = new System.Drawing.Point(457, 415);
+            this.groupBoxFretBoardSounds.Name = "groupBoxFretBoardSounds";
+            this.groupBoxFretBoardSounds.Size = new System.Drawing.Size(384, 57);
+            this.groupBoxFretBoardSounds.TabIndex = 153;
+            this.groupBoxFretBoardSounds.TabStop = false;
+            this.groupBoxFretBoardSounds.Enter += new System.EventHandler(this.groupBoxFretBoardSounds_Enter);
+            // 
+            // checkBoxFretBoardGis
+            // 
+            this.checkBoxFretBoardGis.AutoSize = true;
+            this.checkBoxFretBoardGis.Location = new System.Drawing.Point(283, 32);
+            this.checkBoxFretBoardGis.Name = "checkBoxFretBoardGis";
+            this.checkBoxFretBoardGis.Size = new System.Drawing.Size(41, 17);
+            this.checkBoxFretBoardGis.TabIndex = 13;
+            this.checkBoxFretBoardGis.Tag = "CBoxSound";
+            this.checkBoxFretBoardGis.Text = "G#";
+            this.checkBoxFretBoardGis.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxFretBoardFis
+            // 
+            this.checkBoxFretBoardFis.AutoSize = true;
+            this.checkBoxFretBoardFis.Location = new System.Drawing.Point(236, 32);
+            this.checkBoxFretBoardFis.Name = "checkBoxFretBoardFis";
+            this.checkBoxFretBoardFis.Size = new System.Drawing.Size(39, 17);
+            this.checkBoxFretBoardFis.TabIndex = 12;
+            this.checkBoxFretBoardFis.Tag = "CBoxSound";
+            this.checkBoxFretBoardFis.Text = "F#";
+            this.checkBoxFretBoardFis.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxFretBoardDis
+            // 
+            this.checkBoxFretBoardDis.AutoSize = true;
+            this.checkBoxFretBoardDis.Location = new System.Drawing.Point(145, 32);
+            this.checkBoxFretBoardDis.Name = "checkBoxFretBoardDis";
+            this.checkBoxFretBoardDis.Size = new System.Drawing.Size(41, 17);
+            this.checkBoxFretBoardDis.TabIndex = 11;
+            this.checkBoxFretBoardDis.Tag = "CBoxSound";
+            this.checkBoxFretBoardDis.Text = "D#";
+            this.checkBoxFretBoardDis.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxFretBoardNone
+            // 
+            this.checkBoxFretBoardNone.AutoSize = true;
+            this.checkBoxFretBoardNone.Location = new System.Drawing.Point(330, 32);
+            this.checkBoxFretBoardNone.Name = "checkBoxFretBoardNone";
+            this.checkBoxFretBoardNone.Size = new System.Drawing.Size(52, 17);
+            this.checkBoxFretBoardNone.TabIndex = 10;
+            this.checkBoxFretBoardNone.Text = "None";
+            this.checkBoxFretBoardNone.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxFretBoardAll
+            // 
+            this.checkBoxFretBoardAll.AutoSize = true;
+            this.checkBoxFretBoardAll.Location = new System.Drawing.Point(330, 9);
+            this.checkBoxFretBoardAll.Name = "checkBoxFretBoardAll";
+            this.checkBoxFretBoardAll.Size = new System.Drawing.Size(37, 17);
+            this.checkBoxFretBoardAll.TabIndex = 9;
+            this.checkBoxFretBoardAll.Text = "All";
+            this.checkBoxFretBoardAll.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxFretBoardCis
+            // 
+            this.checkBoxFretBoardCis.AutoSize = true;
+            this.checkBoxFretBoardCis.Location = new System.Drawing.Point(98, 32);
+            this.checkBoxFretBoardCis.Name = "checkBoxFretBoardCis";
+            this.checkBoxFretBoardCis.Size = new System.Drawing.Size(40, 17);
+            this.checkBoxFretBoardCis.TabIndex = 8;
+            this.checkBoxFretBoardCis.Tag = "CBoxSound";
+            this.checkBoxFretBoardCis.Text = "C#";
+            this.checkBoxFretBoardCis.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxFretBoardAis
+            // 
+            this.checkBoxFretBoardAis.AutoSize = true;
+            this.checkBoxFretBoardAis.Location = new System.Drawing.Point(6, 32);
+            this.checkBoxFretBoardAis.Name = "checkBoxFretBoardAis";
+            this.checkBoxFretBoardAis.Size = new System.Drawing.Size(40, 17);
+            this.checkBoxFretBoardAis.TabIndex = 7;
+            this.checkBoxFretBoardAis.Tag = "CBoxSound";
+            this.checkBoxFretBoardAis.Text = "A#";
+            this.checkBoxFretBoardAis.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxFretBoardG
+            // 
+            this.checkBoxFretBoardG.AutoSize = true;
+            this.checkBoxFretBoardG.Location = new System.Drawing.Point(283, 9);
+            this.checkBoxFretBoardG.Name = "checkBoxFretBoardG";
+            this.checkBoxFretBoardG.Size = new System.Drawing.Size(34, 17);
+            this.checkBoxFretBoardG.TabIndex = 6;
+            this.checkBoxFretBoardG.Tag = "CBoxSound";
+            this.checkBoxFretBoardG.Text = "G";
+            this.checkBoxFretBoardG.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxFretBoardF
+            // 
+            this.checkBoxFretBoardF.AutoSize = true;
+            this.checkBoxFretBoardF.Location = new System.Drawing.Point(236, 9);
+            this.checkBoxFretBoardF.Name = "checkBoxFretBoardF";
+            this.checkBoxFretBoardF.Size = new System.Drawing.Size(32, 17);
+            this.checkBoxFretBoardF.TabIndex = 5;
+            this.checkBoxFretBoardF.Tag = "CBoxSound";
+            this.checkBoxFretBoardF.Text = "F";
+            this.checkBoxFretBoardF.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxFretBoardE
+            // 
+            this.checkBoxFretBoardE.AutoSize = true;
+            this.checkBoxFretBoardE.Location = new System.Drawing.Point(191, 9);
+            this.checkBoxFretBoardE.Name = "checkBoxFretBoardE";
+            this.checkBoxFretBoardE.Size = new System.Drawing.Size(33, 17);
+            this.checkBoxFretBoardE.TabIndex = 4;
+            this.checkBoxFretBoardE.Tag = "CBoxSound";
+            this.checkBoxFretBoardE.Text = "E";
+            this.checkBoxFretBoardE.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxFretBoardD
+            // 
+            this.checkBoxFretBoardD.AutoSize = true;
+            this.checkBoxFretBoardD.Location = new System.Drawing.Point(145, 9);
+            this.checkBoxFretBoardD.Name = "checkBoxFretBoardD";
+            this.checkBoxFretBoardD.Size = new System.Drawing.Size(34, 17);
+            this.checkBoxFretBoardD.TabIndex = 3;
+            this.checkBoxFretBoardD.Tag = "CBoxSound";
+            this.checkBoxFretBoardD.Text = "D";
+            this.checkBoxFretBoardD.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxFretBoardC
+            // 
+            this.checkBoxFretBoardC.AutoSize = true;
+            this.checkBoxFretBoardC.Location = new System.Drawing.Point(98, 9);
+            this.checkBoxFretBoardC.Name = "checkBoxFretBoardC";
+            this.checkBoxFretBoardC.Size = new System.Drawing.Size(33, 17);
+            this.checkBoxFretBoardC.TabIndex = 2;
+            this.checkBoxFretBoardC.Tag = "CBoxSound";
+            this.checkBoxFretBoardC.Text = "C";
+            this.checkBoxFretBoardC.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxFretBoardB
+            // 
+            this.checkBoxFretBoardB.AutoSize = true;
+            this.checkBoxFretBoardB.Location = new System.Drawing.Point(52, 9);
+            this.checkBoxFretBoardB.Name = "checkBoxFretBoardB";
+            this.checkBoxFretBoardB.Size = new System.Drawing.Size(33, 17);
+            this.checkBoxFretBoardB.TabIndex = 1;
+            this.checkBoxFretBoardB.Tag = "CBoxSound";
+            this.checkBoxFretBoardB.Text = "B";
+            this.checkBoxFretBoardB.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxFretBoardA
+            // 
+            this.checkBoxFretBoardA.AutoSize = true;
+            this.checkBoxFretBoardA.Location = new System.Drawing.Point(6, 9);
+            this.checkBoxFretBoardA.Name = "checkBoxFretBoardA";
+            this.checkBoxFretBoardA.Size = new System.Drawing.Size(33, 17);
+            this.checkBoxFretBoardA.TabIndex = 0;
+            this.checkBoxFretBoardA.Tag = "CBoxSound";
+            this.checkBoxFretBoardA.Text = "A";
+            this.checkBoxFretBoardA.UseVisualStyleBackColor = true;
+            // 
+            // labelDisplaySounds
+            // 
+            this.labelDisplaySounds.AutoSize = true;
+            this.labelDisplaySounds.Location = new System.Drawing.Point(370, 418);
+            this.labelDisplaySounds.Name = "labelDisplaySounds";
+            this.labelDisplaySounds.Size = new System.Drawing.Size(81, 13);
+            this.labelDisplaySounds.TabIndex = 154;
+            this.labelDisplaySounds.Text = "Display sounds:";
+            // 
             // pictureBox_54
             // 
             this.pictureBox_54.Image = global::Sound_teacher.Properties.Resources.CisSmall;
-            this.pictureBox_54.Location = new System.Drawing.Point(457, 256);
+            this.pictureBox_54.Location = new System.Drawing.Point(454, 256);
             this.pictureBox_54.Name = "pictureBox_54";
-            this.pictureBox_54.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_54.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_54.TabIndex = 148;
             this.pictureBox_54.TabStop = false;
             this.pictureBox_54.Tag = "FretBoardCis";
@@ -383,9 +601,9 @@
             // pictureBox_45
             // 
             this.pictureBox_45.Image = global::Sound_teacher.Properties.Resources.GSmall;
-            this.pictureBox_45.Location = new System.Drawing.Point(544, 199);
+            this.pictureBox_45.Location = new System.Drawing.Point(541, 199);
             this.pictureBox_45.Name = "pictureBox_45";
-            this.pictureBox_45.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_45.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_45.TabIndex = 147;
             this.pictureBox_45.TabStop = false;
             this.pictureBox_45.Tag = "FretBoardG";
@@ -394,9 +612,9 @@
             // pictureBox_44
             // 
             this.pictureBox_44.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_44.Image")));
-            this.pictureBox_44.Location = new System.Drawing.Point(457, 199);
+            this.pictureBox_44.Location = new System.Drawing.Point(454, 199);
             this.pictureBox_44.Name = "pictureBox_44";
-            this.pictureBox_44.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_44.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_44.TabIndex = 146;
             this.pictureBox_44.TabStop = false;
             this.pictureBox_44.Tag = "FretBoardFis";
@@ -405,9 +623,9 @@
             // pictureBox_43
             // 
             this.pictureBox_43.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_43.Image")));
-            this.pictureBox_43.Location = new System.Drawing.Point(364, 199);
+            this.pictureBox_43.Location = new System.Drawing.Point(361, 199);
             this.pictureBox_43.Name = "pictureBox_43";
-            this.pictureBox_43.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_43.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_43.TabIndex = 145;
             this.pictureBox_43.TabStop = false;
             this.pictureBox_43.Tag = "FretBoardF";
@@ -416,9 +634,9 @@
             // pictureBox_52
             // 
             this.pictureBox_52.Image = global::Sound_teacher.Properties.Resources.BSmall;
-            this.pictureBox_52.Location = new System.Drawing.Point(272, 256);
+            this.pictureBox_52.Location = new System.Drawing.Point(269, 256);
             this.pictureBox_52.Name = "pictureBox_52";
-            this.pictureBox_52.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_52.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_52.TabIndex = 144;
             this.pictureBox_52.TabStop = false;
             this.pictureBox_52.Tag = "FretBoardB";
@@ -427,9 +645,9 @@
             // pictureBox_32
             // 
             this.pictureBox_32.Image = global::Sound_teacher.Properties.Resources.ASmall;
-            this.pictureBox_32.Location = new System.Drawing.Point(272, 142);
+            this.pictureBox_32.Location = new System.Drawing.Point(269, 142);
             this.pictureBox_32.Name = "pictureBox_32";
-            this.pictureBox_32.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_32.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_32.TabIndex = 143;
             this.pictureBox_32.TabStop = false;
             this.pictureBox_32.Tag = "FretBoardA";
@@ -438,9 +656,9 @@
             // pictureBox_33
             // 
             this.pictureBox_33.Image = global::Sound_teacher.Properties.Resources.AisSmall;
-            this.pictureBox_33.Location = new System.Drawing.Point(364, 142);
+            this.pictureBox_33.Location = new System.Drawing.Point(361, 142);
             this.pictureBox_33.Name = "pictureBox_33";
-            this.pictureBox_33.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_33.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_33.TabIndex = 142;
             this.pictureBox_33.TabStop = false;
             this.pictureBox_33.Tag = "FretBoardAis";
@@ -449,9 +667,9 @@
             // pictureBox_34
             // 
             this.pictureBox_34.Image = global::Sound_teacher.Properties.Resources.BSmall;
-            this.pictureBox_34.Location = new System.Drawing.Point(457, 142);
+            this.pictureBox_34.Location = new System.Drawing.Point(454, 142);
             this.pictureBox_34.Name = "pictureBox_34";
-            this.pictureBox_34.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_34.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_34.TabIndex = 141;
             this.pictureBox_34.TabStop = false;
             this.pictureBox_34.Tag = "FretBoardB";
@@ -460,9 +678,9 @@
             // pictureBox_35
             // 
             this.pictureBox_35.Image = global::Sound_teacher.Properties.Resources.CSmall;
-            this.pictureBox_35.Location = new System.Drawing.Point(544, 142);
+            this.pictureBox_35.Location = new System.Drawing.Point(541, 142);
             this.pictureBox_35.Name = "pictureBox_35";
-            this.pictureBox_35.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_35.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_35.TabIndex = 140;
             this.pictureBox_35.TabStop = false;
             this.pictureBox_35.Tag = "FretBoardC";
@@ -471,9 +689,9 @@
             // pictureBox_36
             // 
             this.pictureBox_36.Image = global::Sound_teacher.Properties.Resources.CisSmall;
-            this.pictureBox_36.Location = new System.Drawing.Point(628, 142);
+            this.pictureBox_36.Location = new System.Drawing.Point(625, 142);
             this.pictureBox_36.Name = "pictureBox_36";
-            this.pictureBox_36.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_36.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_36.TabIndex = 139;
             this.pictureBox_36.TabStop = false;
             this.pictureBox_36.Tag = "FretBoardCis";
@@ -482,9 +700,9 @@
             // pictureBox_56
             // 
             this.pictureBox_56.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_56.Image")));
-            this.pictureBox_56.Location = new System.Drawing.Point(628, 256);
+            this.pictureBox_56.Location = new System.Drawing.Point(625, 256);
             this.pictureBox_56.Name = "pictureBox_56";
-            this.pictureBox_56.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_56.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_56.TabIndex = 138;
             this.pictureBox_56.TabStop = false;
             this.pictureBox_56.Tag = "FretBoardDis";
@@ -493,9 +711,9 @@
             // pictureBox_57
             // 
             this.pictureBox_57.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_57.Image")));
-            this.pictureBox_57.Location = new System.Drawing.Point(700, 256);
+            this.pictureBox_57.Location = new System.Drawing.Point(697, 256);
             this.pictureBox_57.Name = "pictureBox_57";
-            this.pictureBox_57.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_57.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_57.TabIndex = 137;
             this.pictureBox_57.TabStop = false;
             this.pictureBox_57.Tag = "FretBoardE";
@@ -504,9 +722,9 @@
             // pictureBox_47
             // 
             this.pictureBox_47.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_47.Image")));
-            this.pictureBox_47.Location = new System.Drawing.Point(700, 199);
+            this.pictureBox_47.Location = new System.Drawing.Point(697, 199);
             this.pictureBox_47.Name = "pictureBox_47";
-            this.pictureBox_47.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_47.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_47.TabIndex = 136;
             this.pictureBox_47.TabStop = false;
             this.pictureBox_47.Tag = "FretBoardA";
@@ -515,9 +733,9 @@
             // pictureBox_26
             // 
             this.pictureBox_26.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_26.Image")));
-            this.pictureBox_26.Location = new System.Drawing.Point(628, 88);
+            this.pictureBox_26.Location = new System.Drawing.Point(625, 88);
             this.pictureBox_26.Name = "pictureBox_26";
-            this.pictureBox_26.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_26.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_26.TabIndex = 135;
             this.pictureBox_26.TabStop = false;
             this.pictureBox_26.Tag = "FretBoardF";
@@ -526,9 +744,9 @@
             // pictureBox_25
             // 
             this.pictureBox_25.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_25.Image")));
-            this.pictureBox_25.Location = new System.Drawing.Point(544, 88);
+            this.pictureBox_25.Location = new System.Drawing.Point(541, 88);
             this.pictureBox_25.Name = "pictureBox_25";
-            this.pictureBox_25.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_25.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_25.TabIndex = 134;
             this.pictureBox_25.TabStop = false;
             this.pictureBox_25.Tag = "FretBoardE";
@@ -537,9 +755,9 @@
             // pictureBox_24
             // 
             this.pictureBox_24.Image = global::Sound_teacher.Properties.Resources.DisSmall;
-            this.pictureBox_24.Location = new System.Drawing.Point(457, 88);
+            this.pictureBox_24.Location = new System.Drawing.Point(454, 88);
             this.pictureBox_24.Name = "pictureBox_24";
-            this.pictureBox_24.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_24.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_24.TabIndex = 133;
             this.pictureBox_24.TabStop = false;
             this.pictureBox_24.Tag = "FretBoardDis";
@@ -548,9 +766,9 @@
             // pictureBox_23
             // 
             this.pictureBox_23.Image = global::Sound_teacher.Properties.Resources.DSmall;
-            this.pictureBox_23.Location = new System.Drawing.Point(364, 88);
+            this.pictureBox_23.Location = new System.Drawing.Point(361, 88);
             this.pictureBox_23.Name = "pictureBox_23";
-            this.pictureBox_23.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_23.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_23.TabIndex = 132;
             this.pictureBox_23.TabStop = false;
             this.pictureBox_23.Tag = "FretBoardD";
@@ -559,9 +777,9 @@
             // pictureBox_22
             // 
             this.pictureBox_22.Image = global::Sound_teacher.Properties.Resources.CisSmall;
-            this.pictureBox_22.Location = new System.Drawing.Point(272, 88);
+            this.pictureBox_22.Location = new System.Drawing.Point(269, 88);
             this.pictureBox_22.Name = "pictureBox_22";
-            this.pictureBox_22.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_22.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_22.TabIndex = 131;
             this.pictureBox_22.TabStop = false;
             this.pictureBox_22.Tag = "FretBoardCis";
@@ -570,9 +788,9 @@
             // pictureBox_21
             // 
             this.pictureBox_21.Image = global::Sound_teacher.Properties.Resources.CSmall;
-            this.pictureBox_21.Location = new System.Drawing.Point(182, 88);
+            this.pictureBox_21.Location = new System.Drawing.Point(179, 88);
             this.pictureBox_21.Name = "pictureBox_21";
-            this.pictureBox_21.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_21.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_21.TabIndex = 130;
             this.pictureBox_21.TabStop = false;
             this.pictureBox_21.Tag = "FretBoardC";
@@ -581,9 +799,9 @@
             // pictureBox_41
             // 
             this.pictureBox_41.Image = global::Sound_teacher.Properties.Resources.DisSmall;
-            this.pictureBox_41.Location = new System.Drawing.Point(182, 199);
+            this.pictureBox_41.Location = new System.Drawing.Point(179, 199);
             this.pictureBox_41.Name = "pictureBox_41";
-            this.pictureBox_41.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_41.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_41.TabIndex = 129;
             this.pictureBox_41.TabStop = false;
             this.pictureBox_41.Tag = "FretBoardDis";
@@ -592,9 +810,9 @@
             // pictureBox_51
             // 
             this.pictureBox_51.Image = global::Sound_teacher.Properties.Resources.AisSmall;
-            this.pictureBox_51.Location = new System.Drawing.Point(182, 256);
+            this.pictureBox_51.Location = new System.Drawing.Point(179, 256);
             this.pictureBox_51.Name = "pictureBox_51";
-            this.pictureBox_51.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_51.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_51.TabIndex = 128;
             this.pictureBox_51.TabStop = false;
             this.pictureBox_51.Tag = "FretBoardAis";
@@ -603,9 +821,9 @@
             // pictureBox_61
             // 
             this.pictureBox_61.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_61.Image")));
-            this.pictureBox_61.Location = new System.Drawing.Point(182, 311);
+            this.pictureBox_61.Location = new System.Drawing.Point(179, 311);
             this.pictureBox_61.Name = "pictureBox_61";
-            this.pictureBox_61.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_61.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_61.TabIndex = 127;
             this.pictureBox_61.TabStop = false;
             this.pictureBox_61.Tag = "FretBoardF";
@@ -614,9 +832,9 @@
             // pictureBox_62
             // 
             this.pictureBox_62.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_62.Image")));
-            this.pictureBox_62.Location = new System.Drawing.Point(272, 311);
+            this.pictureBox_62.Location = new System.Drawing.Point(269, 311);
             this.pictureBox_62.Name = "pictureBox_62";
-            this.pictureBox_62.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_62.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_62.TabIndex = 126;
             this.pictureBox_62.TabStop = false;
             this.pictureBox_62.Tag = "FretBoardFis";
@@ -625,9 +843,9 @@
             // pictureBox_63
             // 
             this.pictureBox_63.Image = global::Sound_teacher.Properties.Resources.GSmall;
-            this.pictureBox_63.Location = new System.Drawing.Point(364, 311);
+            this.pictureBox_63.Location = new System.Drawing.Point(361, 311);
             this.pictureBox_63.Name = "pictureBox_63";
-            this.pictureBox_63.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_63.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_63.TabIndex = 125;
             this.pictureBox_63.TabStop = false;
             this.pictureBox_63.Tag = "FretBoardG";
@@ -636,9 +854,9 @@
             // pictureBox_65
             // 
             this.pictureBox_65.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_65.Image")));
-            this.pictureBox_65.Location = new System.Drawing.Point(544, 311);
+            this.pictureBox_65.Location = new System.Drawing.Point(541, 311);
             this.pictureBox_65.Name = "pictureBox_65";
-            this.pictureBox_65.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_65.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_65.TabIndex = 124;
             this.pictureBox_65.TabStop = false;
             this.pictureBox_65.Tag = "FretBoardA";
@@ -647,9 +865,9 @@
             // pictureBox_66
             // 
             this.pictureBox_66.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_66.Image")));
-            this.pictureBox_66.Location = new System.Drawing.Point(628, 311);
+            this.pictureBox_66.Location = new System.Drawing.Point(625, 311);
             this.pictureBox_66.Name = "pictureBox_66";
-            this.pictureBox_66.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_66.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_66.TabIndex = 123;
             this.pictureBox_66.TabStop = false;
             this.pictureBox_66.Tag = "FretBoardAis";
@@ -658,9 +876,9 @@
             // pictureBox_67
             // 
             this.pictureBox_67.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_67.Image")));
-            this.pictureBox_67.Location = new System.Drawing.Point(700, 311);
+            this.pictureBox_67.Location = new System.Drawing.Point(697, 311);
             this.pictureBox_67.Name = "pictureBox_67";
-            this.pictureBox_67.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_67.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_67.TabIndex = 122;
             this.pictureBox_67.TabStop = false;
             this.pictureBox_67.Tag = "FretBoardB";
@@ -669,9 +887,9 @@
             // pictureBox_68
             // 
             this.pictureBox_68.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_68.Image")));
-            this.pictureBox_68.Location = new System.Drawing.Point(772, 311);
+            this.pictureBox_68.Location = new System.Drawing.Point(769, 311);
             this.pictureBox_68.Name = "pictureBox_68";
-            this.pictureBox_68.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_68.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_68.TabIndex = 121;
             this.pictureBox_68.TabStop = false;
             this.pictureBox_68.Tag = "FretBoardC";
@@ -680,9 +898,9 @@
             // pictureBox_58
             // 
             this.pictureBox_58.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_58.Image")));
-            this.pictureBox_58.Location = new System.Drawing.Point(772, 256);
+            this.pictureBox_58.Location = new System.Drawing.Point(769, 256);
             this.pictureBox_58.Name = "pictureBox_58";
-            this.pictureBox_58.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_58.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_58.TabIndex = 120;
             this.pictureBox_58.TabStop = false;
             this.pictureBox_58.Tag = "FretBoardF";
@@ -691,9 +909,9 @@
             // pictureBox_48
             // 
             this.pictureBox_48.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_48.Image")));
-            this.pictureBox_48.Location = new System.Drawing.Point(772, 199);
+            this.pictureBox_48.Location = new System.Drawing.Point(769, 199);
             this.pictureBox_48.Name = "pictureBox_48";
-            this.pictureBox_48.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_48.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_48.TabIndex = 119;
             this.pictureBox_48.TabStop = false;
             this.pictureBox_48.Tag = "FretBoardAis";
@@ -702,9 +920,9 @@
             // pictureBox_38
             // 
             this.pictureBox_38.Image = global::Sound_teacher.Properties.Resources.DisSmall;
-            this.pictureBox_38.Location = new System.Drawing.Point(772, 142);
+            this.pictureBox_38.Location = new System.Drawing.Point(769, 142);
             this.pictureBox_38.Name = "pictureBox_38";
-            this.pictureBox_38.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_38.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_38.TabIndex = 118;
             this.pictureBox_38.TabStop = false;
             this.pictureBox_38.Tag = "FretBoardDis";
@@ -713,9 +931,9 @@
             // pictureBox_27
             // 
             this.pictureBox_27.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_27.Image")));
-            this.pictureBox_27.Location = new System.Drawing.Point(700, 88);
+            this.pictureBox_27.Location = new System.Drawing.Point(697, 88);
             this.pictureBox_27.Name = "pictureBox_27";
-            this.pictureBox_27.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_27.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_27.TabIndex = 117;
             this.pictureBox_27.TabStop = false;
             this.pictureBox_27.Tag = "FretBoardFis";
@@ -724,9 +942,9 @@
             // pictureBox_17
             // 
             this.pictureBox_17.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_17.Image")));
-            this.pictureBox_17.Location = new System.Drawing.Point(700, 32);
+            this.pictureBox_17.Location = new System.Drawing.Point(697, 32);
             this.pictureBox_17.Name = "pictureBox_17";
-            this.pictureBox_17.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_17.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_17.TabIndex = 116;
             this.pictureBox_17.TabStop = false;
             this.pictureBox_17.Tag = "FretBoardB";
@@ -735,9 +953,9 @@
             // pictureBox_18
             // 
             this.pictureBox_18.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_18.Image")));
-            this.pictureBox_18.Location = new System.Drawing.Point(772, 32);
+            this.pictureBox_18.Location = new System.Drawing.Point(769, 32);
             this.pictureBox_18.Name = "pictureBox_18";
-            this.pictureBox_18.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_18.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_18.TabIndex = 115;
             this.pictureBox_18.TabStop = false;
             this.pictureBox_18.Tag = "FretBoardC";
@@ -746,9 +964,9 @@
             // pictureBox_28
             // 
             this.pictureBox_28.Image = global::Sound_teacher.Properties.Resources.GSmall;
-            this.pictureBox_28.Location = new System.Drawing.Point(772, 88);
+            this.pictureBox_28.Location = new System.Drawing.Point(769, 88);
             this.pictureBox_28.Name = "pictureBox_28";
-            this.pictureBox_28.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_28.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_28.TabIndex = 114;
             this.pictureBox_28.TabStop = false;
             this.pictureBox_28.Tag = "FretBoardG";
@@ -757,9 +975,9 @@
             // pictureBox_37
             // 
             this.pictureBox_37.Image = global::Sound_teacher.Properties.Resources.DSmall;
-            this.pictureBox_37.Location = new System.Drawing.Point(700, 142);
+            this.pictureBox_37.Location = new System.Drawing.Point(697, 142);
             this.pictureBox_37.Name = "pictureBox_37";
-            this.pictureBox_37.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_37.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_37.TabIndex = 113;
             this.pictureBox_37.TabStop = false;
             this.pictureBox_37.Tag = "FretBoardD";
@@ -768,9 +986,9 @@
             // pictureBox_16
             // 
             this.pictureBox_16.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_16.Image")));
-            this.pictureBox_16.Location = new System.Drawing.Point(628, 32);
+            this.pictureBox_16.Location = new System.Drawing.Point(625, 32);
             this.pictureBox_16.Name = "pictureBox_16";
-            this.pictureBox_16.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_16.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_16.TabIndex = 112;
             this.pictureBox_16.TabStop = false;
             this.pictureBox_16.Tag = "FretBoardAis";
@@ -779,9 +997,9 @@
             // pictureBox_15
             // 
             this.pictureBox_15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_15.Image")));
-            this.pictureBox_15.Location = new System.Drawing.Point(544, 32);
+            this.pictureBox_15.Location = new System.Drawing.Point(541, 32);
             this.pictureBox_15.Name = "pictureBox_15";
-            this.pictureBox_15.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_15.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_15.TabIndex = 111;
             this.pictureBox_15.TabStop = false;
             this.pictureBox_15.Tag = "FretBoardA";
@@ -790,9 +1008,9 @@
             // pictureBox_319
             // 
             this.pictureBox_319.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_319.Image")));
-            this.pictureBox_319.Location = new System.Drawing.Point(1455, 142);
+            this.pictureBox_319.Location = new System.Drawing.Point(1452, 142);
             this.pictureBox_319.Name = "pictureBox_319";
-            this.pictureBox_319.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_319.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_319.TabIndex = 110;
             this.pictureBox_319.TabStop = false;
             this.pictureBox_319.Tag = "FretBoardD";
@@ -801,9 +1019,9 @@
             // pictureBox_219
             // 
             this.pictureBox_219.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_219.Image")));
-            this.pictureBox_219.Location = new System.Drawing.Point(1455, 90);
+            this.pictureBox_219.Location = new System.Drawing.Point(1452, 90);
             this.pictureBox_219.Name = "pictureBox_219";
-            this.pictureBox_219.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_219.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_219.TabIndex = 109;
             this.pictureBox_219.TabStop = false;
             this.pictureBox_219.Tag = "FretBoardFis";
@@ -812,9 +1030,9 @@
             // pictureBox_419
             // 
             this.pictureBox_419.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_419.Image")));
-            this.pictureBox_419.Location = new System.Drawing.Point(1455, 199);
+            this.pictureBox_419.Location = new System.Drawing.Point(1452, 199);
             this.pictureBox_419.Name = "pictureBox_419";
-            this.pictureBox_419.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_419.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_419.TabIndex = 108;
             this.pictureBox_419.TabStop = false;
             this.pictureBox_419.Tag = "FretBoardA";
@@ -823,9 +1041,9 @@
             // pictureBox_519
             // 
             this.pictureBox_519.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_519.Image")));
-            this.pictureBox_519.Location = new System.Drawing.Point(1455, 256);
+            this.pictureBox_519.Location = new System.Drawing.Point(1452, 256);
             this.pictureBox_519.Name = "pictureBox_519";
-            this.pictureBox_519.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_519.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_519.TabIndex = 107;
             this.pictureBox_519.TabStop = false;
             this.pictureBox_519.Tag = "FretBoardE";
@@ -834,9 +1052,9 @@
             // pictureBox_518
             // 
             this.pictureBox_518.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_518.Image")));
-            this.pictureBox_518.Location = new System.Drawing.Point(1412, 256);
+            this.pictureBox_518.Location = new System.Drawing.Point(1409, 256);
             this.pictureBox_518.Name = "pictureBox_518";
-            this.pictureBox_518.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_518.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_518.TabIndex = 106;
             this.pictureBox_518.TabStop = false;
             this.pictureBox_518.Tag = "FretBoardDis";
@@ -845,20 +1063,20 @@
             // pictureBox_418
             // 
             this.pictureBox_418.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_418.Image")));
-            this.pictureBox_418.Location = new System.Drawing.Point(1412, 199);
+            this.pictureBox_418.Location = new System.Drawing.Point(1409, 199);
             this.pictureBox_418.Name = "pictureBox_418";
-            this.pictureBox_418.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_418.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_418.TabIndex = 105;
             this.pictureBox_418.TabStop = false;
-            this.pictureBox_418.Tag = "FretBoardG#";
+            this.pictureBox_418.Tag = "FretBoardGis";
             this.pictureBox_418.Visible = false;
             // 
             // pictureBox_118
             // 
             this.pictureBox_118.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_118.Image")));
-            this.pictureBox_118.Location = new System.Drawing.Point(1412, 32);
+            this.pictureBox_118.Location = new System.Drawing.Point(1409, 32);
             this.pictureBox_118.Name = "pictureBox_118";
-            this.pictureBox_118.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_118.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_118.TabIndex = 104;
             this.pictureBox_118.TabStop = false;
             this.pictureBox_118.Tag = "FretBoardAis";
@@ -867,9 +1085,9 @@
             // pictureBox_318
             // 
             this.pictureBox_318.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_318.Image")));
-            this.pictureBox_318.Location = new System.Drawing.Point(1412, 142);
+            this.pictureBox_318.Location = new System.Drawing.Point(1409, 142);
             this.pictureBox_318.Name = "pictureBox_318";
-            this.pictureBox_318.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_318.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_318.TabIndex = 103;
             this.pictureBox_318.TabStop = false;
             this.pictureBox_318.Tag = "FretBoardCis";
@@ -878,9 +1096,9 @@
             // pictureBox_517
             // 
             this.pictureBox_517.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_517.Image")));
-            this.pictureBox_517.Location = new System.Drawing.Point(1364, 256);
+            this.pictureBox_517.Location = new System.Drawing.Point(1361, 256);
             this.pictureBox_517.Name = "pictureBox_517";
-            this.pictureBox_517.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_517.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_517.TabIndex = 102;
             this.pictureBox_517.TabStop = false;
             this.pictureBox_517.Tag = "FretBoardD";
@@ -889,9 +1107,9 @@
             // pictureBox_417
             // 
             this.pictureBox_417.Image = global::Sound_teacher.Properties.Resources.GSmall;
-            this.pictureBox_417.Location = new System.Drawing.Point(1364, 199);
+            this.pictureBox_417.Location = new System.Drawing.Point(1361, 199);
             this.pictureBox_417.Name = "pictureBox_417";
-            this.pictureBox_417.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_417.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_417.TabIndex = 101;
             this.pictureBox_417.TabStop = false;
             this.pictureBox_417.Tag = "FretBoardG";
@@ -900,9 +1118,9 @@
             // pictureBox_217
             // 
             this.pictureBox_217.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_217.Image")));
-            this.pictureBox_217.Location = new System.Drawing.Point(1364, 88);
+            this.pictureBox_217.Location = new System.Drawing.Point(1361, 88);
             this.pictureBox_217.Name = "pictureBox_217";
-            this.pictureBox_217.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_217.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_217.TabIndex = 100;
             this.pictureBox_217.TabStop = false;
             this.pictureBox_217.Tag = "FretBoardE";
@@ -911,9 +1129,9 @@
             // pictureBox_117
             // 
             this.pictureBox_117.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_117.Image")));
-            this.pictureBox_117.Location = new System.Drawing.Point(1364, 32);
+            this.pictureBox_117.Location = new System.Drawing.Point(1361, 32);
             this.pictureBox_117.Name = "pictureBox_117";
-            this.pictureBox_117.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_117.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_117.TabIndex = 99;
             this.pictureBox_117.TabStop = false;
             this.pictureBox_117.Tag = "FretBoardA";
@@ -922,20 +1140,20 @@
             // pictureBox_116
             // 
             this.pictureBox_116.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_116.Image")));
-            this.pictureBox_116.Location = new System.Drawing.Point(1313, 32);
+            this.pictureBox_116.Location = new System.Drawing.Point(1310, 32);
             this.pictureBox_116.Name = "pictureBox_116";
-            this.pictureBox_116.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_116.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_116.TabIndex = 98;
             this.pictureBox_116.TabStop = false;
-            this.pictureBox_116.Tag = "FretBoardG#";
+            this.pictureBox_116.Tag = "FretBoardGis";
             this.pictureBox_116.Visible = false;
             // 
             // pictureBox_216
             // 
             this.pictureBox_216.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_216.Image")));
-            this.pictureBox_216.Location = new System.Drawing.Point(1313, 88);
+            this.pictureBox_216.Location = new System.Drawing.Point(1310, 88);
             this.pictureBox_216.Name = "pictureBox_216";
-            this.pictureBox_216.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_216.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_216.TabIndex = 97;
             this.pictureBox_216.TabStop = false;
             this.pictureBox_216.Tag = "FretBoardDis";
@@ -944,9 +1162,9 @@
             // pictureBox_316
             // 
             this.pictureBox_316.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_316.Image")));
-            this.pictureBox_316.Location = new System.Drawing.Point(1313, 142);
+            this.pictureBox_316.Location = new System.Drawing.Point(1310, 142);
             this.pictureBox_316.Name = "pictureBox_316";
-            this.pictureBox_316.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_316.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_316.TabIndex = 96;
             this.pictureBox_316.TabStop = false;
             this.pictureBox_316.Tag = "FretBoardB";
@@ -955,9 +1173,9 @@
             // pictureBox_516
             // 
             this.pictureBox_516.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_516.Image")));
-            this.pictureBox_516.Location = new System.Drawing.Point(1312, 256);
+            this.pictureBox_516.Location = new System.Drawing.Point(1309, 256);
             this.pictureBox_516.Name = "pictureBox_516";
-            this.pictureBox_516.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_516.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_516.TabIndex = 95;
             this.pictureBox_516.TabStop = false;
             this.pictureBox_516.Tag = "FretBoardCis";
@@ -966,9 +1184,9 @@
             // pictureBox_520
             // 
             this.pictureBox_520.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_520.Image")));
-            this.pictureBox_520.Location = new System.Drawing.Point(1499, 256);
+            this.pictureBox_520.Location = new System.Drawing.Point(1496, 256);
             this.pictureBox_520.Name = "pictureBox_520";
-            this.pictureBox_520.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_520.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_520.TabIndex = 94;
             this.pictureBox_520.TabStop = false;
             this.pictureBox_520.Tag = "FretBoardF";
@@ -977,9 +1195,9 @@
             // pictureBox_420
             // 
             this.pictureBox_420.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_420.Image")));
-            this.pictureBox_420.Location = new System.Drawing.Point(1499, 199);
+            this.pictureBox_420.Location = new System.Drawing.Point(1496, 199);
             this.pictureBox_420.Name = "pictureBox_420";
-            this.pictureBox_420.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_420.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_420.TabIndex = 93;
             this.pictureBox_420.TabStop = false;
             this.pictureBox_420.Tag = "FretBoardAis";
@@ -988,9 +1206,9 @@
             // pictureBox_320
             // 
             this.pictureBox_320.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_320.Image")));
-            this.pictureBox_320.Location = new System.Drawing.Point(1499, 142);
+            this.pictureBox_320.Location = new System.Drawing.Point(1496, 142);
             this.pictureBox_320.Name = "pictureBox_320";
-            this.pictureBox_320.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_320.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_320.TabIndex = 92;
             this.pictureBox_320.TabStop = false;
             this.pictureBox_320.Tag = "FretBoardDis";
@@ -999,9 +1217,9 @@
             // pictureBox_120
             // 
             this.pictureBox_120.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_120.Image")));
-            this.pictureBox_120.Location = new System.Drawing.Point(1499, 32);
+            this.pictureBox_120.Location = new System.Drawing.Point(1496, 32);
             this.pictureBox_120.Name = "pictureBox_120";
-            this.pictureBox_120.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_120.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_120.TabIndex = 91;
             this.pictureBox_120.TabStop = false;
             this.pictureBox_120.Tag = "FretBoardC";
@@ -1010,9 +1228,9 @@
             // pictureBox_121
             // 
             this.pictureBox_121.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_121.Image")));
-            this.pictureBox_121.Location = new System.Drawing.Point(1542, 32);
+            this.pictureBox_121.Location = new System.Drawing.Point(1539, 32);
             this.pictureBox_121.Name = "pictureBox_121";
-            this.pictureBox_121.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_121.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_121.TabIndex = 90;
             this.pictureBox_121.TabStop = false;
             this.pictureBox_121.Tag = "FretBoardCis";
@@ -1021,20 +1239,20 @@
             // pictureBox_221
             // 
             this.pictureBox_221.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_221.Image")));
-            this.pictureBox_221.Location = new System.Drawing.Point(1542, 90);
+            this.pictureBox_221.Location = new System.Drawing.Point(1539, 90);
             this.pictureBox_221.Name = "pictureBox_221";
-            this.pictureBox_221.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_221.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_221.TabIndex = 89;
             this.pictureBox_221.TabStop = false;
-            this.pictureBox_221.Tag = "FretBoardG#";
+            this.pictureBox_221.Tag = "FretBoardGis";
             this.pictureBox_221.Visible = false;
             // 
             // pictureBox_421
             // 
             this.pictureBox_421.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_421.Image")));
-            this.pictureBox_421.Location = new System.Drawing.Point(1542, 199);
+            this.pictureBox_421.Location = new System.Drawing.Point(1539, 199);
             this.pictureBox_421.Name = "pictureBox_421";
-            this.pictureBox_421.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_421.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_421.TabIndex = 88;
             this.pictureBox_421.TabStop = false;
             this.pictureBox_421.Tag = "FretBoardB";
@@ -1043,9 +1261,9 @@
             // pictureBox_522
             // 
             this.pictureBox_522.Image = global::Sound_teacher.Properties.Resources.GSmall;
-            this.pictureBox_522.Location = new System.Drawing.Point(1584, 256);
+            this.pictureBox_522.Location = new System.Drawing.Point(1581, 256);
             this.pictureBox_522.Name = "pictureBox_522";
-            this.pictureBox_522.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_522.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_522.TabIndex = 87;
             this.pictureBox_522.TabStop = false;
             this.pictureBox_522.Tag = "FretBoardG";
@@ -1054,9 +1272,9 @@
             // pictureBox_222
             // 
             this.pictureBox_222.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_222.Image")));
-            this.pictureBox_222.Location = new System.Drawing.Point(1584, 90);
+            this.pictureBox_222.Location = new System.Drawing.Point(1581, 90);
             this.pictureBox_222.Name = "pictureBox_222";
-            this.pictureBox_222.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_222.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_222.TabIndex = 86;
             this.pictureBox_222.TabStop = false;
             this.pictureBox_222.Tag = "FretBoardA";
@@ -1065,9 +1283,9 @@
             // pictureBox_122
             // 
             this.pictureBox_122.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_122.Image")));
-            this.pictureBox_122.Location = new System.Drawing.Point(1584, 32);
+            this.pictureBox_122.Location = new System.Drawing.Point(1581, 32);
             this.pictureBox_122.Name = "pictureBox_122";
-            this.pictureBox_122.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_122.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_122.TabIndex = 85;
             this.pictureBox_122.TabStop = false;
             this.pictureBox_122.Tag = "FretBoardD";
@@ -1076,9 +1294,9 @@
             // pictureBox_322
             // 
             this.pictureBox_322.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_322.Image")));
-            this.pictureBox_322.Location = new System.Drawing.Point(1584, 142);
+            this.pictureBox_322.Location = new System.Drawing.Point(1581, 142);
             this.pictureBox_322.Name = "pictureBox_322";
-            this.pictureBox_322.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_322.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_322.TabIndex = 84;
             this.pictureBox_322.TabStop = false;
             this.pictureBox_322.Tag = "FretBoardF";
@@ -1087,9 +1305,9 @@
             // pictureBox_223
             // 
             this.pictureBox_223.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_223.Image")));
-            this.pictureBox_223.Location = new System.Drawing.Point(1619, 88);
+            this.pictureBox_223.Location = new System.Drawing.Point(1616, 88);
             this.pictureBox_223.Name = "pictureBox_223";
-            this.pictureBox_223.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_223.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_223.TabIndex = 83;
             this.pictureBox_223.TabStop = false;
             this.pictureBox_223.Tag = "FretBoardAis";
@@ -1098,9 +1316,9 @@
             // pictureBox_323
             // 
             this.pictureBox_323.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_323.Image")));
-            this.pictureBox_323.Location = new System.Drawing.Point(1619, 142);
+            this.pictureBox_323.Location = new System.Drawing.Point(1616, 142);
             this.pictureBox_323.Name = "pictureBox_323";
-            this.pictureBox_323.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_323.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_323.TabIndex = 82;
             this.pictureBox_323.TabStop = false;
             this.pictureBox_323.Tag = "FretBoardFis";
@@ -1109,9 +1327,9 @@
             // pictureBox_423
             // 
             this.pictureBox_423.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_423.Image")));
-            this.pictureBox_423.Location = new System.Drawing.Point(1619, 199);
+            this.pictureBox_423.Location = new System.Drawing.Point(1616, 199);
             this.pictureBox_423.Name = "pictureBox_423";
-            this.pictureBox_423.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_423.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_423.TabIndex = 81;
             this.pictureBox_423.TabStop = false;
             this.pictureBox_423.Tag = "FretBoardCis";
@@ -1120,9 +1338,9 @@
             // pictureBox_623
             // 
             this.pictureBox_623.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_623.Image")));
-            this.pictureBox_623.Location = new System.Drawing.Point(1619, 311);
+            this.pictureBox_623.Location = new System.Drawing.Point(1616, 311);
             this.pictureBox_623.Name = "pictureBox_623";
-            this.pictureBox_623.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_623.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_623.TabIndex = 80;
             this.pictureBox_623.TabStop = false;
             this.pictureBox_623.Tag = "FretBoardDis";
@@ -1131,9 +1349,9 @@
             // pictureBox_622
             // 
             this.pictureBox_622.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_622.Image")));
-            this.pictureBox_622.Location = new System.Drawing.Point(1584, 311);
+            this.pictureBox_622.Location = new System.Drawing.Point(1581, 311);
             this.pictureBox_622.Name = "pictureBox_622";
-            this.pictureBox_622.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_622.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_622.TabIndex = 79;
             this.pictureBox_622.TabStop = false;
             this.pictureBox_622.Tag = "FretBoardD";
@@ -1142,9 +1360,9 @@
             // pictureBox_621
             // 
             this.pictureBox_621.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_621.Image")));
-            this.pictureBox_621.Location = new System.Drawing.Point(1542, 311);
+            this.pictureBox_621.Location = new System.Drawing.Point(1539, 311);
             this.pictureBox_621.Name = "pictureBox_621";
-            this.pictureBox_621.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_621.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_621.TabIndex = 78;
             this.pictureBox_621.TabStop = false;
             this.pictureBox_621.Tag = "FretBoardCis";
@@ -1153,9 +1371,9 @@
             // pictureBox_620
             // 
             this.pictureBox_620.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_620.Image")));
-            this.pictureBox_620.Location = new System.Drawing.Point(1499, 311);
+            this.pictureBox_620.Location = new System.Drawing.Point(1496, 311);
             this.pictureBox_620.Name = "pictureBox_620";
-            this.pictureBox_620.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_620.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_620.TabIndex = 77;
             this.pictureBox_620.TabStop = false;
             this.pictureBox_620.Tag = "FretBoardC";
@@ -1164,9 +1382,9 @@
             // pictureBox_619
             // 
             this.pictureBox_619.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_619.Image")));
-            this.pictureBox_619.Location = new System.Drawing.Point(1455, 311);
+            this.pictureBox_619.Location = new System.Drawing.Point(1452, 311);
             this.pictureBox_619.Name = "pictureBox_619";
-            this.pictureBox_619.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_619.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_619.TabIndex = 76;
             this.pictureBox_619.TabStop = false;
             this.pictureBox_619.Tag = "FretBoardB";
@@ -1175,9 +1393,9 @@
             // pictureBox_618
             // 
             this.pictureBox_618.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_618.Image")));
-            this.pictureBox_618.Location = new System.Drawing.Point(1412, 311);
+            this.pictureBox_618.Location = new System.Drawing.Point(1409, 311);
             this.pictureBox_618.Name = "pictureBox_618";
-            this.pictureBox_618.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_618.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_618.TabIndex = 75;
             this.pictureBox_618.TabStop = false;
             this.pictureBox_618.Tag = "FretBoardAis";
@@ -1186,9 +1404,9 @@
             // pictureBox_617
             // 
             this.pictureBox_617.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_617.Image")));
-            this.pictureBox_617.Location = new System.Drawing.Point(1363, 311);
+            this.pictureBox_617.Location = new System.Drawing.Point(1360, 311);
             this.pictureBox_617.Name = "pictureBox_617";
-            this.pictureBox_617.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_617.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_617.TabIndex = 74;
             this.pictureBox_617.TabStop = false;
             this.pictureBox_617.Tag = "FretBoardA";
@@ -1197,20 +1415,20 @@
             // pictureBox_616
             // 
             this.pictureBox_616.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_616.Image")));
-            this.pictureBox_616.Location = new System.Drawing.Point(1312, 311);
+            this.pictureBox_616.Location = new System.Drawing.Point(1309, 311);
             this.pictureBox_616.Name = "pictureBox_616";
-            this.pictureBox_616.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_616.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_616.TabIndex = 73;
             this.pictureBox_616.TabStop = false;
-            this.pictureBox_616.Tag = "FretBoardG#";
+            this.pictureBox_616.Tag = "FretBoardGis";
             this.pictureBox_616.Visible = false;
             // 
             // pictureBox_615
             // 
             this.pictureBox_615.Image = global::Sound_teacher.Properties.Resources.GSmall;
-            this.pictureBox_615.Location = new System.Drawing.Point(1255, 311);
+            this.pictureBox_615.Location = new System.Drawing.Point(1252, 311);
             this.pictureBox_615.Name = "pictureBox_615";
-            this.pictureBox_615.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_615.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_615.TabIndex = 72;
             this.pictureBox_615.TabStop = false;
             this.pictureBox_615.Tag = "FretBoardG";
@@ -1219,9 +1437,9 @@
             // pictureBox_415
             // 
             this.pictureBox_415.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_415.Image")));
-            this.pictureBox_415.Location = new System.Drawing.Point(1255, 199);
+            this.pictureBox_415.Location = new System.Drawing.Point(1252, 199);
             this.pictureBox_415.Name = "pictureBox_415";
-            this.pictureBox_415.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_415.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_415.TabIndex = 71;
             this.pictureBox_415.TabStop = false;
             this.pictureBox_415.Tag = "FretBoardF";
@@ -1230,9 +1448,9 @@
             // pictureBox_315
             // 
             this.pictureBox_315.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_315.Image")));
-            this.pictureBox_315.Location = new System.Drawing.Point(1255, 142);
+            this.pictureBox_315.Location = new System.Drawing.Point(1252, 142);
             this.pictureBox_315.Name = "pictureBox_315";
-            this.pictureBox_315.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_315.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_315.TabIndex = 70;
             this.pictureBox_315.TabStop = false;
             this.pictureBox_315.Tag = "FretBoardAis";
@@ -1241,9 +1459,9 @@
             // pictureBox_521
             // 
             this.pictureBox_521.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_521.Image")));
-            this.pictureBox_521.Location = new System.Drawing.Point(1542, 256);
+            this.pictureBox_521.Location = new System.Drawing.Point(1539, 256);
             this.pictureBox_521.Name = "pictureBox_521";
-            this.pictureBox_521.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_521.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_521.TabIndex = 70;
             this.pictureBox_521.TabStop = false;
             this.pictureBox_521.Tag = "FretBoardFis";
@@ -1252,9 +1470,9 @@
             // pictureBox_215
             // 
             this.pictureBox_215.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_215.Image")));
-            this.pictureBox_215.Location = new System.Drawing.Point(1255, 88);
+            this.pictureBox_215.Location = new System.Drawing.Point(1252, 88);
             this.pictureBox_215.Name = "pictureBox_215";
-            this.pictureBox_215.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_215.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_215.TabIndex = 69;
             this.pictureBox_215.TabStop = false;
             this.pictureBox_215.Tag = "FretBoardD";
@@ -1263,9 +1481,9 @@
             // pictureBox_115
             // 
             this.pictureBox_115.Image = global::Sound_teacher.Properties.Resources.GSmall;
-            this.pictureBox_115.Location = new System.Drawing.Point(1255, 32);
+            this.pictureBox_115.Location = new System.Drawing.Point(1252, 32);
             this.pictureBox_115.Name = "pictureBox_115";
-            this.pictureBox_115.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_115.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_115.TabIndex = 68;
             this.pictureBox_115.TabStop = false;
             this.pictureBox_115.Tag = "FretBoardG";
@@ -1274,9 +1492,9 @@
             // pictureBox_214
             // 
             this.pictureBox_214.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_214.Image")));
-            this.pictureBox_214.Location = new System.Drawing.Point(1196, 88);
+            this.pictureBox_214.Location = new System.Drawing.Point(1193, 88);
             this.pictureBox_214.Name = "pictureBox_214";
-            this.pictureBox_214.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_214.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_214.TabIndex = 67;
             this.pictureBox_214.TabStop = false;
             this.pictureBox_214.Tag = "FretBoardCis";
@@ -1285,9 +1503,9 @@
             // pictureBox_314
             // 
             this.pictureBox_314.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_314.Image")));
-            this.pictureBox_314.Location = new System.Drawing.Point(1196, 142);
+            this.pictureBox_314.Location = new System.Drawing.Point(1193, 142);
             this.pictureBox_314.Name = "pictureBox_314";
-            this.pictureBox_314.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_314.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_314.TabIndex = 66;
             this.pictureBox_314.TabStop = false;
             this.pictureBox_314.Tag = "FretBoardA";
@@ -1296,9 +1514,9 @@
             // pictureBox_414
             // 
             this.pictureBox_414.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_414.Image")));
-            this.pictureBox_414.Location = new System.Drawing.Point(1196, 199);
+            this.pictureBox_414.Location = new System.Drawing.Point(1193, 199);
             this.pictureBox_414.Name = "pictureBox_414";
-            this.pictureBox_414.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_414.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_414.TabIndex = 65;
             this.pictureBox_414.TabStop = false;
             this.pictureBox_414.Tag = "FretBoardE";
@@ -1307,9 +1525,9 @@
             // pictureBox_514
             // 
             this.pictureBox_514.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_514.Image")));
-            this.pictureBox_514.Location = new System.Drawing.Point(1196, 256);
+            this.pictureBox_514.Location = new System.Drawing.Point(1193, 256);
             this.pictureBox_514.Name = "pictureBox_514";
-            this.pictureBox_514.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_514.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_514.TabIndex = 64;
             this.pictureBox_514.TabStop = false;
             this.pictureBox_514.Tag = "FretBoardB";
@@ -1318,9 +1536,9 @@
             // pictureBox_613
             // 
             this.pictureBox_613.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_613.Image")));
-            this.pictureBox_613.Location = new System.Drawing.Point(1133, 311);
+            this.pictureBox_613.Location = new System.Drawing.Point(1130, 311);
             this.pictureBox_613.Name = "pictureBox_613";
-            this.pictureBox_613.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_613.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_613.TabIndex = 63;
             this.pictureBox_613.TabStop = false;
             this.pictureBox_613.Tag = "FretBoardF";
@@ -1329,9 +1547,9 @@
             // pictureBox_413
             // 
             this.pictureBox_413.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_413.Image")));
-            this.pictureBox_413.Location = new System.Drawing.Point(1133, 199);
+            this.pictureBox_413.Location = new System.Drawing.Point(1130, 199);
             this.pictureBox_413.Name = "pictureBox_413";
-            this.pictureBox_413.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_413.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_413.TabIndex = 62;
             this.pictureBox_413.TabStop = false;
             this.pictureBox_413.Tag = "FretBoardDis";
@@ -1340,20 +1558,20 @@
             // pictureBox_313
             // 
             this.pictureBox_313.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_313.Image")));
-            this.pictureBox_313.Location = new System.Drawing.Point(1133, 142);
+            this.pictureBox_313.Location = new System.Drawing.Point(1130, 142);
             this.pictureBox_313.Name = "pictureBox_313";
-            this.pictureBox_313.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_313.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_313.TabIndex = 61;
             this.pictureBox_313.TabStop = false;
-            this.pictureBox_313.Tag = "FretBoardG#";
+            this.pictureBox_313.Tag = "FretBoardGis";
             this.pictureBox_313.Visible = false;
             // 
             // pictureBox_213
             // 
             this.pictureBox_213.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_213.Image")));
-            this.pictureBox_213.Location = new System.Drawing.Point(1133, 88);
+            this.pictureBox_213.Location = new System.Drawing.Point(1130, 88);
             this.pictureBox_213.Name = "pictureBox_213";
-            this.pictureBox_213.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_213.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_213.TabIndex = 60;
             this.pictureBox_213.TabStop = false;
             this.pictureBox_213.Tag = "FretBoardC";
@@ -1362,9 +1580,9 @@
             // pictureBox_113
             // 
             this.pictureBox_113.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_113.Image")));
-            this.pictureBox_113.Location = new System.Drawing.Point(1133, 32);
+            this.pictureBox_113.Location = new System.Drawing.Point(1130, 32);
             this.pictureBox_113.Name = "pictureBox_113";
-            this.pictureBox_113.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_113.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_113.TabIndex = 59;
             this.pictureBox_113.TabStop = false;
             this.pictureBox_113.Tag = "FretBoardF";
@@ -1373,9 +1591,9 @@
             // pictureBox_114
             // 
             this.pictureBox_114.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_114.Image")));
-            this.pictureBox_114.Location = new System.Drawing.Point(1196, 32);
+            this.pictureBox_114.Location = new System.Drawing.Point(1193, 32);
             this.pictureBox_114.Name = "pictureBox_114";
-            this.pictureBox_114.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_114.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_114.TabIndex = 59;
             this.pictureBox_114.TabStop = false;
             this.pictureBox_114.Tag = "FretBoardFis";
@@ -1384,9 +1602,9 @@
             // pictureBox_112
             // 
             this.pictureBox_112.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_112.Image")));
-            this.pictureBox_112.Location = new System.Drawing.Point(1065, 32);
+            this.pictureBox_112.Location = new System.Drawing.Point(1062, 32);
             this.pictureBox_112.Name = "pictureBox_112";
-            this.pictureBox_112.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_112.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_112.TabIndex = 58;
             this.pictureBox_112.TabStop = false;
             this.pictureBox_112.Tag = "FretBoardE";
@@ -1395,9 +1613,9 @@
             // pictureBox_212
             // 
             this.pictureBox_212.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_212.Image")));
-            this.pictureBox_212.Location = new System.Drawing.Point(1065, 88);
+            this.pictureBox_212.Location = new System.Drawing.Point(1062, 88);
             this.pictureBox_212.Name = "pictureBox_212";
-            this.pictureBox_212.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_212.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_212.TabIndex = 57;
             this.pictureBox_212.TabStop = false;
             this.pictureBox_212.Tag = "FretBoardB";
@@ -1406,9 +1624,9 @@
             // pictureBox_312
             // 
             this.pictureBox_312.Image = global::Sound_teacher.Properties.Resources.GSmall;
-            this.pictureBox_312.Location = new System.Drawing.Point(1065, 142);
+            this.pictureBox_312.Location = new System.Drawing.Point(1062, 142);
             this.pictureBox_312.Name = "pictureBox_312";
-            this.pictureBox_312.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_312.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_312.TabIndex = 56;
             this.pictureBox_312.TabStop = false;
             this.pictureBox_312.Tag = "FretBoardG";
@@ -1417,9 +1635,9 @@
             // pictureBox_512
             // 
             this.pictureBox_512.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_512.Image")));
-            this.pictureBox_512.Location = new System.Drawing.Point(1065, 256);
+            this.pictureBox_512.Location = new System.Drawing.Point(1062, 256);
             this.pictureBox_512.Name = "pictureBox_512";
-            this.pictureBox_512.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_512.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_512.TabIndex = 55;
             this.pictureBox_512.TabStop = false;
             this.pictureBox_512.Tag = "FretBoardA";
@@ -1428,9 +1646,9 @@
             // pictureBox_612
             // 
             this.pictureBox_612.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_612.Image")));
-            this.pictureBox_612.Location = new System.Drawing.Point(1065, 311);
+            this.pictureBox_612.Location = new System.Drawing.Point(1062, 311);
             this.pictureBox_612.Name = "pictureBox_612";
-            this.pictureBox_612.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_612.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_612.TabIndex = 54;
             this.pictureBox_612.TabStop = false;
             this.pictureBox_612.Tag = "FretBoardE";
@@ -1439,9 +1657,9 @@
             // pictureBox_611
             // 
             this.pictureBox_611.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_611.Image")));
-            this.pictureBox_611.Location = new System.Drawing.Point(993, 311);
+            this.pictureBox_611.Location = new System.Drawing.Point(990, 311);
             this.pictureBox_611.Name = "pictureBox_611";
-            this.pictureBox_611.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_611.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_611.TabIndex = 53;
             this.pictureBox_611.TabStop = false;
             this.pictureBox_611.Tag = "FretBoardDis";
@@ -1450,20 +1668,20 @@
             // pictureBox_511
             // 
             this.pictureBox_511.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_511.Image")));
-            this.pictureBox_511.Location = new System.Drawing.Point(993, 256);
+            this.pictureBox_511.Location = new System.Drawing.Point(990, 256);
             this.pictureBox_511.Name = "pictureBox_511";
-            this.pictureBox_511.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_511.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_511.TabIndex = 52;
             this.pictureBox_511.TabStop = false;
-            this.pictureBox_511.Tag = "FretBoardG#";
+            this.pictureBox_511.Tag = "FretBoardGis";
             this.pictureBox_511.Visible = false;
             // 
             // pictureBox_411
             // 
             this.pictureBox_411.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_411.Image")));
-            this.pictureBox_411.Location = new System.Drawing.Point(993, 199);
+            this.pictureBox_411.Location = new System.Drawing.Point(990, 199);
             this.pictureBox_411.Name = "pictureBox_411";
-            this.pictureBox_411.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_411.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_411.TabIndex = 51;
             this.pictureBox_411.TabStop = false;
             this.pictureBox_411.Tag = "FretBoardCis";
@@ -1472,9 +1690,9 @@
             // pictureBox_211
             // 
             this.pictureBox_211.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_211.Image")));
-            this.pictureBox_211.Location = new System.Drawing.Point(993, 88);
+            this.pictureBox_211.Location = new System.Drawing.Point(990, 88);
             this.pictureBox_211.Name = "pictureBox_211";
-            this.pictureBox_211.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_211.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_211.TabIndex = 50;
             this.pictureBox_211.TabStop = false;
             this.pictureBox_211.Tag = "FretBoardAis";
@@ -1483,9 +1701,9 @@
             // pictureBox_111
             // 
             this.pictureBox_111.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_111.Image")));
-            this.pictureBox_111.Location = new System.Drawing.Point(993, 32);
+            this.pictureBox_111.Location = new System.Drawing.Point(990, 32);
             this.pictureBox_111.Name = "pictureBox_111";
-            this.pictureBox_111.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_111.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_111.TabIndex = 49;
             this.pictureBox_111.TabStop = false;
             this.pictureBox_111.Tag = "FretBoardDis";
@@ -1494,9 +1712,9 @@
             // pictureBox_610
             // 
             this.pictureBox_610.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_610.Image")));
-            this.pictureBox_610.Location = new System.Drawing.Point(918, 311);
+            this.pictureBox_610.Location = new System.Drawing.Point(915, 311);
             this.pictureBox_610.Name = "pictureBox_610";
-            this.pictureBox_610.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_610.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_610.TabIndex = 48;
             this.pictureBox_610.TabStop = false;
             this.pictureBox_610.Tag = "FretBoardD";
@@ -1505,19 +1723,20 @@
             // pictureBox_510
             // 
             this.pictureBox_510.Image = global::Sound_teacher.Properties.Resources.GSmall;
-            this.pictureBox_510.Location = new System.Drawing.Point(918, 256);
+            this.pictureBox_510.Location = new System.Drawing.Point(915, 256);
             this.pictureBox_510.Name = "pictureBox_510";
-            this.pictureBox_510.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_510.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_510.TabIndex = 47;
             this.pictureBox_510.TabStop = false;
+            this.pictureBox_510.Tag = "FretBoardG";
             this.pictureBox_510.Visible = false;
             // 
             // pictureBox_410
             // 
             this.pictureBox_410.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_410.Image")));
-            this.pictureBox_410.Location = new System.Drawing.Point(918, 199);
+            this.pictureBox_410.Location = new System.Drawing.Point(915, 199);
             this.pictureBox_410.Name = "pictureBox_410";
-            this.pictureBox_410.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_410.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_410.TabIndex = 46;
             this.pictureBox_410.TabStop = false;
             this.pictureBox_410.Tag = "FretBoardC";
@@ -1526,9 +1745,9 @@
             // pictureBox_310
             // 
             this.pictureBox_310.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_310.Image")));
-            this.pictureBox_310.Location = new System.Drawing.Point(918, 142);
+            this.pictureBox_310.Location = new System.Drawing.Point(915, 142);
             this.pictureBox_310.Name = "pictureBox_310";
-            this.pictureBox_310.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_310.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_310.TabIndex = 45;
             this.pictureBox_310.TabStop = false;
             this.pictureBox_310.Tag = "FretBoardF";
@@ -1537,9 +1756,9 @@
             // pictureBox_69
             // 
             this.pictureBox_69.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_69.Image")));
-            this.pictureBox_69.Location = new System.Drawing.Point(844, 311);
+            this.pictureBox_69.Location = new System.Drawing.Point(841, 311);
             this.pictureBox_69.Name = "pictureBox_69";
-            this.pictureBox_69.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_69.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_69.TabIndex = 44;
             this.pictureBox_69.TabStop = false;
             this.pictureBox_69.Tag = "FretBoardCis";
@@ -1548,9 +1767,9 @@
             // pictureBox_59
             // 
             this.pictureBox_59.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_59.Image")));
-            this.pictureBox_59.Location = new System.Drawing.Point(844, 256);
+            this.pictureBox_59.Location = new System.Drawing.Point(841, 256);
             this.pictureBox_59.Name = "pictureBox_59";
-            this.pictureBox_59.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_59.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_59.TabIndex = 43;
             this.pictureBox_59.TabStop = false;
             this.pictureBox_59.Tag = "FretBoardFis";
@@ -1559,9 +1778,9 @@
             // pictureBox_49
             // 
             this.pictureBox_49.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_49.Image")));
-            this.pictureBox_49.Location = new System.Drawing.Point(844, 199);
+            this.pictureBox_49.Location = new System.Drawing.Point(841, 199);
             this.pictureBox_49.Name = "pictureBox_49";
-            this.pictureBox_49.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_49.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_49.TabIndex = 42;
             this.pictureBox_49.TabStop = false;
             this.pictureBox_49.Tag = "FretBoardB";
@@ -1570,9 +1789,9 @@
             // pictureBox_110
             // 
             this.pictureBox_110.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_110.Image")));
-            this.pictureBox_110.Location = new System.Drawing.Point(918, 32);
+            this.pictureBox_110.Location = new System.Drawing.Point(915, 32);
             this.pictureBox_110.Name = "pictureBox_110";
-            this.pictureBox_110.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_110.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_110.TabIndex = 41;
             this.pictureBox_110.TabStop = false;
             this.pictureBox_110.Tag = "FretBoardD";
@@ -1581,20 +1800,20 @@
             // pictureBox_29
             // 
             this.pictureBox_29.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_29.Image")));
-            this.pictureBox_29.Location = new System.Drawing.Point(844, 88);
+            this.pictureBox_29.Location = new System.Drawing.Point(841, 88);
             this.pictureBox_29.Name = "pictureBox_29";
-            this.pictureBox_29.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_29.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_29.TabIndex = 40;
             this.pictureBox_29.TabStop = false;
-            this.pictureBox_29.Tag = "FretBoardG#";
+            this.pictureBox_29.Tag = "FretBoardGis";
             this.pictureBox_29.Visible = false;
             // 
             // pictureBox_124
             // 
             this.pictureBox_124.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_124.Image")));
-            this.pictureBox_124.Location = new System.Drawing.Point(1654, 32);
+            this.pictureBox_124.Location = new System.Drawing.Point(1651, 32);
             this.pictureBox_124.Name = "pictureBox_124";
-            this.pictureBox_124.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_124.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_124.TabIndex = 39;
             this.pictureBox_124.TabStop = false;
             this.pictureBox_124.Tag = "FretBoardE";
@@ -1603,9 +1822,9 @@
             // pictureBox_224
             // 
             this.pictureBox_224.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_224.Image")));
-            this.pictureBox_224.Location = new System.Drawing.Point(1653, 88);
+            this.pictureBox_224.Location = new System.Drawing.Point(1650, 88);
             this.pictureBox_224.Name = "pictureBox_224";
-            this.pictureBox_224.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_224.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_224.TabIndex = 38;
             this.pictureBox_224.TabStop = false;
             this.pictureBox_224.Tag = "FretBoardB";
@@ -1614,9 +1833,9 @@
             // pictureBox_324
             // 
             this.pictureBox_324.Image = global::Sound_teacher.Properties.Resources.GSmall;
-            this.pictureBox_324.Location = new System.Drawing.Point(1653, 142);
+            this.pictureBox_324.Location = new System.Drawing.Point(1650, 142);
             this.pictureBox_324.Name = "pictureBox_324";
-            this.pictureBox_324.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_324.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_324.TabIndex = 37;
             this.pictureBox_324.TabStop = false;
             this.pictureBox_324.Tag = "FretBoardG";
@@ -1625,9 +1844,9 @@
             // pictureBox_424
             // 
             this.pictureBox_424.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_424.Image")));
-            this.pictureBox_424.Location = new System.Drawing.Point(1653, 199);
+            this.pictureBox_424.Location = new System.Drawing.Point(1650, 199);
             this.pictureBox_424.Name = "pictureBox_424";
-            this.pictureBox_424.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_424.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_424.TabIndex = 36;
             this.pictureBox_424.TabStop = false;
             this.pictureBox_424.Tag = "FretBoardD";
@@ -1636,9 +1855,9 @@
             // pictureBox_524
             // 
             this.pictureBox_524.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_524.Image")));
-            this.pictureBox_524.Location = new System.Drawing.Point(1654, 256);
+            this.pictureBox_524.Location = new System.Drawing.Point(1651, 256);
             this.pictureBox_524.Name = "pictureBox_524";
-            this.pictureBox_524.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_524.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_524.TabIndex = 35;
             this.pictureBox_524.TabStop = false;
             this.pictureBox_524.Tag = "FretBoardA";
@@ -1647,9 +1866,9 @@
             // pictureBox_624
             // 
             this.pictureBox_624.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_624.Image")));
-            this.pictureBox_624.Location = new System.Drawing.Point(1654, 311);
+            this.pictureBox_624.Location = new System.Drawing.Point(1651, 311);
             this.pictureBox_624.Name = "pictureBox_624";
-            this.pictureBox_624.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_624.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_624.TabIndex = 34;
             this.pictureBox_624.TabStop = false;
             this.pictureBox_624.Tag = "FretBoardE";
@@ -1658,20 +1877,20 @@
             // pictureBox_523
             // 
             this.pictureBox_523.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_523.Image")));
-            this.pictureBox_523.Location = new System.Drawing.Point(1619, 256);
+            this.pictureBox_523.Location = new System.Drawing.Point(1616, 256);
             this.pictureBox_523.Name = "pictureBox_523";
-            this.pictureBox_523.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_523.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_523.TabIndex = 33;
             this.pictureBox_523.TabStop = false;
-            this.pictureBox_523.Tag = "FretBoardG#";
+            this.pictureBox_523.Tag = "FretBoardGis";
             this.pictureBox_523.Visible = false;
             // 
             // pictureBox_422
             // 
             this.pictureBox_422.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_422.Image")));
-            this.pictureBox_422.Location = new System.Drawing.Point(1584, 199);
+            this.pictureBox_422.Location = new System.Drawing.Point(1581, 199);
             this.pictureBox_422.Name = "pictureBox_422";
-            this.pictureBox_422.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_422.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_422.TabIndex = 32;
             this.pictureBox_422.TabStop = false;
             this.pictureBox_422.Tag = "FretBoardC";
@@ -1680,9 +1899,9 @@
             // pictureBox_321
             // 
             this.pictureBox_321.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_321.Image")));
-            this.pictureBox_321.Location = new System.Drawing.Point(1542, 142);
+            this.pictureBox_321.Location = new System.Drawing.Point(1539, 142);
             this.pictureBox_321.Name = "pictureBox_321";
-            this.pictureBox_321.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_321.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_321.TabIndex = 31;
             this.pictureBox_321.TabStop = false;
             this.pictureBox_321.Tag = "FretBoardE";
@@ -1691,9 +1910,9 @@
             // pictureBox_220
             // 
             this.pictureBox_220.Image = global::Sound_teacher.Properties.Resources.GSmall;
-            this.pictureBox_220.Location = new System.Drawing.Point(1499, 88);
+            this.pictureBox_220.Location = new System.Drawing.Point(1496, 88);
             this.pictureBox_220.Name = "pictureBox_220";
-            this.pictureBox_220.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_220.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_220.TabIndex = 30;
             this.pictureBox_220.TabStop = false;
             this.pictureBox_220.Tag = "FretBoardG";
@@ -1702,9 +1921,9 @@
             // pictureBox_119
             // 
             this.pictureBox_119.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_119.Image")));
-            this.pictureBox_119.Location = new System.Drawing.Point(1455, 32);
+            this.pictureBox_119.Location = new System.Drawing.Point(1452, 32);
             this.pictureBox_119.Name = "pictureBox_119";
-            this.pictureBox_119.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_119.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_119.TabIndex = 29;
             this.pictureBox_119.TabStop = false;
             this.pictureBox_119.Tag = "FretBoardB";
@@ -1713,9 +1932,9 @@
             // pictureBox_218
             // 
             this.pictureBox_218.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_218.Image")));
-            this.pictureBox_218.Location = new System.Drawing.Point(1412, 88);
+            this.pictureBox_218.Location = new System.Drawing.Point(1409, 88);
             this.pictureBox_218.Name = "pictureBox_218";
-            this.pictureBox_218.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_218.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_218.TabIndex = 28;
             this.pictureBox_218.TabStop = false;
             this.pictureBox_218.Tag = "FretBoardF";
@@ -1724,9 +1943,9 @@
             // pictureBox_317
             // 
             this.pictureBox_317.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_317.Image")));
-            this.pictureBox_317.Location = new System.Drawing.Point(1364, 142);
+            this.pictureBox_317.Location = new System.Drawing.Point(1361, 142);
             this.pictureBox_317.Name = "pictureBox_317";
-            this.pictureBox_317.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_317.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_317.TabIndex = 27;
             this.pictureBox_317.TabStop = false;
             this.pictureBox_317.Tag = "FretBoardC";
@@ -1735,9 +1954,9 @@
             // pictureBox_416
             // 
             this.pictureBox_416.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_416.Image")));
-            this.pictureBox_416.Location = new System.Drawing.Point(1312, 199);
+            this.pictureBox_416.Location = new System.Drawing.Point(1309, 199);
             this.pictureBox_416.Name = "pictureBox_416";
-            this.pictureBox_416.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_416.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_416.TabIndex = 26;
             this.pictureBox_416.TabStop = false;
             this.pictureBox_416.Tag = "FretBoardFis";
@@ -1746,9 +1965,9 @@
             // pictureBox_39
             // 
             this.pictureBox_39.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_39.Image")));
-            this.pictureBox_39.Location = new System.Drawing.Point(844, 142);
+            this.pictureBox_39.Location = new System.Drawing.Point(841, 142);
             this.pictureBox_39.Name = "pictureBox_39";
-            this.pictureBox_39.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_39.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_39.TabIndex = 25;
             this.pictureBox_39.TabStop = false;
             this.pictureBox_39.Tag = "FretBoardE";
@@ -1757,9 +1976,9 @@
             // pictureBox_614
             // 
             this.pictureBox_614.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_614.Image")));
-            this.pictureBox_614.Location = new System.Drawing.Point(1196, 311);
+            this.pictureBox_614.Location = new System.Drawing.Point(1193, 311);
             this.pictureBox_614.Name = "pictureBox_614";
-            this.pictureBox_614.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_614.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_614.TabIndex = 24;
             this.pictureBox_614.TabStop = false;
             this.pictureBox_614.Tag = "FretBoardFis";
@@ -1768,9 +1987,9 @@
             // pictureBox_513
             // 
             this.pictureBox_513.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_513.Image")));
-            this.pictureBox_513.Location = new System.Drawing.Point(1133, 256);
+            this.pictureBox_513.Location = new System.Drawing.Point(1130, 256);
             this.pictureBox_513.Name = "pictureBox_513";
-            this.pictureBox_513.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_513.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_513.TabIndex = 23;
             this.pictureBox_513.TabStop = false;
             this.pictureBox_513.Tag = "FretBoardAis";
@@ -1779,9 +1998,9 @@
             // pictureBox_412
             // 
             this.pictureBox_412.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_412.Image")));
-            this.pictureBox_412.Location = new System.Drawing.Point(1065, 199);
+            this.pictureBox_412.Location = new System.Drawing.Point(1062, 199);
             this.pictureBox_412.Name = "pictureBox_412";
-            this.pictureBox_412.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_412.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_412.TabIndex = 22;
             this.pictureBox_412.TabStop = false;
             this.pictureBox_412.Tag = "FretBoardD";
@@ -1790,9 +2009,9 @@
             // pictureBox_311
             // 
             this.pictureBox_311.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_311.Image")));
-            this.pictureBox_311.Location = new System.Drawing.Point(993, 142);
+            this.pictureBox_311.Location = new System.Drawing.Point(990, 142);
             this.pictureBox_311.Name = "pictureBox_311";
-            this.pictureBox_311.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_311.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_311.TabIndex = 21;
             this.pictureBox_311.TabStop = false;
             this.pictureBox_311.Tag = "FretBoardFis";
@@ -1801,9 +2020,9 @@
             // pictureBox_210
             // 
             this.pictureBox_210.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_210.Image")));
-            this.pictureBox_210.Location = new System.Drawing.Point(918, 88);
+            this.pictureBox_210.Location = new System.Drawing.Point(915, 88);
             this.pictureBox_210.Name = "pictureBox_210";
-            this.pictureBox_210.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_210.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_210.TabIndex = 20;
             this.pictureBox_210.TabStop = false;
             this.pictureBox_210.Tag = "FretBoardA";
@@ -1812,9 +2031,9 @@
             // pictureBox_19
             // 
             this.pictureBox_19.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_19.Image")));
-            this.pictureBox_19.Location = new System.Drawing.Point(844, 32);
+            this.pictureBox_19.Location = new System.Drawing.Point(841, 32);
             this.pictureBox_19.Name = "pictureBox_19";
-            this.pictureBox_19.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_19.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_19.TabIndex = 19;
             this.pictureBox_19.TabStop = false;
             this.pictureBox_19.Tag = "FretBoardCis";
@@ -1823,9 +2042,9 @@
             // pictureBox_123
             // 
             this.pictureBox_123.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_123.Image")));
-            this.pictureBox_123.Location = new System.Drawing.Point(1619, 32);
+            this.pictureBox_123.Location = new System.Drawing.Point(1616, 32);
             this.pictureBox_123.Name = "pictureBox_123";
-            this.pictureBox_123.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_123.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_123.TabIndex = 18;
             this.pictureBox_123.TabStop = false;
             this.pictureBox_123.Tag = "FretBoardDis";
@@ -1834,9 +2053,9 @@
             // pictureBox_515
             // 
             this.pictureBox_515.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_515.Image")));
-            this.pictureBox_515.Location = new System.Drawing.Point(1255, 256);
+            this.pictureBox_515.Location = new System.Drawing.Point(1252, 256);
             this.pictureBox_515.Name = "pictureBox_515";
-            this.pictureBox_515.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_515.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_515.TabIndex = 17;
             this.pictureBox_515.TabStop = false;
             this.pictureBox_515.Tag = "FretBoardC";
@@ -1845,20 +2064,20 @@
             // pictureBox_46
             // 
             this.pictureBox_46.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_46.Image")));
-            this.pictureBox_46.Location = new System.Drawing.Point(628, 199);
+            this.pictureBox_46.Location = new System.Drawing.Point(625, 199);
             this.pictureBox_46.Name = "pictureBox_46";
-            this.pictureBox_46.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_46.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_46.TabIndex = 16;
             this.pictureBox_46.TabStop = false;
-            this.pictureBox_46.Tag = "FretBoardG#";
+            this.pictureBox_46.Tag = "FretBoardGis";
             this.pictureBox_46.Visible = false;
             // 
             // pictureBox_55
             // 
             this.pictureBox_55.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_55.Image")));
-            this.pictureBox_55.Location = new System.Drawing.Point(544, 256);
+            this.pictureBox_55.Location = new System.Drawing.Point(541, 256);
             this.pictureBox_55.Name = "pictureBox_55";
-            this.pictureBox_55.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_55.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_55.TabIndex = 15;
             this.pictureBox_55.TabStop = false;
             this.pictureBox_55.Tag = "FretBoardD";
@@ -1867,9 +2086,9 @@
             // pictureBox_60
             // 
             this.pictureBox_60.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_60.Image")));
-            this.pictureBox_60.Location = new System.Drawing.Point(67, 311);
+            this.pictureBox_60.Location = new System.Drawing.Point(64, 311);
             this.pictureBox_60.Name = "pictureBox_60";
-            this.pictureBox_60.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_60.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_60.TabIndex = 14;
             this.pictureBox_60.TabStop = false;
             this.pictureBox_60.Tag = "FretBoardE";
@@ -1878,9 +2097,9 @@
             // pictureBox_50
             // 
             this.pictureBox_50.Image = global::Sound_teacher.Properties.Resources.ASmall;
-            this.pictureBox_50.Location = new System.Drawing.Point(67, 256);
+            this.pictureBox_50.Location = new System.Drawing.Point(64, 256);
             this.pictureBox_50.Name = "pictureBox_50";
-            this.pictureBox_50.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_50.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_50.TabIndex = 13;
             this.pictureBox_50.TabStop = false;
             this.pictureBox_50.Tag = "FretBoardA";
@@ -1889,9 +2108,9 @@
             // pictureBox_40
             // 
             this.pictureBox_40.Image = global::Sound_teacher.Properties.Resources.DSmall;
-            this.pictureBox_40.Location = new System.Drawing.Point(67, 199);
+            this.pictureBox_40.Location = new System.Drawing.Point(64, 199);
             this.pictureBox_40.Name = "pictureBox_40";
-            this.pictureBox_40.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_40.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_40.TabIndex = 12;
             this.pictureBox_40.TabStop = false;
             this.pictureBox_40.Tag = "FretBoardD";
@@ -1900,9 +2119,9 @@
             // pictureBox_30
             // 
             this.pictureBox_30.Image = global::Sound_teacher.Properties.Resources.GSmall;
-            this.pictureBox_30.Location = new System.Drawing.Point(67, 142);
+            this.pictureBox_30.Location = new System.Drawing.Point(64, 142);
             this.pictureBox_30.Name = "pictureBox_30";
-            this.pictureBox_30.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_30.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_30.TabIndex = 11;
             this.pictureBox_30.TabStop = false;
             this.pictureBox_30.Tag = "FretBoardG";
@@ -1911,31 +2130,31 @@
             // pictureBox_64
             // 
             this.pictureBox_64.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_64.Image")));
-            this.pictureBox_64.Location = new System.Drawing.Point(457, 311);
+            this.pictureBox_64.Location = new System.Drawing.Point(454, 311);
             this.pictureBox_64.Name = "pictureBox_64";
-            this.pictureBox_64.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_64.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_64.TabIndex = 10;
             this.pictureBox_64.TabStop = false;
-            this.pictureBox_64.Tag = "FretBoardG#";
+            this.pictureBox_64.Tag = "FretBoardGis";
             this.pictureBox_64.Visible = false;
             // 
             // pictureBox_14
             // 
             this.pictureBox_14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_14.Image")));
-            this.pictureBox_14.Location = new System.Drawing.Point(457, 32);
+            this.pictureBox_14.Location = new System.Drawing.Point(454, 32);
             this.pictureBox_14.Name = "pictureBox_14";
-            this.pictureBox_14.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_14.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_14.TabIndex = 9;
             this.pictureBox_14.TabStop = false;
-            this.pictureBox_14.Tag = "FretBoardG#";
+            this.pictureBox_14.Tag = "FretBoardGis";
             this.pictureBox_14.Visible = false;
             // 
             // pictureBox_53
             // 
             this.pictureBox_53.Image = global::Sound_teacher.Properties.Resources.CSmall;
-            this.pictureBox_53.Location = new System.Drawing.Point(364, 256);
+            this.pictureBox_53.Location = new System.Drawing.Point(361, 256);
             this.pictureBox_53.Name = "pictureBox_53";
-            this.pictureBox_53.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_53.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_53.TabIndex = 8;
             this.pictureBox_53.TabStop = false;
             this.pictureBox_53.Tag = "FretBoardC";
@@ -1944,9 +2163,9 @@
             // pictureBox_42
             // 
             this.pictureBox_42.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_42.Image")));
-            this.pictureBox_42.Location = new System.Drawing.Point(272, 199);
+            this.pictureBox_42.Location = new System.Drawing.Point(269, 199);
             this.pictureBox_42.Name = "pictureBox_42";
-            this.pictureBox_42.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_42.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_42.TabIndex = 7;
             this.pictureBox_42.TabStop = false;
             this.pictureBox_42.Tag = "FretBoardE";
@@ -1954,21 +2173,21 @@
             // 
             // pictureBox_31
             // 
-            this.pictureBox_31.Image = global::Sound_teacher.Properties.Resources.GisSmall;
-            this.pictureBox_31.Location = new System.Drawing.Point(182, 142);
+            this.pictureBox_31.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_31.Image")));
+            this.pictureBox_31.Location = new System.Drawing.Point(179, 142);
             this.pictureBox_31.Name = "pictureBox_31";
-            this.pictureBox_31.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_31.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_31.TabIndex = 6;
             this.pictureBox_31.TabStop = false;
-            this.pictureBox_31.Tag = "FretBoardG#";
+            this.pictureBox_31.Tag = "FretBoardGis";
             this.pictureBox_31.Visible = false;
             // 
             // pictureBox_13
             // 
             this.pictureBox_13.Image = global::Sound_teacher.Properties.Resources.GSmall;
-            this.pictureBox_13.Location = new System.Drawing.Point(364, 32);
+            this.pictureBox_13.Location = new System.Drawing.Point(361, 32);
             this.pictureBox_13.Name = "pictureBox_13";
-            this.pictureBox_13.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_13.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_13.TabIndex = 5;
             this.pictureBox_13.TabStop = false;
             this.pictureBox_13.Tag = "FretBoardG";
@@ -1977,9 +2196,9 @@
             // pictureBox_12
             // 
             this.pictureBox_12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_12.Image")));
-            this.pictureBox_12.Location = new System.Drawing.Point(272, 32);
+            this.pictureBox_12.Location = new System.Drawing.Point(269, 32);
             this.pictureBox_12.Name = "pictureBox_12";
-            this.pictureBox_12.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_12.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_12.TabIndex = 4;
             this.pictureBox_12.TabStop = false;
             this.pictureBox_12.Tag = "FretBoardFis";
@@ -1988,9 +2207,9 @@
             // pictureBox_20
             // 
             this.pictureBox_20.Image = global::Sound_teacher.Properties.Resources.BSmall;
-            this.pictureBox_20.Location = new System.Drawing.Point(67, 88);
+            this.pictureBox_20.Location = new System.Drawing.Point(64, 88);
             this.pictureBox_20.Name = "pictureBox_20";
-            this.pictureBox_20.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_20.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_20.TabIndex = 3;
             this.pictureBox_20.TabStop = false;
             this.pictureBox_20.Tag = "FretBoardB";
@@ -1999,9 +2218,9 @@
             // pictureBox_11
             // 
             this.pictureBox_11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_11.Image")));
-            this.pictureBox_11.Location = new System.Drawing.Point(182, 32);
+            this.pictureBox_11.Location = new System.Drawing.Point(179, 32);
             this.pictureBox_11.Name = "pictureBox_11";
-            this.pictureBox_11.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_11.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_11.TabIndex = 2;
             this.pictureBox_11.TabStop = false;
             this.pictureBox_11.Tag = "FretBoardF";
@@ -2011,9 +2230,9 @@
             // 
             this.pictureBox_10.BackColor = System.Drawing.SystemColors.WindowText;
             this.pictureBox_10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_10.Image")));
-            this.pictureBox_10.Location = new System.Drawing.Point(67, 32);
+            this.pictureBox_10.Location = new System.Drawing.Point(64, 32);
             this.pictureBox_10.Name = "pictureBox_10";
-            this.pictureBox_10.Size = new System.Drawing.Size(45, 46);
+            this.pictureBox_10.Size = new System.Drawing.Size(45, 45);
             this.pictureBox_10.TabIndex = 1;
             this.pictureBox_10.TabStop = false;
             this.pictureBox_10.Tag = "FretBoardE";
@@ -2027,14 +2246,21 @@
             this.labelFretboardImage.Size = new System.Drawing.Size(1689, 403);
             this.labelFretboardImage.TabIndex = 150;
             // 
+            // timerCheckAdditional
+            // 
+            this.timerCheckAdditional.Enabled = true;
+            this.timerCheckAdditional.Tick += new System.EventHandler(this.timerCheckAdditional_Tick);
+            // 
             // FormFretBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1714, 483);
-            this.Controls.Add(this.labelDev2);
-            this.Controls.Add(this.labelDev1);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1714, 484);
+            this.Controls.Add(this.labelDisplaySounds);
+            this.Controls.Add(this.groupBoxFretBoardSounds);
+            this.Controls.Add(this.labelDisplayScale);
+            this.Controls.Add(this.comboBoxSoundChoice);
+            this.Controls.Add(this.buttonFretBoardStartStop);
             this.Controls.Add(this.pictureBox_54);
             this.Controls.Add(this.pictureBox_45);
             this.Controls.Add(this.pictureBox_44);
@@ -2186,8 +2412,13 @@
             this.Controls.Add(this.pictureBox_11);
             this.Controls.Add(this.pictureBox_10);
             this.Controls.Add(this.labelFretboardImage);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormFretBoard";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "Sound Teacher FretBoard";
+            this.Load += new System.EventHandler(this.FormFretBoard_Load);
+            this.groupBoxFretBoardSounds.ResumeLayout(false);
+            this.groupBoxFretBoardSounds.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_54)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_45)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_44)).EndInit();
@@ -2495,10 +2726,27 @@
         private System.Windows.Forms.PictureBox pictureBox_44;
         private System.Windows.Forms.PictureBox pictureBox_45;
         private System.Windows.Forms.PictureBox pictureBox_54;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonFretBoardStartStop;
         private System.Windows.Forms.Label labelFretboardImage;
-        private System.Windows.Forms.Label labelDev1;
-        private System.Windows.Forms.Label labelDev2;
         private System.Windows.Forms.Timer timerFretBoardChangeImages;
+        private System.Windows.Forms.ComboBox comboBoxSoundChoice;
+        private System.Windows.Forms.Label labelDisplayScale;
+        private System.Windows.Forms.GroupBox groupBoxFretBoardSounds;
+        private System.Windows.Forms.Label labelDisplaySounds;
+        private System.Windows.Forms.CheckBox checkBoxFretBoardGis;
+        private System.Windows.Forms.CheckBox checkBoxFretBoardFis;
+        private System.Windows.Forms.CheckBox checkBoxFretBoardDis;
+        private System.Windows.Forms.CheckBox checkBoxFretBoardNone;
+        private System.Windows.Forms.CheckBox checkBoxFretBoardAll;
+        private System.Windows.Forms.CheckBox checkBoxFretBoardCis;
+        private System.Windows.Forms.CheckBox checkBoxFretBoardAis;
+        private System.Windows.Forms.CheckBox checkBoxFretBoardG;
+        private System.Windows.Forms.CheckBox checkBoxFretBoardF;
+        private System.Windows.Forms.CheckBox checkBoxFretBoardE;
+        private System.Windows.Forms.CheckBox checkBoxFretBoardD;
+        private System.Windows.Forms.CheckBox checkBoxFretBoardC;
+        private System.Windows.Forms.CheckBox checkBoxFretBoardB;
+        private System.Windows.Forms.CheckBox checkBoxFretBoardA;
+        private System.Windows.Forms.Timer timerCheckAdditional;
     }
 }

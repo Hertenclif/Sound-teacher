@@ -27,6 +27,7 @@ namespace Sound_teacher
             if (timerPictures.Enabled == true)
             {
                 timerPictures.Enabled = false;
+                PassSoundSingleton.getInstance().on = false;
                 buttonChangeSound.Text = "Start!";
             }
 
@@ -34,6 +35,7 @@ namespace Sound_teacher
             {
                 timerPictures.Enabled = true;
                 buttonChangeSound.Text = "Stop!";
+                PassSoundSingleton.getInstance().on = true;
                 progressBar1.Value = 1;
             }
         }
@@ -42,10 +44,10 @@ namespace Sound_teacher
         {
             if (timeLeft == 0)
             {
-                currentSound = randomSound.Next(0, 11);
+                currentSound = randomSound.Next(0, 12);
                 while (currentSound == previousSound)
                 {
-                    currentSound = randomSound.Next(0, 11);
+                    currentSound = randomSound.Next(0, 12);
                 }
                 previousSound = currentSound;
                 pictureBoxSound.Image = (Image)Properties.Resources.ResourceManager.GetObject(soundImageNames[currentSound]);

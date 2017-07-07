@@ -11,7 +11,7 @@ namespace Sound_teacher
     {
         private volatile static PassSoundSingleton soundSingleton;
         public int sound;
-        public bool change;
+        public bool change, on;
         PassSoundSingleton() { }
 
         public static PassSoundSingleton getInstance()
