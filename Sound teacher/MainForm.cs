@@ -19,8 +19,12 @@ namespace Sound_teacher
         {
             InitializeComponent();
         }
+        public void initializeButton()
+        {
+            buttonChangeSound.PerformClick();
+        }
 
-        private void button1_Click(object sender, EventArgs e)
+        void button1_Click(object sender, EventArgs e)
         {
             timeLeft = System.Convert.ToInt32(numericUpDownChangeSound.Value);
             progressBar1.Maximum = timeLeft+1;
@@ -52,7 +56,6 @@ namespace Sound_teacher
                 previousSound = currentSound;
                 pictureBoxSound.Image = (Image)Properties.Resources.ResourceManager.GetObject(soundImageNames[currentSound]);
                 timeLeft = System.Convert.ToInt32(numericUpDownChangeSound.Value);
-              //  PassSoundSingleton.getInstance().PassDataSingleton();
                 PassSoundSingleton.getInstance().sound = currentSound;
                 PassSoundSingleton.getInstance().change = true;
                 progressBar1.Maximum = timeLeft + 1;

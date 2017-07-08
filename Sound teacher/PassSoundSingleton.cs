@@ -29,9 +29,5 @@ namespace Sound_teacher
             }
             return soundSingleton;
         }
-        public void PassDataSingleton()
-        {
-            MessageBox.Show("" + sound);
-        }
     }
 }

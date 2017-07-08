@@ -37,10 +37,8 @@
             this.numericUpDownChangeSound = new System.Windows.Forms.NumericUpDown();
             this.buttonOpenFretBoard = new System.Windows.Forms.Button();
             this.pictureBoxSound = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownChangeSound)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSound)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonChangeSound
@@ -115,20 +113,11 @@
             this.pictureBoxSound.TabIndex = 2;
             this.pictureBoxSound.TabStop = false;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(277, 108);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(182, 233);
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(471, 351);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buttonOpenFretBoard);
             this.Controls.Add(this.numericUpDownChangeSound);
             this.Controls.Add(this.labelSoundTimeLeft);
@@ -140,7 +129,6 @@
             this.Text = "Sound Teacher";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownChangeSound)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSound)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -155,7 +143,6 @@
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.NumericUpDown numericUpDownChangeSound;
         private System.Windows.Forms.Button buttonOpenFretBoard;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

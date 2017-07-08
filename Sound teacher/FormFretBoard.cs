@@ -15,7 +15,6 @@ namespace Sound_teacher
 
         int fretBoardSoundToDisplay;
         
-        //MessageBox.Show(System.Convert.ToString(fretBoardSoundToDisplay));
         String[] fretBoardSoundImageNames = new String[] { "FretBoardA", "FretBoardAis", "FretBoardB", "FretBoardC", "FretBoardCis", "FretBoardD", "FretBoardDis", "FretBoardE", "FretBoardF", "FretBoardFis", "FretBoardG", "FretBoardGis" };
 
         public FormFretBoard()
@@ -24,9 +23,8 @@ namespace Sound_teacher
             if (PassSoundSingleton.getInstance().on)
             {
                 timerFretBoardChangeImages.Enabled = true;
-                buttonFretBoardStartStop.Text = "Stop!";
             }
-            comboBoxSoundChoice.SelectedIndex = 0;
+            comboBoxScaleChoice.SelectedIndex = 0;
         }
 
 
@@ -35,13 +33,13 @@ namespace Sound_teacher
             if (timerFretBoardChangeImages.Enabled) 
             {
                 timerFretBoardChangeImages.Enabled = false;
-                buttonFretBoardStartStop.Text = "Start!";
+                buttonFretBoardStartStop.Text = "Start FretBoard!";
             }
             else
             {
-
                 timerFretBoardChangeImages.Enabled = true;
-                buttonFretBoardStartStop.Text = "Stop!";
+
+                buttonFretBoardStartStop.Text = "Stop FretBoard!";
             }
         }
 
@@ -65,17 +63,17 @@ namespace Sound_teacher
 
         private void comboBoxSoundChoice_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(comboBoxSoundChoice.SelectedIndex != 0)
+            if(comboBoxScaleChoice.SelectedIndex != 0)
             {
                 timerFretBoardChangeImages.Enabled = false;
                 buttonFretBoardStartStop.Enabled = false;
-                buttonFretBoardStartStop.Text = "Start!";
+                buttonFretBoardStartStop.Text = "Start FretBoard!";
             }
             else
             {
                 timerFretBoardChangeImages.Enabled = true;
                 buttonFretBoardStartStop.Enabled = true;
-                buttonFretBoardStartStop.Text = "Stop!";
+                buttonFretBoardStartStop.Text = "Stop FretBoard!";
 
             }
 
@@ -185,13 +183,42 @@ namespace Sound_teacher
                 checkBoxFretBoardAll.Checked = false;
                 checkBoxFretBoardNone.Checked = false;
             }
+            if (checkBoxFretBoardShowNextTo.Checked)
+            {
+                if (fretBoardSoundToDisplay == 0) setPictures(11, true);
+                else setPictures(fretBoardSoundToDisplay - 1, true);
+
+                if (fretBoardSoundToDisplay == 11) setPictures(0, true);
+                else setPictures(fretBoardSoundToDisplay + 1, true);
+            }
         }
 
         private void timerCheckAdditional_Tick(object sender, EventArgs e)
         {
-            if (PassSoundSingleton.getInstance().on) timerFretBoardChangeImages.Enabled = true;
+            if (PassSoundSingleton.getInstance().on && buttonFretBoardStartStop.Text == "Stop FretBoard!")
+            {
+                timerFretBoardChangeImages.Enabled = true;
+                buttonStartExternal.Text = "Stop!";
+            }
+            if (PassSoundSingleton.getInstance().on == false)
+            {
+                buttonStartExternal.Text = "Start!";
+            }
             setAdditionalSound();
 
+        }
+
+        private void buttonFretBoardNew_Click(object sender, EventArgs e)
+        {
+            FormFretBoard fretBoardWindow = new FormFretBoard();
+            fretBoardWindow.Show();
+        }
+
+        private void buttonStartExternal_Click(object sender, EventArgs e)
+        {
+            MainForm mainForm = Application.OpenForms.OfType<MainForm>().FirstOrDefault();
+            if (mainForm != null)
+                mainForm.initializeButton();
         }
     }
 }

@@ -32,7 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormFretBoard));
             this.buttonFretBoardStartStop = new System.Windows.Forms.Button();
             this.timerFretBoardChangeImages = new System.Windows.Forms.Timer(this.components);
-            this.comboBoxSoundChoice = new System.Windows.Forms.ComboBox();
+            this.comboBoxScaleChoice = new System.Windows.Forms.ComboBox();
             this.labelDisplayScale = new System.Windows.Forms.Label();
             this.groupBoxFretBoardSounds = new System.Windows.Forms.GroupBox();
             this.checkBoxFretBoardGis = new System.Windows.Forms.CheckBox();
@@ -202,6 +202,9 @@
             this.pictureBox_10 = new System.Windows.Forms.PictureBox();
             this.labelFretboardImage = new System.Windows.Forms.Label();
             this.timerCheckAdditional = new System.Windows.Forms.Timer(this.components);
+            this.checkBoxFretBoardShowNextTo = new System.Windows.Forms.CheckBox();
+            this.buttonFretBoardNew = new System.Windows.Forms.Button();
+            this.buttonStartExternal = new System.Windows.Forms.Button();
             this.groupBoxFretBoardSounds.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_54)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_45)).BeginInit();
@@ -357,11 +360,11 @@
             // 
             // buttonFretBoardStartStop
             // 
-            this.buttonFretBoardStartStop.Location = new System.Drawing.Point(15, 415);
+            this.buttonFretBoardStartStop.Location = new System.Drawing.Point(93, 415);
             this.buttonFretBoardStartStop.Name = "buttonFretBoardStartStop";
-            this.buttonFretBoardStartStop.Size = new System.Drawing.Size(145, 57);
+            this.buttonFretBoardStartStop.Size = new System.Drawing.Size(65, 57);
             this.buttonFretBoardStartStop.TabIndex = 149;
-            this.buttonFretBoardStartStop.Text = "Start!";
+            this.buttonFretBoardStartStop.Text = "Stop FretBoard!";
             this.buttonFretBoardStartStop.UseVisualStyleBackColor = true;
             this.buttonFretBoardStartStop.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -369,12 +372,12 @@
             // 
             this.timerFretBoardChangeImages.Tick += new System.EventHandler(this.timerFretBoardChangeImages_Tick);
             // 
-            // comboBoxSoundChoice
+            // comboBoxScaleChoice
             // 
-            this.comboBoxSoundChoice.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxSoundChoice.FormattingEnabled = true;
-            this.comboBoxSoundChoice.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.comboBoxSoundChoice.Items.AddRange(new object[] {
+            this.comboBoxScaleChoice.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxScaleChoice.FormattingEnabled = true;
+            this.comboBoxScaleChoice.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.comboBoxScaleChoice.Items.AddRange(new object[] {
             "Off",
             "A",
             "A#",
@@ -388,11 +391,11 @@
             "F#",
             "G",
             "G#"});
-            this.comboBoxSoundChoice.Location = new System.Drawing.Point(251, 415);
-            this.comboBoxSoundChoice.Name = "comboBoxSoundChoice";
-            this.comboBoxSoundChoice.Size = new System.Drawing.Size(66, 21);
-            this.comboBoxSoundChoice.TabIndex = 151;
-            this.comboBoxSoundChoice.SelectedIndexChanged += new System.EventHandler(this.comboBoxSoundChoice_SelectedIndexChanged);
+            this.comboBoxScaleChoice.Location = new System.Drawing.Point(251, 415);
+            this.comboBoxScaleChoice.Name = "comboBoxScaleChoice";
+            this.comboBoxScaleChoice.Size = new System.Drawing.Size(66, 21);
+            this.comboBoxScaleChoice.TabIndex = 151;
+            this.comboBoxScaleChoice.SelectedIndexChanged += new System.EventHandler(this.comboBoxSoundChoice_SelectedIndexChanged);
             // 
             // labelDisplayScale
             // 
@@ -2251,15 +2254,49 @@
             this.timerCheckAdditional.Enabled = true;
             this.timerCheckAdditional.Tick += new System.EventHandler(this.timerCheckAdditional_Tick);
             // 
+            // checkBoxFretBoardShowNextTo
+            // 
+            this.checkBoxFretBoardShowNextTo.AutoSize = true;
+            this.checkBoxFretBoardShowNextTo.Location = new System.Drawing.Point(915, 424);
+            this.checkBoxFretBoardShowNextTo.Name = "checkBoxFretBoardShowNextTo";
+            this.checkBoxFretBoardShowNextTo.Size = new System.Drawing.Size(88, 17);
+            this.checkBoxFretBoardShowNextTo.TabIndex = 14;
+            this.checkBoxFretBoardShowNextTo.Tag = "CBoxSound";
+            this.checkBoxFretBoardShowNextTo.Text = "Show next to";
+            this.checkBoxFretBoardShowNextTo.UseVisualStyleBackColor = true;
+            // 
+            // buttonFretBoardNew
+            // 
+            this.buttonFretBoardNew.Location = new System.Drawing.Point(179, 447);
+            this.buttonFretBoardNew.Name = "buttonFretBoardNew";
+            this.buttonFretBoardNew.Size = new System.Drawing.Size(141, 23);
+            this.buttonFretBoardNew.TabIndex = 155;
+            this.buttonFretBoardNew.Text = "New FretBoard";
+            this.buttonFretBoardNew.UseVisualStyleBackColor = true;
+            this.buttonFretBoardNew.Click += new System.EventHandler(this.buttonFretBoardNew_Click);
+            // 
+            // buttonStartExternal
+            // 
+            this.buttonStartExternal.Location = new System.Drawing.Point(15, 415);
+            this.buttonStartExternal.Name = "buttonStartExternal";
+            this.buttonStartExternal.Size = new System.Drawing.Size(72, 57);
+            this.buttonStartExternal.TabIndex = 156;
+            this.buttonStartExternal.Text = "Start!";
+            this.buttonStartExternal.UseVisualStyleBackColor = true;
+            this.buttonStartExternal.Click += new System.EventHandler(this.buttonStartExternal_Click);
+            // 
             // FormFretBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1714, 484);
+            this.Controls.Add(this.buttonStartExternal);
+            this.Controls.Add(this.buttonFretBoardNew);
+            this.Controls.Add(this.checkBoxFretBoardShowNextTo);
             this.Controls.Add(this.labelDisplaySounds);
             this.Controls.Add(this.groupBoxFretBoardSounds);
             this.Controls.Add(this.labelDisplayScale);
-            this.Controls.Add(this.comboBoxSoundChoice);
+            this.Controls.Add(this.comboBoxScaleChoice);
             this.Controls.Add(this.buttonFretBoardStartStop);
             this.Controls.Add(this.pictureBox_54);
             this.Controls.Add(this.pictureBox_45);
@@ -2729,7 +2766,7 @@
         private System.Windows.Forms.Button buttonFretBoardStartStop;
         private System.Windows.Forms.Label labelFretboardImage;
         private System.Windows.Forms.Timer timerFretBoardChangeImages;
-        private System.Windows.Forms.ComboBox comboBoxSoundChoice;
+        private System.Windows.Forms.ComboBox comboBoxScaleChoice;
         private System.Windows.Forms.Label labelDisplayScale;
         private System.Windows.Forms.GroupBox groupBoxFretBoardSounds;
         private System.Windows.Forms.Label labelDisplaySounds;
@@ -2748,5 +2785,8 @@
         private System.Windows.Forms.CheckBox checkBoxFretBoardB;
         private System.Windows.Forms.CheckBox checkBoxFretBoardA;
         private System.Windows.Forms.Timer timerCheckAdditional;
+        private System.Windows.Forms.CheckBox checkBoxFretBoardShowNextTo;
+        private System.Windows.Forms.Button buttonFretBoardNew;
+        private System.Windows.Forms.Button buttonStartExternal;
     }
 }
