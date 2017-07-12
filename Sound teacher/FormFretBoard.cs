@@ -204,6 +204,7 @@ namespace Sound_teacher
             {
                 buttonStartExternal.Text = "Start!";
             }
+
             setAdditionalSound();
 
         }

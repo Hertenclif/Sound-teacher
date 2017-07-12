@@ -123,6 +123,26 @@ namespace Sound_teacher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ButtonStartMedium {
+            get {
+                object obj = ResourceManager.GetObject("ButtonStartMedium", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ButtonStopMedium {
+            get {
+                object obj = ResourceManager.GetObject("ButtonStopMedium", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap C {
             get {
                 object obj = ResourceManager.GetObject("C", resourceCulture);
@@ -166,6 +186,16 @@ namespace Sound_teacher.Properties {
         internal static System.Drawing.Bitmap D {
             get {
                 object obj = ResourceManager.GetObject("D", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DGrayFrame {
+            get {
+                object obj = ResourceManager.GetObject("DGrayFrame", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -306,6 +336,76 @@ namespace Sound_teacher.Properties {
         internal static System.Drawing.Bitmap GSmall {
             get {
                 object obj = ResourceManager.GetObject("GSmall", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LEDBlue {
+            get {
+                object obj = ResourceManager.GetObject("LEDBlue", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LEDGreen {
+            get {
+                object obj = ResourceManager.GetObject("LEDGreen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LEDGrey {
+            get {
+                object obj = ResourceManager.GetObject("LEDGrey", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LEDRed {
+            get {
+                object obj = ResourceManager.GetObject("LEDRed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MetronomeBackGroupBox {
+            get {
+                object obj = ResourceManager.GetObject("MetronomeBackGroupBox", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MetronomeComboBoxGrayBackground {
+            get {
+                object obj = ResourceManager.GetObject("MetronomeComboBoxGrayBackground", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MetronomeFrame {
+            get {
+                object obj = ResourceManager.GetObject("MetronomeFrame", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

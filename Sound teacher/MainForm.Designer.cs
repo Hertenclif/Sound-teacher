@@ -37,6 +37,7 @@
             this.numericUpDownChangeSound = new System.Windows.Forms.NumericUpDown();
             this.buttonOpenFretBoard = new System.Windows.Forms.Button();
             this.pictureBoxSound = new System.Windows.Forms.PictureBox();
+            this.buttonMainFormMetronome = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownChangeSound)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSound)).BeginInit();
             this.SuspendLayout();
@@ -97,7 +98,7 @@
             // 
             this.buttonOpenFretBoard.Location = new System.Drawing.Point(234, 33);
             this.buttonOpenFretBoard.Name = "buttonOpenFretBoard";
-            this.buttonOpenFretBoard.Size = new System.Drawing.Size(109, 23);
+            this.buttonOpenFretBoard.Size = new System.Drawing.Size(109, 69);
             this.buttonOpenFretBoard.TabIndex = 6;
             this.buttonOpenFretBoard.Text = "Open fretboard";
             this.buttonOpenFretBoard.UseVisualStyleBackColor = true;
@@ -113,11 +114,22 @@
             this.pictureBoxSound.TabIndex = 2;
             this.pictureBoxSound.TabStop = false;
             // 
+            // buttonMainFormMetronome
+            // 
+            this.buttonMainFormMetronome.Location = new System.Drawing.Point(234, 108);
+            this.buttonMainFormMetronome.Name = "buttonMainFormMetronome";
+            this.buttonMainFormMetronome.Size = new System.Drawing.Size(109, 69);
+            this.buttonMainFormMetronome.TabIndex = 7;
+            this.buttonMainFormMetronome.Text = "Open metronome";
+            this.buttonMainFormMetronome.UseVisualStyleBackColor = true;
+            this.buttonMainFormMetronome.Click += new System.EventHandler(this.buttonMainFormMetronome_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(471, 351);
+            this.ClientSize = new System.Drawing.Size(354, 351);
+            this.Controls.Add(this.buttonMainFormMetronome);
             this.Controls.Add(this.buttonOpenFretBoard);
             this.Controls.Add(this.numericUpDownChangeSound);
             this.Controls.Add(this.labelSoundTimeLeft);
@@ -143,6 +155,7 @@
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.NumericUpDown numericUpDownChangeSound;
         private System.Windows.Forms.Button buttonOpenFretBoard;
+        private System.Windows.Forms.Button buttonMainFormMetronome;
     }
 }
 

@@ -72,5 +72,11 @@ namespace Sound_teacher
             FormFretBoard fretBoardWindow = new FormFretBoard();
             fretBoardWindow.Show();
         }
+
+        private void buttonMainFormMetronome_Click(object sender, EventArgs e)
+        {
+            FormMetronome metronomeWindow = new FormMetronome();
+            metronomeWindow.Show();
+        }
     }
 }

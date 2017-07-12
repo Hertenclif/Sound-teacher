@@ -33,7 +33,6 @@
             this.buttonFretBoardStartStop = new System.Windows.Forms.Button();
             this.timerFretBoardChangeImages = new System.Windows.Forms.Timer(this.components);
             this.comboBoxScaleChoice = new System.Windows.Forms.ComboBox();
-            this.labelDisplayScale = new System.Windows.Forms.Label();
             this.groupBoxFretBoardSounds = new System.Windows.Forms.GroupBox();
             this.checkBoxFretBoardGis = new System.Windows.Forms.CheckBox();
             this.checkBoxFretBoardFis = new System.Windows.Forms.CheckBox();
@@ -50,6 +49,12 @@
             this.checkBoxFretBoardB = new System.Windows.Forms.CheckBox();
             this.checkBoxFretBoardA = new System.Windows.Forms.CheckBox();
             this.labelDisplaySounds = new System.Windows.Forms.Label();
+            this.timerCheckAdditional = new System.Windows.Forms.Timer(this.components);
+            this.checkBoxFretBoardShowNextTo = new System.Windows.Forms.CheckBox();
+            this.buttonFretBoardNew = new System.Windows.Forms.Button();
+            this.buttonStartExternal = new System.Windows.Forms.Button();
+            this.numericUpDownChangeSound = new System.Windows.Forms.NumericUpDown();
+            this.labelFretBoardScale = new System.Windows.Forms.Label();
             this.pictureBox_54 = new System.Windows.Forms.PictureBox();
             this.pictureBox_45 = new System.Windows.Forms.PictureBox();
             this.pictureBox_44 = new System.Windows.Forms.PictureBox();
@@ -80,7 +85,6 @@
             this.pictureBox_68 = new System.Windows.Forms.PictureBox();
             this.pictureBox_58 = new System.Windows.Forms.PictureBox();
             this.pictureBox_48 = new System.Windows.Forms.PictureBox();
-            this.pictureBox_38 = new System.Windows.Forms.PictureBox();
             this.pictureBox_27 = new System.Windows.Forms.PictureBox();
             this.pictureBox_17 = new System.Windows.Forms.PictureBox();
             this.pictureBox_18 = new System.Windows.Forms.PictureBox();
@@ -201,11 +205,9 @@
             this.pictureBox_11 = new System.Windows.Forms.PictureBox();
             this.pictureBox_10 = new System.Windows.Forms.PictureBox();
             this.labelFretboardImage = new System.Windows.Forms.Label();
-            this.timerCheckAdditional = new System.Windows.Forms.Timer(this.components);
-            this.checkBoxFretBoardShowNextTo = new System.Windows.Forms.CheckBox();
-            this.buttonFretBoardNew = new System.Windows.Forms.Button();
-            this.buttonStartExternal = new System.Windows.Forms.Button();
+            this.pictureBox_38 = new System.Windows.Forms.PictureBox();
             this.groupBoxFretBoardSounds.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownChangeSound)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_54)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_45)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_44)).BeginInit();
@@ -236,7 +238,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_68)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_58)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_48)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_38)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_27)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_17)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_18)).BeginInit();
@@ -356,13 +357,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_38)).BeginInit();
             this.SuspendLayout();
             // 
             // buttonFretBoardStartStop
             // 
-            this.buttonFretBoardStartStop.Location = new System.Drawing.Point(93, 415);
+            this.buttonFretBoardStartStop.Location = new System.Drawing.Point(125, 415);
             this.buttonFretBoardStartStop.Name = "buttonFretBoardStartStop";
-            this.buttonFretBoardStartStop.Size = new System.Drawing.Size(65, 57);
+            this.buttonFretBoardStartStop.Size = new System.Drawing.Size(104, 26);
             this.buttonFretBoardStartStop.TabIndex = 149;
             this.buttonFretBoardStartStop.Text = "Stop FretBoard!";
             this.buttonFretBoardStartStop.UseVisualStyleBackColor = true;
@@ -391,20 +393,11 @@
             "F#",
             "G",
             "G#"});
-            this.comboBoxScaleChoice.Location = new System.Drawing.Point(251, 415);
+            this.comboBoxScaleChoice.Location = new System.Drawing.Point(235, 447);
             this.comboBoxScaleChoice.Name = "comboBoxScaleChoice";
-            this.comboBoxScaleChoice.Size = new System.Drawing.Size(66, 21);
+            this.comboBoxScaleChoice.Size = new System.Drawing.Size(129, 21);
             this.comboBoxScaleChoice.TabIndex = 151;
             this.comboBoxScaleChoice.SelectedIndexChanged += new System.EventHandler(this.comboBoxSoundChoice_SelectedIndexChanged);
-            // 
-            // labelDisplayScale
-            // 
-            this.labelDisplayScale.AutoSize = true;
-            this.labelDisplayScale.Location = new System.Drawing.Point(173, 418);
-            this.labelDisplayScale.Name = "labelDisplayScale";
-            this.labelDisplayScale.Size = new System.Drawing.Size(72, 13);
-            this.labelDisplayScale.TabIndex = 152;
-            this.labelDisplayScale.Text = "Display scale:";
             // 
             // groupBoxFretBoardSounds
             // 
@@ -422,7 +415,7 @@
             this.groupBoxFretBoardSounds.Controls.Add(this.checkBoxFretBoardC);
             this.groupBoxFretBoardSounds.Controls.Add(this.checkBoxFretBoardB);
             this.groupBoxFretBoardSounds.Controls.Add(this.checkBoxFretBoardA);
-            this.groupBoxFretBoardSounds.Location = new System.Drawing.Point(457, 415);
+            this.groupBoxFretBoardSounds.Location = new System.Drawing.Point(467, 415);
             this.groupBoxFretBoardSounds.Name = "groupBoxFretBoardSounds";
             this.groupBoxFretBoardSounds.Size = new System.Drawing.Size(384, 57);
             this.groupBoxFretBoardSounds.TabIndex = 153;
@@ -590,9 +583,72 @@
             this.labelDisplaySounds.TabIndex = 154;
             this.labelDisplaySounds.Text = "Display sounds:";
             // 
+            // timerCheckAdditional
+            // 
+            this.timerCheckAdditional.Enabled = true;
+            this.timerCheckAdditional.Tick += new System.EventHandler(this.timerCheckAdditional_Tick);
+            // 
+            // checkBoxFretBoardShowNextTo
+            // 
+            this.checkBoxFretBoardShowNextTo.AutoSize = true;
+            this.checkBoxFretBoardShowNextTo.Location = new System.Drawing.Point(373, 446);
+            this.checkBoxFretBoardShowNextTo.Name = "checkBoxFretBoardShowNextTo";
+            this.checkBoxFretBoardShowNextTo.Size = new System.Drawing.Size(88, 17);
+            this.checkBoxFretBoardShowNextTo.TabIndex = 14;
+            this.checkBoxFretBoardShowNextTo.Tag = "CBoxSound";
+            this.checkBoxFretBoardShowNextTo.Text = "Show next to";
+            this.checkBoxFretBoardShowNextTo.UseVisualStyleBackColor = true;
+            // 
+            // buttonFretBoardNew
+            // 
+            this.buttonFretBoardNew.Location = new System.Drawing.Point(125, 446);
+            this.buttonFretBoardNew.Name = "buttonFretBoardNew";
+            this.buttonFretBoardNew.Size = new System.Drawing.Size(104, 22);
+            this.buttonFretBoardNew.TabIndex = 155;
+            this.buttonFretBoardNew.Text = "New FretBoard";
+            this.buttonFretBoardNew.UseVisualStyleBackColor = true;
+            this.buttonFretBoardNew.Click += new System.EventHandler(this.buttonFretBoardNew_Click);
+            // 
+            // buttonStartExternal
+            // 
+            this.buttonStartExternal.Location = new System.Drawing.Point(15, 415);
+            this.buttonStartExternal.Name = "buttonStartExternal";
+            this.buttonStartExternal.Size = new System.Drawing.Size(104, 26);
+            this.buttonStartExternal.TabIndex = 156;
+            this.buttonStartExternal.Text = "Start!";
+            this.buttonStartExternal.UseVisualStyleBackColor = true;
+            this.buttonStartExternal.Click += new System.EventHandler(this.buttonStartExternal_Click);
+            // 
+            // numericUpDownChangeSound
+            // 
+            this.numericUpDownChangeSound.Location = new System.Drawing.Point(15, 447);
+            this.numericUpDownChangeSound.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDownChangeSound.Name = "numericUpDownChangeSound";
+            this.numericUpDownChangeSound.Size = new System.Drawing.Size(104, 20);
+            this.numericUpDownChangeSound.TabIndex = 157;
+            this.numericUpDownChangeSound.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // labelFretBoardScale
+            // 
+            this.labelFretBoardScale.AutoSize = true;
+            this.labelFretBoardScale.Location = new System.Drawing.Point(277, 428);
+            this.labelFretBoardScale.Name = "labelFretBoardScale";
+            this.labelFretBoardScale.Size = new System.Drawing.Size(37, 13);
+            this.labelFretBoardScale.TabIndex = 158;
+            this.labelFretBoardScale.Text = "Scale:";
+            // 
             // pictureBox_54
             // 
-            this.pictureBox_54.Image = global::Sound_teacher.Properties.Resources.CisSmall;
+            this.pictureBox_54.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox_54.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_54.Image")));
             this.pictureBox_54.Location = new System.Drawing.Point(454, 256);
             this.pictureBox_54.Name = "pictureBox_54";
             this.pictureBox_54.Size = new System.Drawing.Size(45, 45);
@@ -603,7 +659,8 @@
             // 
             // pictureBox_45
             // 
-            this.pictureBox_45.Image = global::Sound_teacher.Properties.Resources.GSmall;
+            this.pictureBox_45.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox_45.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_45.Image")));
             this.pictureBox_45.Location = new System.Drawing.Point(541, 199);
             this.pictureBox_45.Name = "pictureBox_45";
             this.pictureBox_45.Size = new System.Drawing.Size(45, 45);
@@ -614,6 +671,7 @@
             // 
             // pictureBox_44
             // 
+            this.pictureBox_44.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_44.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_44.Image")));
             this.pictureBox_44.Location = new System.Drawing.Point(454, 199);
             this.pictureBox_44.Name = "pictureBox_44";
@@ -625,6 +683,7 @@
             // 
             // pictureBox_43
             // 
+            this.pictureBox_43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_43.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_43.Image")));
             this.pictureBox_43.Location = new System.Drawing.Point(361, 199);
             this.pictureBox_43.Name = "pictureBox_43";
@@ -636,7 +695,8 @@
             // 
             // pictureBox_52
             // 
-            this.pictureBox_52.Image = global::Sound_teacher.Properties.Resources.BSmall;
+            this.pictureBox_52.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox_52.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_52.Image")));
             this.pictureBox_52.Location = new System.Drawing.Point(269, 256);
             this.pictureBox_52.Name = "pictureBox_52";
             this.pictureBox_52.Size = new System.Drawing.Size(45, 45);
@@ -647,7 +707,8 @@
             // 
             // pictureBox_32
             // 
-            this.pictureBox_32.Image = global::Sound_teacher.Properties.Resources.ASmall;
+            this.pictureBox_32.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox_32.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_32.Image")));
             this.pictureBox_32.Location = new System.Drawing.Point(269, 142);
             this.pictureBox_32.Name = "pictureBox_32";
             this.pictureBox_32.Size = new System.Drawing.Size(45, 45);
@@ -658,7 +719,8 @@
             // 
             // pictureBox_33
             // 
-            this.pictureBox_33.Image = global::Sound_teacher.Properties.Resources.AisSmall;
+            this.pictureBox_33.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox_33.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_33.Image")));
             this.pictureBox_33.Location = new System.Drawing.Point(361, 142);
             this.pictureBox_33.Name = "pictureBox_33";
             this.pictureBox_33.Size = new System.Drawing.Size(45, 45);
@@ -669,7 +731,8 @@
             // 
             // pictureBox_34
             // 
-            this.pictureBox_34.Image = global::Sound_teacher.Properties.Resources.BSmall;
+            this.pictureBox_34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox_34.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_34.Image")));
             this.pictureBox_34.Location = new System.Drawing.Point(454, 142);
             this.pictureBox_34.Name = "pictureBox_34";
             this.pictureBox_34.Size = new System.Drawing.Size(45, 45);
@@ -680,7 +743,8 @@
             // 
             // pictureBox_35
             // 
-            this.pictureBox_35.Image = global::Sound_teacher.Properties.Resources.CSmall;
+            this.pictureBox_35.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox_35.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_35.Image")));
             this.pictureBox_35.Location = new System.Drawing.Point(541, 142);
             this.pictureBox_35.Name = "pictureBox_35";
             this.pictureBox_35.Size = new System.Drawing.Size(45, 45);
@@ -691,7 +755,8 @@
             // 
             // pictureBox_36
             // 
-            this.pictureBox_36.Image = global::Sound_teacher.Properties.Resources.CisSmall;
+            this.pictureBox_36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox_36.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_36.Image")));
             this.pictureBox_36.Location = new System.Drawing.Point(625, 142);
             this.pictureBox_36.Name = "pictureBox_36";
             this.pictureBox_36.Size = new System.Drawing.Size(45, 45);
@@ -702,6 +767,7 @@
             // 
             // pictureBox_56
             // 
+            this.pictureBox_56.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_56.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_56.Image")));
             this.pictureBox_56.Location = new System.Drawing.Point(625, 256);
             this.pictureBox_56.Name = "pictureBox_56";
@@ -713,6 +779,7 @@
             // 
             // pictureBox_57
             // 
+            this.pictureBox_57.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_57.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_57.Image")));
             this.pictureBox_57.Location = new System.Drawing.Point(697, 256);
             this.pictureBox_57.Name = "pictureBox_57";
@@ -724,6 +791,7 @@
             // 
             // pictureBox_47
             // 
+            this.pictureBox_47.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_47.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_47.Image")));
             this.pictureBox_47.Location = new System.Drawing.Point(697, 199);
             this.pictureBox_47.Name = "pictureBox_47";
@@ -735,6 +803,7 @@
             // 
             // pictureBox_26
             // 
+            this.pictureBox_26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_26.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_26.Image")));
             this.pictureBox_26.Location = new System.Drawing.Point(625, 88);
             this.pictureBox_26.Name = "pictureBox_26";
@@ -746,6 +815,7 @@
             // 
             // pictureBox_25
             // 
+            this.pictureBox_25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_25.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_25.Image")));
             this.pictureBox_25.Location = new System.Drawing.Point(541, 88);
             this.pictureBox_25.Name = "pictureBox_25";
@@ -757,7 +827,8 @@
             // 
             // pictureBox_24
             // 
-            this.pictureBox_24.Image = global::Sound_teacher.Properties.Resources.DisSmall;
+            this.pictureBox_24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox_24.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_24.Image")));
             this.pictureBox_24.Location = new System.Drawing.Point(454, 88);
             this.pictureBox_24.Name = "pictureBox_24";
             this.pictureBox_24.Size = new System.Drawing.Size(45, 45);
@@ -768,7 +839,8 @@
             // 
             // pictureBox_23
             // 
-            this.pictureBox_23.Image = global::Sound_teacher.Properties.Resources.DSmall;
+            this.pictureBox_23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox_23.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_23.Image")));
             this.pictureBox_23.Location = new System.Drawing.Point(361, 88);
             this.pictureBox_23.Name = "pictureBox_23";
             this.pictureBox_23.Size = new System.Drawing.Size(45, 45);
@@ -779,7 +851,8 @@
             // 
             // pictureBox_22
             // 
-            this.pictureBox_22.Image = global::Sound_teacher.Properties.Resources.CisSmall;
+            this.pictureBox_22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox_22.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_22.Image")));
             this.pictureBox_22.Location = new System.Drawing.Point(269, 88);
             this.pictureBox_22.Name = "pictureBox_22";
             this.pictureBox_22.Size = new System.Drawing.Size(45, 45);
@@ -790,7 +863,8 @@
             // 
             // pictureBox_21
             // 
-            this.pictureBox_21.Image = global::Sound_teacher.Properties.Resources.CSmall;
+            this.pictureBox_21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox_21.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_21.Image")));
             this.pictureBox_21.Location = new System.Drawing.Point(179, 88);
             this.pictureBox_21.Name = "pictureBox_21";
             this.pictureBox_21.Size = new System.Drawing.Size(45, 45);
@@ -801,7 +875,8 @@
             // 
             // pictureBox_41
             // 
-            this.pictureBox_41.Image = global::Sound_teacher.Properties.Resources.DisSmall;
+            this.pictureBox_41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox_41.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_41.Image")));
             this.pictureBox_41.Location = new System.Drawing.Point(179, 199);
             this.pictureBox_41.Name = "pictureBox_41";
             this.pictureBox_41.Size = new System.Drawing.Size(45, 45);
@@ -812,7 +887,8 @@
             // 
             // pictureBox_51
             // 
-            this.pictureBox_51.Image = global::Sound_teacher.Properties.Resources.AisSmall;
+            this.pictureBox_51.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox_51.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_51.Image")));
             this.pictureBox_51.Location = new System.Drawing.Point(179, 256);
             this.pictureBox_51.Name = "pictureBox_51";
             this.pictureBox_51.Size = new System.Drawing.Size(45, 45);
@@ -823,6 +899,7 @@
             // 
             // pictureBox_61
             // 
+            this.pictureBox_61.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_61.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_61.Image")));
             this.pictureBox_61.Location = new System.Drawing.Point(179, 311);
             this.pictureBox_61.Name = "pictureBox_61";
@@ -834,6 +911,7 @@
             // 
             // pictureBox_62
             // 
+            this.pictureBox_62.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_62.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_62.Image")));
             this.pictureBox_62.Location = new System.Drawing.Point(269, 311);
             this.pictureBox_62.Name = "pictureBox_62";
@@ -845,7 +923,8 @@
             // 
             // pictureBox_63
             // 
-            this.pictureBox_63.Image = global::Sound_teacher.Properties.Resources.GSmall;
+            this.pictureBox_63.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox_63.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_63.Image")));
             this.pictureBox_63.Location = new System.Drawing.Point(361, 311);
             this.pictureBox_63.Name = "pictureBox_63";
             this.pictureBox_63.Size = new System.Drawing.Size(45, 45);
@@ -856,6 +935,7 @@
             // 
             // pictureBox_65
             // 
+            this.pictureBox_65.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_65.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_65.Image")));
             this.pictureBox_65.Location = new System.Drawing.Point(541, 311);
             this.pictureBox_65.Name = "pictureBox_65";
@@ -867,6 +947,7 @@
             // 
             // pictureBox_66
             // 
+            this.pictureBox_66.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_66.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_66.Image")));
             this.pictureBox_66.Location = new System.Drawing.Point(625, 311);
             this.pictureBox_66.Name = "pictureBox_66";
@@ -878,6 +959,7 @@
             // 
             // pictureBox_67
             // 
+            this.pictureBox_67.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_67.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_67.Image")));
             this.pictureBox_67.Location = new System.Drawing.Point(697, 311);
             this.pictureBox_67.Name = "pictureBox_67";
@@ -889,6 +971,7 @@
             // 
             // pictureBox_68
             // 
+            this.pictureBox_68.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_68.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_68.Image")));
             this.pictureBox_68.Location = new System.Drawing.Point(769, 311);
             this.pictureBox_68.Name = "pictureBox_68";
@@ -900,6 +983,7 @@
             // 
             // pictureBox_58
             // 
+            this.pictureBox_58.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_58.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_58.Image")));
             this.pictureBox_58.Location = new System.Drawing.Point(769, 256);
             this.pictureBox_58.Name = "pictureBox_58";
@@ -911,6 +995,7 @@
             // 
             // pictureBox_48
             // 
+            this.pictureBox_48.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_48.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_48.Image")));
             this.pictureBox_48.Location = new System.Drawing.Point(769, 199);
             this.pictureBox_48.Name = "pictureBox_48";
@@ -920,19 +1005,9 @@
             this.pictureBox_48.Tag = "FretBoardAis";
             this.pictureBox_48.Visible = false;
             // 
-            // pictureBox_38
-            // 
-            this.pictureBox_38.Image = global::Sound_teacher.Properties.Resources.DisSmall;
-            this.pictureBox_38.Location = new System.Drawing.Point(769, 142);
-            this.pictureBox_38.Name = "pictureBox_38";
-            this.pictureBox_38.Size = new System.Drawing.Size(45, 45);
-            this.pictureBox_38.TabIndex = 118;
-            this.pictureBox_38.TabStop = false;
-            this.pictureBox_38.Tag = "FretBoardDis";
-            this.pictureBox_38.Visible = false;
-            // 
             // pictureBox_27
             // 
+            this.pictureBox_27.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_27.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_27.Image")));
             this.pictureBox_27.Location = new System.Drawing.Point(697, 88);
             this.pictureBox_27.Name = "pictureBox_27";
@@ -944,6 +1019,7 @@
             // 
             // pictureBox_17
             // 
+            this.pictureBox_17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_17.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_17.Image")));
             this.pictureBox_17.Location = new System.Drawing.Point(697, 32);
             this.pictureBox_17.Name = "pictureBox_17";
@@ -955,6 +1031,7 @@
             // 
             // pictureBox_18
             // 
+            this.pictureBox_18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_18.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_18.Image")));
             this.pictureBox_18.Location = new System.Drawing.Point(769, 32);
             this.pictureBox_18.Name = "pictureBox_18";
@@ -966,7 +1043,8 @@
             // 
             // pictureBox_28
             // 
-            this.pictureBox_28.Image = global::Sound_teacher.Properties.Resources.GSmall;
+            this.pictureBox_28.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox_28.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_28.Image")));
             this.pictureBox_28.Location = new System.Drawing.Point(769, 88);
             this.pictureBox_28.Name = "pictureBox_28";
             this.pictureBox_28.Size = new System.Drawing.Size(45, 45);
@@ -977,7 +1055,8 @@
             // 
             // pictureBox_37
             // 
-            this.pictureBox_37.Image = global::Sound_teacher.Properties.Resources.DSmall;
+            this.pictureBox_37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox_37.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_37.Image")));
             this.pictureBox_37.Location = new System.Drawing.Point(697, 142);
             this.pictureBox_37.Name = "pictureBox_37";
             this.pictureBox_37.Size = new System.Drawing.Size(45, 45);
@@ -988,6 +1067,7 @@
             // 
             // pictureBox_16
             // 
+            this.pictureBox_16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_16.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_16.Image")));
             this.pictureBox_16.Location = new System.Drawing.Point(625, 32);
             this.pictureBox_16.Name = "pictureBox_16";
@@ -999,6 +1079,7 @@
             // 
             // pictureBox_15
             // 
+            this.pictureBox_15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_15.Image")));
             this.pictureBox_15.Location = new System.Drawing.Point(541, 32);
             this.pictureBox_15.Name = "pictureBox_15";
@@ -1010,6 +1091,7 @@
             // 
             // pictureBox_319
             // 
+            this.pictureBox_319.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_319.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_319.Image")));
             this.pictureBox_319.Location = new System.Drawing.Point(1452, 142);
             this.pictureBox_319.Name = "pictureBox_319";
@@ -1021,6 +1103,7 @@
             // 
             // pictureBox_219
             // 
+            this.pictureBox_219.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_219.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_219.Image")));
             this.pictureBox_219.Location = new System.Drawing.Point(1452, 90);
             this.pictureBox_219.Name = "pictureBox_219";
@@ -1032,6 +1115,7 @@
             // 
             // pictureBox_419
             // 
+            this.pictureBox_419.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_419.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_419.Image")));
             this.pictureBox_419.Location = new System.Drawing.Point(1452, 199);
             this.pictureBox_419.Name = "pictureBox_419";
@@ -1043,6 +1127,7 @@
             // 
             // pictureBox_519
             // 
+            this.pictureBox_519.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_519.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_519.Image")));
             this.pictureBox_519.Location = new System.Drawing.Point(1452, 256);
             this.pictureBox_519.Name = "pictureBox_519";
@@ -1054,6 +1139,7 @@
             // 
             // pictureBox_518
             // 
+            this.pictureBox_518.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_518.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_518.Image")));
             this.pictureBox_518.Location = new System.Drawing.Point(1409, 256);
             this.pictureBox_518.Name = "pictureBox_518";
@@ -1065,6 +1151,7 @@
             // 
             // pictureBox_418
             // 
+            this.pictureBox_418.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_418.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_418.Image")));
             this.pictureBox_418.Location = new System.Drawing.Point(1409, 199);
             this.pictureBox_418.Name = "pictureBox_418";
@@ -1076,6 +1163,7 @@
             // 
             // pictureBox_118
             // 
+            this.pictureBox_118.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_118.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_118.Image")));
             this.pictureBox_118.Location = new System.Drawing.Point(1409, 32);
             this.pictureBox_118.Name = "pictureBox_118";
@@ -1087,6 +1175,7 @@
             // 
             // pictureBox_318
             // 
+            this.pictureBox_318.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_318.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_318.Image")));
             this.pictureBox_318.Location = new System.Drawing.Point(1409, 142);
             this.pictureBox_318.Name = "pictureBox_318";
@@ -1098,6 +1187,7 @@
             // 
             // pictureBox_517
             // 
+            this.pictureBox_517.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_517.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_517.Image")));
             this.pictureBox_517.Location = new System.Drawing.Point(1361, 256);
             this.pictureBox_517.Name = "pictureBox_517";
@@ -1109,7 +1199,8 @@
             // 
             // pictureBox_417
             // 
-            this.pictureBox_417.Image = global::Sound_teacher.Properties.Resources.GSmall;
+            this.pictureBox_417.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox_417.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_417.Image")));
             this.pictureBox_417.Location = new System.Drawing.Point(1361, 199);
             this.pictureBox_417.Name = "pictureBox_417";
             this.pictureBox_417.Size = new System.Drawing.Size(45, 45);
@@ -1120,6 +1211,7 @@
             // 
             // pictureBox_217
             // 
+            this.pictureBox_217.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_217.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_217.Image")));
             this.pictureBox_217.Location = new System.Drawing.Point(1361, 88);
             this.pictureBox_217.Name = "pictureBox_217";
@@ -1131,6 +1223,7 @@
             // 
             // pictureBox_117
             // 
+            this.pictureBox_117.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_117.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_117.Image")));
             this.pictureBox_117.Location = new System.Drawing.Point(1361, 32);
             this.pictureBox_117.Name = "pictureBox_117";
@@ -1142,6 +1235,7 @@
             // 
             // pictureBox_116
             // 
+            this.pictureBox_116.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_116.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_116.Image")));
             this.pictureBox_116.Location = new System.Drawing.Point(1310, 32);
             this.pictureBox_116.Name = "pictureBox_116";
@@ -1153,6 +1247,7 @@
             // 
             // pictureBox_216
             // 
+            this.pictureBox_216.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_216.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_216.Image")));
             this.pictureBox_216.Location = new System.Drawing.Point(1310, 88);
             this.pictureBox_216.Name = "pictureBox_216";
@@ -1164,6 +1259,7 @@
             // 
             // pictureBox_316
             // 
+            this.pictureBox_316.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_316.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_316.Image")));
             this.pictureBox_316.Location = new System.Drawing.Point(1310, 142);
             this.pictureBox_316.Name = "pictureBox_316";
@@ -1175,6 +1271,7 @@
             // 
             // pictureBox_516
             // 
+            this.pictureBox_516.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_516.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_516.Image")));
             this.pictureBox_516.Location = new System.Drawing.Point(1309, 256);
             this.pictureBox_516.Name = "pictureBox_516";
@@ -1186,6 +1283,7 @@
             // 
             // pictureBox_520
             // 
+            this.pictureBox_520.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_520.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_520.Image")));
             this.pictureBox_520.Location = new System.Drawing.Point(1496, 256);
             this.pictureBox_520.Name = "pictureBox_520";
@@ -1197,6 +1295,7 @@
             // 
             // pictureBox_420
             // 
+            this.pictureBox_420.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_420.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_420.Image")));
             this.pictureBox_420.Location = new System.Drawing.Point(1496, 199);
             this.pictureBox_420.Name = "pictureBox_420";
@@ -1208,6 +1307,7 @@
             // 
             // pictureBox_320
             // 
+            this.pictureBox_320.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_320.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_320.Image")));
             this.pictureBox_320.Location = new System.Drawing.Point(1496, 142);
             this.pictureBox_320.Name = "pictureBox_320";
@@ -1219,6 +1319,7 @@
             // 
             // pictureBox_120
             // 
+            this.pictureBox_120.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_120.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_120.Image")));
             this.pictureBox_120.Location = new System.Drawing.Point(1496, 32);
             this.pictureBox_120.Name = "pictureBox_120";
@@ -1230,6 +1331,7 @@
             // 
             // pictureBox_121
             // 
+            this.pictureBox_121.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_121.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_121.Image")));
             this.pictureBox_121.Location = new System.Drawing.Point(1539, 32);
             this.pictureBox_121.Name = "pictureBox_121";
@@ -1241,6 +1343,7 @@
             // 
             // pictureBox_221
             // 
+            this.pictureBox_221.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_221.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_221.Image")));
             this.pictureBox_221.Location = new System.Drawing.Point(1539, 90);
             this.pictureBox_221.Name = "pictureBox_221";
@@ -1252,6 +1355,7 @@
             // 
             // pictureBox_421
             // 
+            this.pictureBox_421.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_421.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_421.Image")));
             this.pictureBox_421.Location = new System.Drawing.Point(1539, 199);
             this.pictureBox_421.Name = "pictureBox_421";
@@ -1263,7 +1367,8 @@
             // 
             // pictureBox_522
             // 
-            this.pictureBox_522.Image = global::Sound_teacher.Properties.Resources.GSmall;
+            this.pictureBox_522.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox_522.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_522.Image")));
             this.pictureBox_522.Location = new System.Drawing.Point(1581, 256);
             this.pictureBox_522.Name = "pictureBox_522";
             this.pictureBox_522.Size = new System.Drawing.Size(45, 45);
@@ -1274,6 +1379,7 @@
             // 
             // pictureBox_222
             // 
+            this.pictureBox_222.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_222.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_222.Image")));
             this.pictureBox_222.Location = new System.Drawing.Point(1581, 90);
             this.pictureBox_222.Name = "pictureBox_222";
@@ -1285,6 +1391,7 @@
             // 
             // pictureBox_122
             // 
+            this.pictureBox_122.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_122.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_122.Image")));
             this.pictureBox_122.Location = new System.Drawing.Point(1581, 32);
             this.pictureBox_122.Name = "pictureBox_122";
@@ -1296,6 +1403,7 @@
             // 
             // pictureBox_322
             // 
+            this.pictureBox_322.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_322.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_322.Image")));
             this.pictureBox_322.Location = new System.Drawing.Point(1581, 142);
             this.pictureBox_322.Name = "pictureBox_322";
@@ -1307,6 +1415,7 @@
             // 
             // pictureBox_223
             // 
+            this.pictureBox_223.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_223.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_223.Image")));
             this.pictureBox_223.Location = new System.Drawing.Point(1616, 88);
             this.pictureBox_223.Name = "pictureBox_223";
@@ -1318,6 +1427,7 @@
             // 
             // pictureBox_323
             // 
+            this.pictureBox_323.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_323.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_323.Image")));
             this.pictureBox_323.Location = new System.Drawing.Point(1616, 142);
             this.pictureBox_323.Name = "pictureBox_323";
@@ -1329,6 +1439,7 @@
             // 
             // pictureBox_423
             // 
+            this.pictureBox_423.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_423.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_423.Image")));
             this.pictureBox_423.Location = new System.Drawing.Point(1616, 199);
             this.pictureBox_423.Name = "pictureBox_423";
@@ -1340,6 +1451,7 @@
             // 
             // pictureBox_623
             // 
+            this.pictureBox_623.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_623.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_623.Image")));
             this.pictureBox_623.Location = new System.Drawing.Point(1616, 311);
             this.pictureBox_623.Name = "pictureBox_623";
@@ -1351,6 +1463,7 @@
             // 
             // pictureBox_622
             // 
+            this.pictureBox_622.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_622.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_622.Image")));
             this.pictureBox_622.Location = new System.Drawing.Point(1581, 311);
             this.pictureBox_622.Name = "pictureBox_622";
@@ -1362,6 +1475,7 @@
             // 
             // pictureBox_621
             // 
+            this.pictureBox_621.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_621.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_621.Image")));
             this.pictureBox_621.Location = new System.Drawing.Point(1539, 311);
             this.pictureBox_621.Name = "pictureBox_621";
@@ -1373,6 +1487,7 @@
             // 
             // pictureBox_620
             // 
+            this.pictureBox_620.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_620.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_620.Image")));
             this.pictureBox_620.Location = new System.Drawing.Point(1496, 311);
             this.pictureBox_620.Name = "pictureBox_620";
@@ -1384,6 +1499,7 @@
             // 
             // pictureBox_619
             // 
+            this.pictureBox_619.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_619.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_619.Image")));
             this.pictureBox_619.Location = new System.Drawing.Point(1452, 311);
             this.pictureBox_619.Name = "pictureBox_619";
@@ -1395,6 +1511,7 @@
             // 
             // pictureBox_618
             // 
+            this.pictureBox_618.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_618.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_618.Image")));
             this.pictureBox_618.Location = new System.Drawing.Point(1409, 311);
             this.pictureBox_618.Name = "pictureBox_618";
@@ -1406,6 +1523,7 @@
             // 
             // pictureBox_617
             // 
+            this.pictureBox_617.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_617.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_617.Image")));
             this.pictureBox_617.Location = new System.Drawing.Point(1360, 311);
             this.pictureBox_617.Name = "pictureBox_617";
@@ -1417,6 +1535,7 @@
             // 
             // pictureBox_616
             // 
+            this.pictureBox_616.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_616.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_616.Image")));
             this.pictureBox_616.Location = new System.Drawing.Point(1309, 311);
             this.pictureBox_616.Name = "pictureBox_616";
@@ -1428,7 +1547,8 @@
             // 
             // pictureBox_615
             // 
-            this.pictureBox_615.Image = global::Sound_teacher.Properties.Resources.GSmall;
+            this.pictureBox_615.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox_615.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_615.Image")));
             this.pictureBox_615.Location = new System.Drawing.Point(1252, 311);
             this.pictureBox_615.Name = "pictureBox_615";
             this.pictureBox_615.Size = new System.Drawing.Size(45, 45);
@@ -1439,6 +1559,7 @@
             // 
             // pictureBox_415
             // 
+            this.pictureBox_415.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_415.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_415.Image")));
             this.pictureBox_415.Location = new System.Drawing.Point(1252, 199);
             this.pictureBox_415.Name = "pictureBox_415";
@@ -1450,6 +1571,7 @@
             // 
             // pictureBox_315
             // 
+            this.pictureBox_315.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_315.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_315.Image")));
             this.pictureBox_315.Location = new System.Drawing.Point(1252, 142);
             this.pictureBox_315.Name = "pictureBox_315";
@@ -1461,6 +1583,7 @@
             // 
             // pictureBox_521
             // 
+            this.pictureBox_521.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_521.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_521.Image")));
             this.pictureBox_521.Location = new System.Drawing.Point(1539, 256);
             this.pictureBox_521.Name = "pictureBox_521";
@@ -1472,6 +1595,7 @@
             // 
             // pictureBox_215
             // 
+            this.pictureBox_215.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_215.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_215.Image")));
             this.pictureBox_215.Location = new System.Drawing.Point(1252, 88);
             this.pictureBox_215.Name = "pictureBox_215";
@@ -1483,7 +1607,8 @@
             // 
             // pictureBox_115
             // 
-            this.pictureBox_115.Image = global::Sound_teacher.Properties.Resources.GSmall;
+            this.pictureBox_115.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox_115.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_115.Image")));
             this.pictureBox_115.Location = new System.Drawing.Point(1252, 32);
             this.pictureBox_115.Name = "pictureBox_115";
             this.pictureBox_115.Size = new System.Drawing.Size(45, 45);
@@ -1494,6 +1619,7 @@
             // 
             // pictureBox_214
             // 
+            this.pictureBox_214.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_214.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_214.Image")));
             this.pictureBox_214.Location = new System.Drawing.Point(1193, 88);
             this.pictureBox_214.Name = "pictureBox_214";
@@ -1505,6 +1631,7 @@
             // 
             // pictureBox_314
             // 
+            this.pictureBox_314.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_314.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_314.Image")));
             this.pictureBox_314.Location = new System.Drawing.Point(1193, 142);
             this.pictureBox_314.Name = "pictureBox_314";
@@ -1516,6 +1643,7 @@
             // 
             // pictureBox_414
             // 
+            this.pictureBox_414.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_414.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_414.Image")));
             this.pictureBox_414.Location = new System.Drawing.Point(1193, 199);
             this.pictureBox_414.Name = "pictureBox_414";
@@ -1527,6 +1655,7 @@
             // 
             // pictureBox_514
             // 
+            this.pictureBox_514.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_514.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_514.Image")));
             this.pictureBox_514.Location = new System.Drawing.Point(1193, 256);
             this.pictureBox_514.Name = "pictureBox_514";
@@ -1538,6 +1667,7 @@
             // 
             // pictureBox_613
             // 
+            this.pictureBox_613.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_613.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_613.Image")));
             this.pictureBox_613.Location = new System.Drawing.Point(1130, 311);
             this.pictureBox_613.Name = "pictureBox_613";
@@ -1549,6 +1679,7 @@
             // 
             // pictureBox_413
             // 
+            this.pictureBox_413.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_413.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_413.Image")));
             this.pictureBox_413.Location = new System.Drawing.Point(1130, 199);
             this.pictureBox_413.Name = "pictureBox_413";
@@ -1560,6 +1691,7 @@
             // 
             // pictureBox_313
             // 
+            this.pictureBox_313.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_313.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_313.Image")));
             this.pictureBox_313.Location = new System.Drawing.Point(1130, 142);
             this.pictureBox_313.Name = "pictureBox_313";
@@ -1571,6 +1703,7 @@
             // 
             // pictureBox_213
             // 
+            this.pictureBox_213.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_213.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_213.Image")));
             this.pictureBox_213.Location = new System.Drawing.Point(1130, 88);
             this.pictureBox_213.Name = "pictureBox_213";
@@ -1582,6 +1715,7 @@
             // 
             // pictureBox_113
             // 
+            this.pictureBox_113.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_113.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_113.Image")));
             this.pictureBox_113.Location = new System.Drawing.Point(1130, 32);
             this.pictureBox_113.Name = "pictureBox_113";
@@ -1593,6 +1727,7 @@
             // 
             // pictureBox_114
             // 
+            this.pictureBox_114.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_114.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_114.Image")));
             this.pictureBox_114.Location = new System.Drawing.Point(1193, 32);
             this.pictureBox_114.Name = "pictureBox_114";
@@ -1604,6 +1739,7 @@
             // 
             // pictureBox_112
             // 
+            this.pictureBox_112.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_112.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_112.Image")));
             this.pictureBox_112.Location = new System.Drawing.Point(1062, 32);
             this.pictureBox_112.Name = "pictureBox_112";
@@ -1615,6 +1751,7 @@
             // 
             // pictureBox_212
             // 
+            this.pictureBox_212.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_212.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_212.Image")));
             this.pictureBox_212.Location = new System.Drawing.Point(1062, 88);
             this.pictureBox_212.Name = "pictureBox_212";
@@ -1626,7 +1763,8 @@
             // 
             // pictureBox_312
             // 
-            this.pictureBox_312.Image = global::Sound_teacher.Properties.Resources.GSmall;
+            this.pictureBox_312.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox_312.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_312.Image")));
             this.pictureBox_312.Location = new System.Drawing.Point(1062, 142);
             this.pictureBox_312.Name = "pictureBox_312";
             this.pictureBox_312.Size = new System.Drawing.Size(45, 45);
@@ -1637,6 +1775,7 @@
             // 
             // pictureBox_512
             // 
+            this.pictureBox_512.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_512.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_512.Image")));
             this.pictureBox_512.Location = new System.Drawing.Point(1062, 256);
             this.pictureBox_512.Name = "pictureBox_512";
@@ -1648,6 +1787,7 @@
             // 
             // pictureBox_612
             // 
+            this.pictureBox_612.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_612.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_612.Image")));
             this.pictureBox_612.Location = new System.Drawing.Point(1062, 311);
             this.pictureBox_612.Name = "pictureBox_612";
@@ -1659,6 +1799,7 @@
             // 
             // pictureBox_611
             // 
+            this.pictureBox_611.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_611.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_611.Image")));
             this.pictureBox_611.Location = new System.Drawing.Point(990, 311);
             this.pictureBox_611.Name = "pictureBox_611";
@@ -1670,6 +1811,7 @@
             // 
             // pictureBox_511
             // 
+            this.pictureBox_511.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_511.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_511.Image")));
             this.pictureBox_511.Location = new System.Drawing.Point(990, 256);
             this.pictureBox_511.Name = "pictureBox_511";
@@ -1681,6 +1823,7 @@
             // 
             // pictureBox_411
             // 
+            this.pictureBox_411.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_411.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_411.Image")));
             this.pictureBox_411.Location = new System.Drawing.Point(990, 199);
             this.pictureBox_411.Name = "pictureBox_411";
@@ -1692,6 +1835,7 @@
             // 
             // pictureBox_211
             // 
+            this.pictureBox_211.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_211.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_211.Image")));
             this.pictureBox_211.Location = new System.Drawing.Point(990, 88);
             this.pictureBox_211.Name = "pictureBox_211";
@@ -1703,6 +1847,7 @@
             // 
             // pictureBox_111
             // 
+            this.pictureBox_111.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_111.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_111.Image")));
             this.pictureBox_111.Location = new System.Drawing.Point(990, 32);
             this.pictureBox_111.Name = "pictureBox_111";
@@ -1714,6 +1859,7 @@
             // 
             // pictureBox_610
             // 
+            this.pictureBox_610.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_610.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_610.Image")));
             this.pictureBox_610.Location = new System.Drawing.Point(915, 311);
             this.pictureBox_610.Name = "pictureBox_610";
@@ -1725,7 +1871,8 @@
             // 
             // pictureBox_510
             // 
-            this.pictureBox_510.Image = global::Sound_teacher.Properties.Resources.GSmall;
+            this.pictureBox_510.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox_510.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_510.Image")));
             this.pictureBox_510.Location = new System.Drawing.Point(915, 256);
             this.pictureBox_510.Name = "pictureBox_510";
             this.pictureBox_510.Size = new System.Drawing.Size(45, 45);
@@ -1736,6 +1883,7 @@
             // 
             // pictureBox_410
             // 
+            this.pictureBox_410.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_410.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_410.Image")));
             this.pictureBox_410.Location = new System.Drawing.Point(915, 199);
             this.pictureBox_410.Name = "pictureBox_410";
@@ -1747,6 +1895,7 @@
             // 
             // pictureBox_310
             // 
+            this.pictureBox_310.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_310.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_310.Image")));
             this.pictureBox_310.Location = new System.Drawing.Point(915, 142);
             this.pictureBox_310.Name = "pictureBox_310";
@@ -1758,6 +1907,7 @@
             // 
             // pictureBox_69
             // 
+            this.pictureBox_69.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_69.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_69.Image")));
             this.pictureBox_69.Location = new System.Drawing.Point(841, 311);
             this.pictureBox_69.Name = "pictureBox_69";
@@ -1769,6 +1919,7 @@
             // 
             // pictureBox_59
             // 
+            this.pictureBox_59.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_59.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_59.Image")));
             this.pictureBox_59.Location = new System.Drawing.Point(841, 256);
             this.pictureBox_59.Name = "pictureBox_59";
@@ -1780,6 +1931,7 @@
             // 
             // pictureBox_49
             // 
+            this.pictureBox_49.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_49.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_49.Image")));
             this.pictureBox_49.Location = new System.Drawing.Point(841, 199);
             this.pictureBox_49.Name = "pictureBox_49";
@@ -1791,6 +1943,7 @@
             // 
             // pictureBox_110
             // 
+            this.pictureBox_110.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_110.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_110.Image")));
             this.pictureBox_110.Location = new System.Drawing.Point(915, 32);
             this.pictureBox_110.Name = "pictureBox_110";
@@ -1802,6 +1955,7 @@
             // 
             // pictureBox_29
             // 
+            this.pictureBox_29.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_29.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_29.Image")));
             this.pictureBox_29.Location = new System.Drawing.Point(841, 88);
             this.pictureBox_29.Name = "pictureBox_29";
@@ -1813,6 +1967,7 @@
             // 
             // pictureBox_124
             // 
+            this.pictureBox_124.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_124.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_124.Image")));
             this.pictureBox_124.Location = new System.Drawing.Point(1651, 32);
             this.pictureBox_124.Name = "pictureBox_124";
@@ -1824,6 +1979,7 @@
             // 
             // pictureBox_224
             // 
+            this.pictureBox_224.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_224.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_224.Image")));
             this.pictureBox_224.Location = new System.Drawing.Point(1650, 88);
             this.pictureBox_224.Name = "pictureBox_224";
@@ -1835,7 +1991,8 @@
             // 
             // pictureBox_324
             // 
-            this.pictureBox_324.Image = global::Sound_teacher.Properties.Resources.GSmall;
+            this.pictureBox_324.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox_324.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_324.Image")));
             this.pictureBox_324.Location = new System.Drawing.Point(1650, 142);
             this.pictureBox_324.Name = "pictureBox_324";
             this.pictureBox_324.Size = new System.Drawing.Size(45, 45);
@@ -1846,6 +2003,7 @@
             // 
             // pictureBox_424
             // 
+            this.pictureBox_424.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_424.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_424.Image")));
             this.pictureBox_424.Location = new System.Drawing.Point(1650, 199);
             this.pictureBox_424.Name = "pictureBox_424";
@@ -1857,6 +2015,7 @@
             // 
             // pictureBox_524
             // 
+            this.pictureBox_524.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_524.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_524.Image")));
             this.pictureBox_524.Location = new System.Drawing.Point(1651, 256);
             this.pictureBox_524.Name = "pictureBox_524";
@@ -1868,6 +2027,7 @@
             // 
             // pictureBox_624
             // 
+            this.pictureBox_624.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_624.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_624.Image")));
             this.pictureBox_624.Location = new System.Drawing.Point(1651, 311);
             this.pictureBox_624.Name = "pictureBox_624";
@@ -1879,6 +2039,7 @@
             // 
             // pictureBox_523
             // 
+            this.pictureBox_523.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_523.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_523.Image")));
             this.pictureBox_523.Location = new System.Drawing.Point(1616, 256);
             this.pictureBox_523.Name = "pictureBox_523";
@@ -1890,6 +2051,7 @@
             // 
             // pictureBox_422
             // 
+            this.pictureBox_422.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_422.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_422.Image")));
             this.pictureBox_422.Location = new System.Drawing.Point(1581, 199);
             this.pictureBox_422.Name = "pictureBox_422";
@@ -1901,6 +2063,7 @@
             // 
             // pictureBox_321
             // 
+            this.pictureBox_321.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_321.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_321.Image")));
             this.pictureBox_321.Location = new System.Drawing.Point(1539, 142);
             this.pictureBox_321.Name = "pictureBox_321";
@@ -1912,7 +2075,8 @@
             // 
             // pictureBox_220
             // 
-            this.pictureBox_220.Image = global::Sound_teacher.Properties.Resources.GSmall;
+            this.pictureBox_220.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox_220.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_220.Image")));
             this.pictureBox_220.Location = new System.Drawing.Point(1496, 88);
             this.pictureBox_220.Name = "pictureBox_220";
             this.pictureBox_220.Size = new System.Drawing.Size(45, 45);
@@ -1923,6 +2087,7 @@
             // 
             // pictureBox_119
             // 
+            this.pictureBox_119.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_119.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_119.Image")));
             this.pictureBox_119.Location = new System.Drawing.Point(1452, 32);
             this.pictureBox_119.Name = "pictureBox_119";
@@ -1934,6 +2099,7 @@
             // 
             // pictureBox_218
             // 
+            this.pictureBox_218.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_218.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_218.Image")));
             this.pictureBox_218.Location = new System.Drawing.Point(1409, 88);
             this.pictureBox_218.Name = "pictureBox_218";
@@ -1945,6 +2111,7 @@
             // 
             // pictureBox_317
             // 
+            this.pictureBox_317.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_317.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_317.Image")));
             this.pictureBox_317.Location = new System.Drawing.Point(1361, 142);
             this.pictureBox_317.Name = "pictureBox_317";
@@ -1956,6 +2123,7 @@
             // 
             // pictureBox_416
             // 
+            this.pictureBox_416.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_416.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_416.Image")));
             this.pictureBox_416.Location = new System.Drawing.Point(1309, 199);
             this.pictureBox_416.Name = "pictureBox_416";
@@ -1967,6 +2135,7 @@
             // 
             // pictureBox_39
             // 
+            this.pictureBox_39.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_39.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_39.Image")));
             this.pictureBox_39.Location = new System.Drawing.Point(841, 142);
             this.pictureBox_39.Name = "pictureBox_39";
@@ -1978,6 +2147,7 @@
             // 
             // pictureBox_614
             // 
+            this.pictureBox_614.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_614.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_614.Image")));
             this.pictureBox_614.Location = new System.Drawing.Point(1193, 311);
             this.pictureBox_614.Name = "pictureBox_614";
@@ -1989,6 +2159,7 @@
             // 
             // pictureBox_513
             // 
+            this.pictureBox_513.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_513.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_513.Image")));
             this.pictureBox_513.Location = new System.Drawing.Point(1130, 256);
             this.pictureBox_513.Name = "pictureBox_513";
@@ -2000,6 +2171,7 @@
             // 
             // pictureBox_412
             // 
+            this.pictureBox_412.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_412.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_412.Image")));
             this.pictureBox_412.Location = new System.Drawing.Point(1062, 199);
             this.pictureBox_412.Name = "pictureBox_412";
@@ -2011,6 +2183,7 @@
             // 
             // pictureBox_311
             // 
+            this.pictureBox_311.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_311.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_311.Image")));
             this.pictureBox_311.Location = new System.Drawing.Point(990, 142);
             this.pictureBox_311.Name = "pictureBox_311";
@@ -2022,6 +2195,7 @@
             // 
             // pictureBox_210
             // 
+            this.pictureBox_210.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_210.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_210.Image")));
             this.pictureBox_210.Location = new System.Drawing.Point(915, 88);
             this.pictureBox_210.Name = "pictureBox_210";
@@ -2033,6 +2207,7 @@
             // 
             // pictureBox_19
             // 
+            this.pictureBox_19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_19.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_19.Image")));
             this.pictureBox_19.Location = new System.Drawing.Point(841, 32);
             this.pictureBox_19.Name = "pictureBox_19";
@@ -2044,6 +2219,7 @@
             // 
             // pictureBox_123
             // 
+            this.pictureBox_123.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_123.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_123.Image")));
             this.pictureBox_123.Location = new System.Drawing.Point(1616, 32);
             this.pictureBox_123.Name = "pictureBox_123";
@@ -2055,6 +2231,7 @@
             // 
             // pictureBox_515
             // 
+            this.pictureBox_515.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_515.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_515.Image")));
             this.pictureBox_515.Location = new System.Drawing.Point(1252, 256);
             this.pictureBox_515.Name = "pictureBox_515";
@@ -2066,6 +2243,7 @@
             // 
             // pictureBox_46
             // 
+            this.pictureBox_46.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_46.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_46.Image")));
             this.pictureBox_46.Location = new System.Drawing.Point(625, 199);
             this.pictureBox_46.Name = "pictureBox_46";
@@ -2077,6 +2255,7 @@
             // 
             // pictureBox_55
             // 
+            this.pictureBox_55.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_55.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_55.Image")));
             this.pictureBox_55.Location = new System.Drawing.Point(541, 256);
             this.pictureBox_55.Name = "pictureBox_55";
@@ -2088,6 +2267,7 @@
             // 
             // pictureBox_60
             // 
+            this.pictureBox_60.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_60.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_60.Image")));
             this.pictureBox_60.Location = new System.Drawing.Point(64, 311);
             this.pictureBox_60.Name = "pictureBox_60";
@@ -2099,7 +2279,8 @@
             // 
             // pictureBox_50
             // 
-            this.pictureBox_50.Image = global::Sound_teacher.Properties.Resources.ASmall;
+            this.pictureBox_50.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox_50.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_50.Image")));
             this.pictureBox_50.Location = new System.Drawing.Point(64, 256);
             this.pictureBox_50.Name = "pictureBox_50";
             this.pictureBox_50.Size = new System.Drawing.Size(45, 45);
@@ -2110,7 +2291,8 @@
             // 
             // pictureBox_40
             // 
-            this.pictureBox_40.Image = global::Sound_teacher.Properties.Resources.DSmall;
+            this.pictureBox_40.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox_40.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_40.Image")));
             this.pictureBox_40.Location = new System.Drawing.Point(64, 199);
             this.pictureBox_40.Name = "pictureBox_40";
             this.pictureBox_40.Size = new System.Drawing.Size(45, 45);
@@ -2121,7 +2303,8 @@
             // 
             // pictureBox_30
             // 
-            this.pictureBox_30.Image = global::Sound_teacher.Properties.Resources.GSmall;
+            this.pictureBox_30.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox_30.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_30.Image")));
             this.pictureBox_30.Location = new System.Drawing.Point(64, 142);
             this.pictureBox_30.Name = "pictureBox_30";
             this.pictureBox_30.Size = new System.Drawing.Size(45, 45);
@@ -2132,6 +2315,7 @@
             // 
             // pictureBox_64
             // 
+            this.pictureBox_64.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_64.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_64.Image")));
             this.pictureBox_64.Location = new System.Drawing.Point(454, 311);
             this.pictureBox_64.Name = "pictureBox_64";
@@ -2143,6 +2327,7 @@
             // 
             // pictureBox_14
             // 
+            this.pictureBox_14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_14.Image")));
             this.pictureBox_14.Location = new System.Drawing.Point(454, 32);
             this.pictureBox_14.Name = "pictureBox_14";
@@ -2154,7 +2339,8 @@
             // 
             // pictureBox_53
             // 
-            this.pictureBox_53.Image = global::Sound_teacher.Properties.Resources.CSmall;
+            this.pictureBox_53.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox_53.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_53.Image")));
             this.pictureBox_53.Location = new System.Drawing.Point(361, 256);
             this.pictureBox_53.Name = "pictureBox_53";
             this.pictureBox_53.Size = new System.Drawing.Size(45, 45);
@@ -2165,6 +2351,7 @@
             // 
             // pictureBox_42
             // 
+            this.pictureBox_42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_42.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_42.Image")));
             this.pictureBox_42.Location = new System.Drawing.Point(269, 199);
             this.pictureBox_42.Name = "pictureBox_42";
@@ -2176,6 +2363,7 @@
             // 
             // pictureBox_31
             // 
+            this.pictureBox_31.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_31.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_31.Image")));
             this.pictureBox_31.Location = new System.Drawing.Point(179, 142);
             this.pictureBox_31.Name = "pictureBox_31";
@@ -2187,7 +2375,8 @@
             // 
             // pictureBox_13
             // 
-            this.pictureBox_13.Image = global::Sound_teacher.Properties.Resources.GSmall;
+            this.pictureBox_13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox_13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_13.Image")));
             this.pictureBox_13.Location = new System.Drawing.Point(361, 32);
             this.pictureBox_13.Name = "pictureBox_13";
             this.pictureBox_13.Size = new System.Drawing.Size(45, 45);
@@ -2198,6 +2387,7 @@
             // 
             // pictureBox_12
             // 
+            this.pictureBox_12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_12.Image")));
             this.pictureBox_12.Location = new System.Drawing.Point(269, 32);
             this.pictureBox_12.Name = "pictureBox_12";
@@ -2209,7 +2399,8 @@
             // 
             // pictureBox_20
             // 
-            this.pictureBox_20.Image = global::Sound_teacher.Properties.Resources.BSmall;
+            this.pictureBox_20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox_20.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_20.Image")));
             this.pictureBox_20.Location = new System.Drawing.Point(64, 88);
             this.pictureBox_20.Name = "pictureBox_20";
             this.pictureBox_20.Size = new System.Drawing.Size(45, 45);
@@ -2220,6 +2411,7 @@
             // 
             // pictureBox_11
             // 
+            this.pictureBox_11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_11.Image")));
             this.pictureBox_11.Location = new System.Drawing.Point(179, 32);
             this.pictureBox_11.Name = "pictureBox_11";
@@ -2232,6 +2424,7 @@
             // pictureBox_10
             // 
             this.pictureBox_10.BackColor = System.Drawing.SystemColors.WindowText;
+            this.pictureBox_10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox_10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_10.Image")));
             this.pictureBox_10.Location = new System.Drawing.Point(64, 32);
             this.pictureBox_10.Name = "pictureBox_10";
@@ -2249,53 +2442,31 @@
             this.labelFretboardImage.Size = new System.Drawing.Size(1689, 403);
             this.labelFretboardImage.TabIndex = 150;
             // 
-            // timerCheckAdditional
+            // pictureBox_38
             // 
-            this.timerCheckAdditional.Enabled = true;
-            this.timerCheckAdditional.Tick += new System.EventHandler(this.timerCheckAdditional_Tick);
-            // 
-            // checkBoxFretBoardShowNextTo
-            // 
-            this.checkBoxFretBoardShowNextTo.AutoSize = true;
-            this.checkBoxFretBoardShowNextTo.Location = new System.Drawing.Point(915, 424);
-            this.checkBoxFretBoardShowNextTo.Name = "checkBoxFretBoardShowNextTo";
-            this.checkBoxFretBoardShowNextTo.Size = new System.Drawing.Size(88, 17);
-            this.checkBoxFretBoardShowNextTo.TabIndex = 14;
-            this.checkBoxFretBoardShowNextTo.Tag = "CBoxSound";
-            this.checkBoxFretBoardShowNextTo.Text = "Show next to";
-            this.checkBoxFretBoardShowNextTo.UseVisualStyleBackColor = true;
-            // 
-            // buttonFretBoardNew
-            // 
-            this.buttonFretBoardNew.Location = new System.Drawing.Point(179, 447);
-            this.buttonFretBoardNew.Name = "buttonFretBoardNew";
-            this.buttonFretBoardNew.Size = new System.Drawing.Size(141, 23);
-            this.buttonFretBoardNew.TabIndex = 155;
-            this.buttonFretBoardNew.Text = "New FretBoard";
-            this.buttonFretBoardNew.UseVisualStyleBackColor = true;
-            this.buttonFretBoardNew.Click += new System.EventHandler(this.buttonFretBoardNew_Click);
-            // 
-            // buttonStartExternal
-            // 
-            this.buttonStartExternal.Location = new System.Drawing.Point(15, 415);
-            this.buttonStartExternal.Name = "buttonStartExternal";
-            this.buttonStartExternal.Size = new System.Drawing.Size(72, 57);
-            this.buttonStartExternal.TabIndex = 156;
-            this.buttonStartExternal.Text = "Start!";
-            this.buttonStartExternal.UseVisualStyleBackColor = true;
-            this.buttonStartExternal.Click += new System.EventHandler(this.buttonStartExternal_Click);
+            this.pictureBox_38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox_38.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox_38.Image")));
+            this.pictureBox_38.Location = new System.Drawing.Point(769, 142);
+            this.pictureBox_38.Name = "pictureBox_38";
+            this.pictureBox_38.Size = new System.Drawing.Size(45, 45);
+            this.pictureBox_38.TabIndex = 159;
+            this.pictureBox_38.TabStop = false;
+            this.pictureBox_38.Tag = "FretBoardDis";
+            this.pictureBox_38.Visible = false;
             // 
             // FormFretBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1714, 484);
+            this.Controls.Add(this.pictureBox_38);
+            this.Controls.Add(this.labelFretBoardScale);
+            this.Controls.Add(this.numericUpDownChangeSound);
             this.Controls.Add(this.buttonStartExternal);
             this.Controls.Add(this.buttonFretBoardNew);
             this.Controls.Add(this.checkBoxFretBoardShowNextTo);
             this.Controls.Add(this.labelDisplaySounds);
             this.Controls.Add(this.groupBoxFretBoardSounds);
-            this.Controls.Add(this.labelDisplayScale);
             this.Controls.Add(this.comboBoxScaleChoice);
             this.Controls.Add(this.buttonFretBoardStartStop);
             this.Controls.Add(this.pictureBox_54);
@@ -2328,7 +2499,6 @@
             this.Controls.Add(this.pictureBox_68);
             this.Controls.Add(this.pictureBox_58);
             this.Controls.Add(this.pictureBox_48);
-            this.Controls.Add(this.pictureBox_38);
             this.Controls.Add(this.pictureBox_27);
             this.Controls.Add(this.pictureBox_17);
             this.Controls.Add(this.pictureBox_18);
@@ -2456,6 +2626,7 @@
             this.Load += new System.EventHandler(this.FormFretBoard_Load);
             this.groupBoxFretBoardSounds.ResumeLayout(false);
             this.groupBoxFretBoardSounds.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownChangeSound)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_54)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_45)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_44)).EndInit();
@@ -2486,7 +2657,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_68)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_58)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_48)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_38)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_27)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_17)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_18)).EndInit();
@@ -2606,6 +2776,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox_38)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2732,7 +2903,6 @@
         private System.Windows.Forms.PictureBox pictureBox_18;
         private System.Windows.Forms.PictureBox pictureBox_17;
         private System.Windows.Forms.PictureBox pictureBox_27;
-        private System.Windows.Forms.PictureBox pictureBox_38;
         private System.Windows.Forms.PictureBox pictureBox_48;
         private System.Windows.Forms.PictureBox pictureBox_58;
         private System.Windows.Forms.PictureBox pictureBox_68;
@@ -2767,7 +2937,6 @@
         private System.Windows.Forms.Label labelFretboardImage;
         private System.Windows.Forms.Timer timerFretBoardChangeImages;
         private System.Windows.Forms.ComboBox comboBoxScaleChoice;
-        private System.Windows.Forms.Label labelDisplayScale;
         private System.Windows.Forms.GroupBox groupBoxFretBoardSounds;
         private System.Windows.Forms.Label labelDisplaySounds;
         private System.Windows.Forms.CheckBox checkBoxFretBoardGis;
@@ -2788,5 +2957,8 @@
         private System.Windows.Forms.CheckBox checkBoxFretBoardShowNextTo;
         private System.Windows.Forms.Button buttonFretBoardNew;
         private System.Windows.Forms.Button buttonStartExternal;
+        private System.Windows.Forms.NumericUpDown numericUpDownChangeSound;
+        private System.Windows.Forms.Label labelFretBoardScale;
+        private System.Windows.Forms.PictureBox pictureBox_38;
     }
 }

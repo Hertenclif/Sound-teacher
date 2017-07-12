@@ -53,6 +53,12 @@
     <Compile Include="FormFretBoard.Designer.cs">
       <DependentUpon>FormFretBoard.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormMetronome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMetronome.Designer.cs">
+      <DependentUpon>FormMetronome.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +70,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormFretBoard.resx">
       <DependentUpon>FormFretBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMetronome.resx">
+      <DependentUpon>FormMetronome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -168,6 +177,17 @@
     <None Include="resources\GSmall.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="resources\MetronomeFrame.png" />
+    <None Include="resources\StartButtonMedium.png" />
+    <None Include="resources\LEDGreen.png" />
+    <None Include="resources\LEDRed.png" />
+    <None Include="resources\LEDGrey.png" />
+    <None Include="resources\ButtonStartMedium.png" />
+    <None Include="resources\ButtonStopMedium.png" />
+    <None Include="resources\DGrayFrame.png" />
+    <None Include="resources\MetronomeBackGroupBox.png" />
+    <None Include="resources\MetronomeComboBoxGrayBackground.png" />
+    <None Include="resources\LEDBlue.png" />
     <Content Include="STL.ico" />
     <Content Include="STLogo.ico" />
   </ItemGroup>
