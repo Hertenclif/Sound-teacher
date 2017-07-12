@@ -188,6 +188,7 @@
     <None Include="resources\MetronomeBackGroupBox.png" />
     <None Include="resources\MetronomeComboBoxGrayBackground.png" />
     <None Include="resources\LEDBlue.png" />
+    <None Include="resources\RadioButtonGray.png" />
     <Content Include="STL.ico" />
     <Content Include="STLogo.ico" />
   </ItemGroup>

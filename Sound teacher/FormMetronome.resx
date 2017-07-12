@@ -121,6 +121,358 @@
     <value>17, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="radioButtonMetronome40.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAFxJREFUKFOdjjEOgDAMxPJzfsGckWdywVF66oTqoWrPFiKcy+jJQdwGS2sx+jFY
+        Vkc0Anh2tBX1EbvrrM6jTR9FmVnyEzjuOiv69eMTIQaWFQk9JgWW1g4CehIRL1mswhHGFlq/AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="radioButtonMetronome360.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAFxJREFUKFOdjjEOgDAMxPJzfsGckWdywVF66oTqoWrPFiKcy+jJQdwGS2sx+jFY
+        Vkc0Anh2tBX1EbvrrM6jTR9FmVnyEzjuOiv69eMTIQaWFQk9JgWW1g4CehIRL1mswhHGFlq/AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="radioButtonMetronome245.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAFxJREFUKFOdjjEOgDAMxPJzfsGckWdywVF66oTqoWrPFiKcy+jJQdwGS2sx+jFY
+        Vkc0Anh2tBX1EbvrrM6jTR9FmVnyEzjuOiv69eMTIQaWFQk9JgWW1g4CehIRL1mswhHGFlq/AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="radioButtonMetronome234.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAFxJREFUKFOdjjEOgDAMxPJzfsGckWdywVF66oTqoWrPFiKcy+jJQdwGS2sx+jFY
+        Vkc0Anh2tBX1EbvrrM6jTR9FmVnyEzjuOiv69eMTIQaWFQk9JgWW1g4CehIRL1mswhHGFlq/AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="radioButtonMetronome225.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAFxJREFUKFOdjjEOgDAMxPJzfsGckWdywVF66oTqoWrPFiKcy+jJQdwGS2sx+jFY
+        Vkc0Anh2tBX1EbvrrM6jTR9FmVnyEzjuOiv69eMTIQaWFQk9JgWW1g4CehIRL1mswhHGFlq/AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="radioButtonMetronome216.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAFxJREFUKFOdjjEOgDAMxPJzfsGckWdywVF66oTqoWrPFiKcy+jJQdwGS2sx+jFY
+        Vkc0Anh2tBX1EbvrrM6jTR9FmVnyEzjuOiv69eMTIQaWFQk9JgWW1g4CehIRL1mswhHGFlq/AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="radioButtonMetronome208.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAFxJREFUKFOdjjEOgDAMxPJzfsGckWdywVF66oTqoWrPFiKcy+jJQdwGS2sx+jFY
+        Vkc0Anh2tBX1EbvrrM6jTR9FmVnyEzjuOiv69eMTIQaWFQk9JgWW1g4CehIRL1mswhHGFlq/AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="radioButtonMetronome200.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAFxJREFUKFOdjjEOgDAMxPJzfsGckWdywVF66oTqoWrPFiKcy+jJQdwGS2sx+jFY
+        Vkc0Anh2tBX1EbvrrM6jTR9FmVnyEzjuOiv69eMTIQaWFQk9JgWW1g4CehIRL1mswhHGFlq/AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="radioButtonMetronome192.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAFxJREFUKFOdjjEOgDAMxPJzfsGckWdywVF66oTqoWrPFiKcy+jJQdwGS2sx+jFY
+        Vkc0Anh2tBX1EbvrrM6jTR9FmVnyEzjuOiv69eMTIQaWFQk9JgWW1g4CehIRL1mswhHGFlq/AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="radioButtonMetronome184.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAFxJREFUKFOdjjEOgDAMxPJzfsGckWdywVF66oTqoWrPFiKcy+jJQdwGS2sx+jFY
+        Vkc0Anh2tBX1EbvrrM6jTR9FmVnyEzjuOiv69eMTIQaWFQk9JgWW1g4CehIRL1mswhHGFlq/AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="radioButtonMetronome176.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAFxJREFUKFOdjjEOgDAMxPJzfsGckWdywVF66oTqoWrPFiKcy+jJQdwGS2sx+jFY
+        Vkc0Anh2tBX1EbvrrM6jTR9FmVnyEzjuOiv69eMTIQaWFQk9JgWW1g4CehIRL1mswhHGFlq/AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="radioButtonMetronome168.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAFxJREFUKFOdjjEOgDAMxPJzfsGckWdywVF66oTqoWrPFiKcy+jJQdwGS2sx+jFY
+        Vkc0Anh2tBX1EbvrrM6jTR9FmVnyEzjuOiv69eMTIQaWFQk9JgWW1g4CehIRL1mswhHGFlq/AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="radioButtonMetronome160.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAFxJREFUKFOdjjEOgDAMxPJzfsGckWdywVF66oTqoWrPFiKcy+jJQdwGS2sx+jFY
+        Vkc0Anh2tBX1EbvrrM6jTR9FmVnyEzjuOiv69eMTIQaWFQk9JgWW1g4CehIRL1mswhHGFlq/AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="radioButtonMetronome152.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAFxJREFUKFOdjjEOgDAMxPJzfsGckWdywVF66oTqoWrPFiKcy+jJQdwGS2sx+jFY
+        Vkc0Anh2tBX1EbvrrM6jTR9FmVnyEzjuOiv69eMTIQaWFQk9JgWW1g4CehIRL1mswhHGFlq/AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="radioButtonMetronome144.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAFxJREFUKFOdjjEOgDAMxPJzfsGckWdywVF66oTqoWrPFiKcy+jJQdwGS2sx+jFY
+        Vkc0Anh2tBX1EbvrrM6jTR9FmVnyEzjuOiv69eMTIQaWFQk9JgWW1g4CehIRL1mswhHGFlq/AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="radioButtonMetronome138.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAFxJREFUKFOdjjEOgDAMxPJzfsGckWdywVF66oTqoWrPFiKcy+jJQdwGS2sx+jFY
+        Vkc0Anh2tBX1EbvrrM6jTR9FmVnyEzjuOiv69eMTIQaWFQk9JgWW1g4CehIRL1mswhHGFlq/AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="radioButtonMetronome132.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAFxJREFUKFOdjjEOgDAMxPJzfsGckWdywVF66oTqoWrPFiKcy+jJQdwGS2sx+jFY
+        Vkc0Anh2tBX1EbvrrM6jTR9FmVnyEzjuOiv69eMTIQaWFQk9JgWW1g4CehIRL1mswhHGFlq/AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="radioButtonMetronome126.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAFxJREFUKFOdjjEOgDAMxPJzfsGckWdywVF66oTqoWrPFiKcy+jJQdwGS2sx+jFY
+        Vkc0Anh2tBX1EbvrrM6jTR9FmVnyEzjuOiv69eMTIQaWFQk9JgWW1g4CehIRL1mswhHGFlq/AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="radioButtonMetronome120.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAFxJREFUKFOdjjEOgDAMxPJzfsGckWdywVF66oTqoWrPFiKcy+jJQdwGS2sx+jFY
+        Vkc0Anh2tBX1EbvrrM6jTR9FmVnyEzjuOiv69eMTIQaWFQk9JgWW1g4CehIRL1mswhHGFlq/AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="radioButtonMetronome116.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAFxJREFUKFOdjjEOgDAMxPJzfsGckWdywVF66oTqoWrPFiKcy+jJQdwGS2sx+jFY
+        Vkc0Anh2tBX1EbvrrM6jTR9FmVnyEzjuOiv69eMTIQaWFQk9JgWW1g4CehIRL1mswhHGFlq/AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="radioButtonMetronome112.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAFxJREFUKFOdjjEOgDAMxPJzfsGckWdywVF66oTqoWrPFiKcy+jJQdwGS2sx+jFY
+        Vkc0Anh2tBX1EbvrrM6jTR9FmVnyEzjuOiv69eMTIQaWFQk9JgWW1g4CehIRL1mswhHGFlq/AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="radioButtonMetronome108.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAFxJREFUKFOdjjEOgDAMxPJzfsGckWdywVF66oTqoWrPFiKcy+jJQdwGS2sx+jFY
+        Vkc0Anh2tBX1EbvrrM6jTR9FmVnyEzjuOiv69eMTIQaWFQk9JgWW1g4CehIRL1mswhHGFlq/AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="radioButtonMetronome104.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAFxJREFUKFOdjjEOgDAMxPJzfsGckWdywVF66oTqoWrPFiKcy+jJQdwGS2sx+jFY
+        Vkc0Anh2tBX1EbvrrM6jTR9FmVnyEzjuOiv69eMTIQaWFQk9JgWW1g4CehIRL1mswhHGFlq/AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="radioButtonMetronome100.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAFxJREFUKFOdjjEOgDAMxPJzfsGckWdywVF66oTqoWrPFiKcy+jJQdwGS2sx+jFY
+        Vkc0Anh2tBX1EbvrrM6jTR9FmVnyEzjuOiv69eMTIQaWFQk9JgWW1g4CehIRL1mswhHGFlq/AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="radioButtonMetronome96.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAFxJREFUKFOdjjEOgDAMxPJzfsGckWdywVF66oTqoWrPFiKcy+jJQdwGS2sx+jFY
+        Vkc0Anh2tBX1EbvrrM6jTR9FmVnyEzjuOiv69eMTIQaWFQk9JgWW1g4CehIRL1mswhHGFlq/AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="radioButtonMetronome92.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAFxJREFUKFOdjjEOgDAMxPJzfsGckWdywVF66oTqoWrPFiKcy+jJQdwGS2sx+jFY
+        Vkc0Anh2tBX1EbvrrM6jTR9FmVnyEzjuOiv69eMTIQaWFQk9JgWW1g4CehIRL1mswhHGFlq/AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="radioButtonMetronome88.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAFxJREFUKFOdjjEOgDAMxPJzfsGckWdywVF66oTqoWrPFiKcy+jJQdwGS2sx+jFY
+        Vkc0Anh2tBX1EbvrrM6jTR9FmVnyEzjuOiv69eMTIQaWFQk9JgWW1g4CehIRL1mswhHGFlq/AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="radioButtonMetronome84.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAFxJREFUKFOdjjEOgDAMxPJzfsGckWdywVF66oTqoWrPFiKcy+jJQdwGS2sx+jFY
+        Vkc0Anh2tBX1EbvrrM6jTR9FmVnyEzjuOiv69eMTIQaWFQk9JgWW1g4CehIRL1mswhHGFlq/AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="radioButtonMetronome80.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAFxJREFUKFOdjjEOgDAMxPJzfsGckWdywVF66oTqoWrPFiKcy+jJQdwGS2sx+jFY
+        Vkc0Anh2tBX1EbvrrM6jTR9FmVnyEzjuOiv69eMTIQaWFQk9JgWW1g4CehIRL1mswhHGFlq/AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="radioButtonMetronome76.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAFxJREFUKFOdjjEOgDAMxPJzfsGckWdywVF66oTqoWrPFiKcy+jJQdwGS2sx+jFY
+        Vkc0Anh2tBX1EbvrrM6jTR9FmVnyEzjuOiv69eMTIQaWFQk9JgWW1g4CehIRL1mswhHGFlq/AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="radioButtonMetronome72.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAFxJREFUKFOdjjEOgDAMxPJzfsGckWdywVF66oTqoWrPFiKcy+jJQdwGS2sx+jFY
+        Vkc0Anh2tBX1EbvrrM6jTR9FmVnyEzjuOiv69eMTIQaWFQk9JgWW1g4CehIRL1mswhHGFlq/AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="radioButtonMetronome69.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAFxJREFUKFOdjjEOgDAMxPJzfsGckWdywVF66oTqoWrPFiKcy+jJQdwGS2sx+jFY
+        Vkc0Anh2tBX1EbvrrM6jTR9FmVnyEzjuOiv69eMTIQaWFQk9JgWW1g4CehIRL1mswhHGFlq/AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="radioButtonMetronome66.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAFxJREFUKFOdjjEOgDAMxPJzfsGckWdywVF66oTqoWrPFiKcy+jJQdwGS2sx+jFY
+        Vkc0Anh2tBX1EbvrrM6jTR9FmVnyEzjuOiv69eMTIQaWFQk9JgWW1g4CehIRL1mswhHGFlq/AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="radioButtonMetronome63.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAFxJREFUKFOdjjEOgDAMxPJzfsGckWdywVF66oTqoWrPFiKcy+jJQdwGS2sx+jFY
+        Vkc0Anh2tBX1EbvrrM6jTR9FmVnyEzjuOiv69eMTIQaWFQk9JgWW1g4CehIRL1mswhHGFlq/AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="radioButtonMetronome46.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAFxJREFUKFOdjjEOgDAMxPJzfsGckWdywVF66oTqoWrPFiKcy+jJQdwGS2sx+jFY
+        Vkc0Anh2tBX1EbvrrM6jTR9FmVnyEzjuOiv69eMTIQaWFQk9JgWW1g4CehIRL1mswhHGFlq/AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="radioButtonMetronome44.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAFxJREFUKFOdjjEOgDAMxPJzfsGckWdywVF66oTqoWrPFiKcy+jJQdwGS2sx+jFY
+        Vkc0Anh2tBX1EbvrrM6jTR9FmVnyEzjuOiv69eMTIQaWFQk9JgWW1g4CehIRL1mswhHGFlq/AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="radioButtonMetronome60.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAFxJREFUKFOdjjEOgDAMxPJzfsGckWdywVF66oTqoWrPFiKcy+jJQdwGS2sx+jFY
+        Vkc0Anh2tBX1EbvrrM6jTR9FmVnyEzjuOiv69eMTIQaWFQk9JgWW1g4CehIRL1mswhHGFlq/AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="radioButtonMetronome42.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAFxJREFUKFOdjjEOgDAMxPJzfsGckWdywVF66oTqoWrPFiKcy+jJQdwGS2sx+jFY
+        Vkc0Anh2tBX1EbvrrM6jTR9FmVnyEzjuOiv69eMTIQaWFQk9JgWW1g4CehIRL1mswhHGFlq/AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="radioButtonMetronome58.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAFxJREFUKFOdjjEOgDAMxPJzfsGckWdywVF66oTqoWrPFiKcy+jJQdwGS2sx+jFY
+        Vkc0Anh2tBX1EbvrrM6jTR9FmVnyEzjuOiv69eMTIQaWFQk9JgWW1g4CehIRL1mswhHGFlq/AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="radioButtonMetronome48.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAFxJREFUKFOdjjEOgDAMxPJzfsGckWdywVF66oTqoWrPFiKcy+jJQdwGS2sx+jFY
+        Vkc0Anh2tBX1EbvrrM6jTR9FmVnyEzjuOiv69eMTIQaWFQk9JgWW1g4CehIRL1mswhHGFlq/AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="radioButtonMetronome50.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAFxJREFUKFOdjjEOgDAMxPJzfsGckWdywVF66oTqoWrPFiKcy+jJQdwGS2sx+jFY
+        Vkc0Anh2tBX1EbvrrM6jTR9FmVnyEzjuOiv69eMTIQaWFQk9JgWW1g4CehIRL1mswhHGFlq/AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="radioButtonMetronome56.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAFxJREFUKFOdjjEOgDAMxPJzfsGckWdywVF66oTqoWrPFiKcy+jJQdwGS2sx+jFY
+        Vkc0Anh2tBX1EbvrrM6jTR9FmVnyEzjuOiv69eMTIQaWFQk9JgWW1g4CehIRL1mswhHGFlq/AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="radioButtonMetronome52.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAFxJREFUKFOdjjEOgDAMxPJzfsGckWdywVF66oTqoWrPFiKcy+jJQdwGS2sx+jFY
+        Vkc0Anh2tBX1EbvrrM6jTR9FmVnyEzjuOiv69eMTIQaWFQk9JgWW1g4CehIRL1mswhHGFlq/AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="radioButtonMetronome54.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAIAAADZF8uwAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAFxJREFUKFOdjjEOgDAMxPJzfsGckWdywVF66oTqoWrPFiKcy+jJQdwGS2sx+jFY
+        Vkc0Anh2tBX1EbvrrM6jTR9FmVnyEzjuOiv69eMTIQaWFQk9JgWW1g4CehIRL1mswhHGFlq/AAAAAElF
+        TkSuQmCC
+</value>
+  </data>
   <data name="pictureBoxDiode.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO

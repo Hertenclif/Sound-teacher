@@ -56,6 +56,11 @@ namespace Sound_teacher
                 try
                 {
                     bpm = 60000 / System.Convert.ToInt32(numericUpDownMetronomeBPM.Text);
+                    if (comboBoxMetronomeMetrum2.Text == "1") bpm *= 4;
+                    else if (comboBoxMetronomeMetrum2.Text == "2") bpm *= 2;
+                    else if (comboBoxMetronomeMetrum2.Text == "8") bpm /= 2;
+                    else if (comboBoxMetronomeMetrum2.Text == "16") bpm /= 4;
+                    else if (comboBoxMetronomeMetrum2.Text == "32") bpm /= 8;
                     timerMetronomeBPM.Interval = bpm;
                     hScrollBarMetronomeBPS.Value = System.Convert.ToInt32(numericUpDownMetronomeBPM.Text);
                 }
@@ -64,7 +69,7 @@ namespace Sound_teacher
                     bpm = 1;
                 }
                     labelTimeTick.Text = System.Convert.ToString(currentSound);
-                    if (currentSound < 4)
+                    if (currentSound < System.Convert.ToInt32(comboBoxMetronomeMetrum1.Text))
                     {
                         metronomeBeat.Play();
                     }
@@ -114,6 +119,11 @@ namespace Sound_teacher
             else if (bpm > 132 && bpm <= 168) labelMetronomeTempo.Text = tempoNames[7];
             else if (bpm > 168 && bpm <= 199) labelMetronomeTempo.Text = tempoNames[8];
             else labelMetronomeTempo.Text = tempoNames[9];
+        }
+        private void comboBoxSetBpm(object sender, EventArgs e)
+        {
+           // RadioButton checkedCombobox = (RadioButton)sender;
+            numericUpDownMetronomeBPM.Value = System.Convert.ToInt32(((RadioButton)sender).Text);
         }
     }
 }
