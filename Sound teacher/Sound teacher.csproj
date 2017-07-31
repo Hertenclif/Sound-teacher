@@ -35,6 +35,11 @@
     <ApplicationIcon>STLogo.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Microsoft.Xna.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -45,8 +50,10 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClassNotificatioNSound.cs" />
     <Compile Include="FormFretBoard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +65,12 @@
     </Compile>
     <Compile Include="FormMetronome.Designer.cs">
       <DependentUpon>FormMetronome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTuner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTuner.Designer.cs">
+      <DependentUpon>FormTuner.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -73,6 +86,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMetronome.resx">
       <DependentUpon>FormMetronome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTuner.resx">
+      <DependentUpon>FormTuner.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -189,6 +205,66 @@
     <None Include="resources\MetronomeComboBoxGrayBackground.png" />
     <None Include="resources\LEDBlue.png" />
     <None Include="resources\RadioButtonGray.png" />
+    <None Include="resources\MainLayout.png" />
+    <None Include="resources\MainForm_FretBoardButton.png" />
+    <None Include="resources\MainForm_MetronomeButton.png" />
+    <None Include="resources\MainForm_ExitButton.png" />
+    <None Include="resources\MainForm_TunerButton.png" />
+    <None Include="resources\StartButton.png" />
+    <None Include="resources\StopButton.png" />
+    <None Include="resources\FretBoard_StartButton.png" />
+    <None Include="resources\FretBoard_StartFretBoardButton.png" />
+    <None Include="resources\FretBoard_StopButton.png" />
+    <None Include="resources\FretBoard_StopFretBoardButton.png" />
+    <None Include="resources\FretBoard_NewFretBoardButton.png" />
+    <None Include="resources\FretBoardRes\FretBoardImg\SoundImg\ESmall.png" />
+    <None Include="resources\FretBoardRes\FretBoardImg\FormImg\Fretboard.png" />
+    <None Include="resources\FretBoardRes\FretBoardImg\SoundImg\FSmall.png" />
+    <None Include="resources\FretBoardRes\FretBoardImg\SoundImg\FisSmall.png" />
+    <None Include="resources\FretBoardRes\FretBoardImg\SoundImg\GSmall.png" />
+    <None Include="resources\FretBoardRes\FretBoardImg\SoundImg\GisSmall.png" />
+    <None Include="resources\FretBoardRes\FretBoardImg\SoundImg\ASmall.png" />
+    <None Include="resources\FretBoardRes\FretBoardImg\SoundImg\AisSmall.png" />
+    <None Include="resources\FretBoardRes\FretBoardImg\SoundImg\BSmall.png" />
+    <None Include="resources\FretBoardRes\FretBoardImg\SoundImg\CSmall.png" />
+    <None Include="resources\FretBoardRes\FretBoardImg\SoundImg\CisSmall.png" />
+    <None Include="resources\FretBoardRes\FretBoardImg\SoundImg\DSmall.png" />
+    <None Include="resources\FretBoardRes\FretBoardImg\SoundImg\DisSmall.png" />
+    <None Include="resources\FretBoardRes\FretBoardImg\FormImg\FretBoard_StartButton.png" />
+    <None Include="resources\FretBoardRes\FretBoardImg\FormImg\FretBoard_StopButton.png" />
+    <None Include="resources\FretBoardRes\FretBoardImg\FormImg\FretBoard_StartFretBoardButton.png" />
+    <None Include="resources\FretBoardRes\FretBoardImg\FormImg\FretBoard_StopFretBoardButton.png" />
+    <None Include="resources\FretBoardRes\FretBoardImg\FormImg\FretBoard_NewFretBoardButton.png" />
+    <None Include="resources\MainFormRes\MainFormImg\FormImg\MainForm_FretBoardButton.png" />
+    <None Include="resources\MainFormRes\MainFormImg\FormImg\MainForm_MetronomeButton.png" />
+    <None Include="resources\MainFormRes\MainFormImg\FormImg\MainForm_TunerButton.png" />
+    <None Include="resources\MainFormRes\MainFormImg\FormImg\MainForm_ExitButton.png" />
+    <None Include="resources\MainFormRes\MainFormImg\FormImg\MainLayout.png" />
+    <None Include="resources\MainFormRes\MainFormImg\FormImg\MainForm_StartButton.png" />
+    <None Include="resources\MainFormRes\MainFormImg\FormImg\MainForm_StopButton.png" />
+    <None Include="resources\MetronomeRes\MetronomeImg\MetronomeForm\MetronomeFrame.png" />
+    <None Include="resources\MetronomeRes\MetronomeImg\MetronomeForm\MetronomeBackGroupBox.png" />
+    <None Include="resources\MetronomeRes\MetronomeImg\MetronomeForm\LEDBlue.png" />
+    <None Include="resources\MetronomeRes\MetronomeImg\MetronomeForm\LEDGreen.png" />
+    <None Include="resources\MetronomeRes\MetronomeImg\MetronomeForm\LEDGrey.png" />
+    <None Include="resources\MetronomeRes\MetronomeImg\MetronomeForm\LEDRed.png" />
+    <None Include="resources\MetronomeRes\MetronomeImg\MetronomeForm\ButtonStartMedium.png" />
+    <None Include="resources\MetronomeRes\MetronomeImg\MetronomeForm\ButtonStopMedium.png" />
+    <None Include="resources\MetronomeRes\MetronomeImg\MetronomeForm\DGrayFrame.png" />
+    <None Include="resources\MainFormRes\MainFormImg\SoundImg\A.png" />
+    <None Include="resources\MainFormRes\MainFormImg\SoundImg\Ais.png" />
+    <None Include="resources\MainFormRes\MainFormImg\SoundImg\B.png" />
+    <None Include="resources\MainFormRes\MainFormImg\SoundImg\C.png" />
+    <None Include="resources\MainFormRes\MainFormImg\SoundImg\Cis.png" />
+    <None Include="resources\MainFormRes\MainFormImg\SoundImg\D.png" />
+    <None Include="resources\MainFormRes\MainFormImg\SoundImg\Dis.png" />
+    <None Include="resources\MainFormRes\MainFormImg\SoundImg\E.png" />
+    <None Include="resources\MainFormRes\MainFormImg\SoundImg\F.png" />
+    <None Include="resources\MainFormRes\MainFormImg\SoundImg\Fis.png" />
+    <None Include="resources\MainFormRes\MainFormImg\SoundImg\G.png" />
+    <None Include="resources\MainFormRes\MainFormImg\SoundImg\Gis.png" />
+    <None Include="resources\MainFormRes\MainFormImg\SoundImg\ST.png" />
+    <None Include="resources\MainFormRes\MainFormImg\FormImg\MainLayoutExtended.png" />
     <Content Include="STL.ico" />
     <Content Include="STLogo.ico" />
   </ItemGroup>

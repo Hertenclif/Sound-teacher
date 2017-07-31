@@ -14,9 +14,9 @@ namespace Sound_teacher
     {
 
         int fretBoardSoundToDisplay;
-        
+        bool startStopFretBoardFlag = true;
         String[] fretBoardSoundImageNames = new String[] { "FretBoardA", "FretBoardAis", "FretBoardB", "FretBoardC", "FretBoardCis", "FretBoardD", "FretBoardDis", "FretBoardE", "FretBoardF", "FretBoardFis", "FretBoardG", "FretBoardGis" };
-
+        String[] pictures = new String[] { "FretBoard_StartButton", "FretBoard_StopButton", "FretBoard_StartFretBoardButton", "FretBoard_StopFretBoardButton", "FretBoard_NewFretBoard" };
         public FormFretBoard()
         {
             InitializeComponent();
@@ -33,13 +33,24 @@ namespace Sound_teacher
             if (timerFretBoardChangeImages.Enabled) 
             {
                 timerFretBoardChangeImages.Enabled = false;
-                buttonFretBoardStartStop.Text = "Start FretBoard!";
+                buttonFretBoardStartStop.Image = (Image)Properties.Resources.ResourceManager.GetObject(pictures[2]);
+               // buttonFretBoardStartStop.Tag = "stopFret";
+                startStopFretBoardFlag = false;
+                foreach (Control x in this.Controls)
+                {
+                    if (x is PictureBox)
+                    {
+                        if (((PictureBox)x).Tag == fretBoardSoundImageNames[fretBoardSoundToDisplay = PassSoundSingleton.getInstance().sound]) ((PictureBox)x).Visible = false;
+                    }
+                }
             }
             else
             {
+                MessageBox.Show("");
                 timerFretBoardChangeImages.Enabled = true;
-
-                buttonFretBoardStartStop.Text = "Stop FretBoard!";
+                //buttonFretBoardStartStop.Tag = "startFret";
+                startStopFretBoardFlag = true;
+                buttonFretBoardStartStop.Image = (Image)Properties.Resources.ResourceManager.GetObject(pictures[3]);
             }
         }
 
@@ -67,13 +78,15 @@ namespace Sound_teacher
             {
                 timerFretBoardChangeImages.Enabled = false;
                 buttonFretBoardStartStop.Enabled = false;
-                buttonFretBoardStartStop.Text = "Start FretBoard!";
+                buttonFretBoardStartStop.Image = (Image)Properties.Resources.ResourceManager.GetObject(pictures[2]);
+                //startStopFretBoardFlag = false;
             }
             else
             {
                 timerFretBoardChangeImages.Enabled = true;
                 buttonFretBoardStartStop.Enabled = true;
-                buttonFretBoardStartStop.Text = "Stop FretBoard!";
+                buttonFretBoardStartStop.Image = (Image)Properties.Resources.ResourceManager.GetObject(pictures[3]);
+               // startStopFretBoardFlag = true;
 
             }
 
@@ -90,7 +103,7 @@ namespace Sound_teacher
         }
         private void setPictures(int displaySound, bool showHide)
         {
-            if (showHide)
+            if (showHide == true && timerFretBoardChangeImages.Enabled == true)
             {
                 foreach (Control x in this.Controls)
                 {
@@ -195,14 +208,14 @@ namespace Sound_teacher
 
         private void timerCheckAdditional_Tick(object sender, EventArgs e)
         {
-            if (PassSoundSingleton.getInstance().on && buttonFretBoardStartStop.Text == "Stop FretBoard!")
+            if (PassSoundSingleton.getInstance().on && startStopFretBoardFlag==true)//buttonFretBoardStartStop.Tag == "startFret")
             {
                 timerFretBoardChangeImages.Enabled = true;
-                buttonStartExternal.Text = "Stop!";
+                buttonStartExternal.Image = (Image)Properties.Resources.ResourceManager.GetObject(pictures[1]);
             }
             if (PassSoundSingleton.getInstance().on == false)
             {
-                buttonStartExternal.Text = "Start!";
+                buttonStartExternal.Image = (Image)Properties.Resources.ResourceManager.GetObject(pictures[0]);
             }
 
             setAdditionalSound();
@@ -219,7 +232,26 @@ namespace Sound_teacher
         {
             MainForm mainForm = Application.OpenForms.OfType<MainForm>().FirstOrDefault();
             if (mainForm != null)
-                mainForm.initializeButton();
+                mainForm.initializeStartButton();
+        }
+
+        private void numericUpDownChangeSound_ValueChanged(object sender, EventArgs e)
+        {
+            MainForm mainForm = Application.OpenForms.OfType<MainForm>().FirstOrDefault();
+            if (mainForm != null)
+                mainForm.changeTime(System.Convert.ToInt32(numericUpDownChangeSound.Value));
+        }
+
+        private void buttonFretBoardOpenMetronome_Click(object sender, EventArgs e)
+        {
+            FormMetronome metronomeWindow = new FormMetronome();
+            metronomeWindow.Show();
+        }
+
+        private void buttonFretBoardOpenTuner_Click(object sender, EventArgs e)
+        {
+            FormTuner tunerWindow = new FormTuner();
+            tunerWindow.Show();
         }
     }
 }

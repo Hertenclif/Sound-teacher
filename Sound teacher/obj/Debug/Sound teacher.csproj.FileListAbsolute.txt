@@ -9,3 +9,5 @@ D:\VisualProjects\Sound teacher\Sound teacher\obj\Debug\Sound teacher.exe
 D:\VisualProjects\Sound teacher\Sound teacher\obj\Debug\Sound teacher.pdb
 D:\VisualProjects\Sound teacher\Sound teacher\obj\Debug\Sound_teacher.FormFretBoard.resources
 D:\VisualProjects\Sound teacher\Sound teacher\obj\Debug\Sound_teacher.FormMetronome.resources
+D:\VisualProjects\Sound teacher\Sound teacher\obj\Debug\Sound_teacher.FormTuner.resources
+D:\VisualProjects\Sound teacher\Sound teacher\bin\Debug\Microsoft.Xna.Framework.dll

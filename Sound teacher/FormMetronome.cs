@@ -14,35 +14,53 @@ namespace Sound_teacher
 {
     public partial class FormMetronome : Form
     {
-        SoundPlayer metronomeBeat = new SoundPlayer(@"d:\VisualProjects\Sound teacher\Sound teacher\Resources\metronomeBit.wav");
-        SoundPlayer metronomeBeat2 = new SoundPlayer(@"d:\VisualProjects\Sound teacher\Sound teacher\Resources\metronomeBit2.wav");
-        String[] pictures = new String[] { "LEDGrey", "LEDRed", "LEDGreen", "ButtonStartMedium", "ButtonStopMedium" };
+        SoundPlayer metronomeBeat = new SoundPlayer(@"d:\VisualProjects\Sound teacher\Sound teacher\Resources\MetronomeRes\MetronomeSounds\metronomeBit.wav");
+        SoundPlayer metronomeBeat2 = new SoundPlayer(@"d:\VisualProjects\Sound teacher\Sound teacher\Resources\MetronomeRes\MetronomeSounds\metronomeBit2.wav");
+        String[] pictures = new String[] { "LEDGrey", "LEDRed", "LEDGreen",  "LEDBlue", "ButtonStartMedium", "ButtonStopMedium" };
         String[] tempoNames = new String[] { "Grave", "Largo", "Lento", "Adagio", "Andante", "Moderato", "Allegretto", "Allegro", "Presto", "Prestissimo" };
-       
-        //     LedFlash oLedFlash = new LedFlash();
-        //   Thread ledThread = new Thread(new ThreadStart(oLedFlash.ledFlash));
-
-        //double metrum = 1;
+        bool isLedEnabled = false;
         int bpm = 1, currentSound = 0;
+        
         public FormMetronome()
         {
             InitializeComponent();
         }
 
+        private void timerMetronomeLedFlash_Tick(object sender, EventArgs e)
+        {
+            if (isLedEnabled)
+            {
+                if ((currentSound < System.Convert.ToInt32(comboBoxMetronomeMetrum1.Text)) && currentSound != 0)
+                {
+                    pictureBoxDiode.Image = (Image)Properties.Resources.ResourceManager.GetObject(pictures[2]);
+                    isLedEnabled = false;
+                }
+                else
+                {
+                    pictureBoxDiode.Image = (Image)Properties.Resources.ResourceManager.GetObject(pictures[3]);
+                    isLedEnabled = false;
+                }
+            }
+            else
+            {
+                pictureBoxDiode.Image = (Image)Properties.Resources.ResourceManager.GetObject(pictures[0]);
+            }
+        }
 
         private void buttonMetronomeStartStop_Click(object sender, EventArgs e)
         {
-
             if (buttonMetronomeStartStop.Tag == "off")
             {
                 buttonMetronomeStartStop.Tag = "on";
-                buttonMetronomeStartStop.Image = (Image)Properties.Resources.ResourceManager.GetObject(pictures[4]);
+                buttonMetronomeStartStop.Image = (Image)Properties.Resources.ResourceManager.GetObject(pictures[5]);
                 currentSound = 0;
+                timerMetronomeLedFlash.Enabled = true;
             }
             else
             {
                 buttonMetronomeStartStop.Tag = "off";
-                buttonMetronomeStartStop.Image = (Image)Properties.Resources.ResourceManager.GetObject(pictures[3]);
+                buttonMetronomeStartStop.Image = (Image)Properties.Resources.ResourceManager.GetObject(pictures[4]);
+                timerMetronomeLedFlash.Enabled = false;
             }
         }
 
@@ -71,24 +89,15 @@ namespace Sound_teacher
                     labelTimeTick.Text = System.Convert.ToString(currentSound);
                     if (currentSound < System.Convert.ToInt32(comboBoxMetronomeMetrum1.Text))
                     {
+                        isLedEnabled = true;
                         metronomeBeat.Play();
                     }
                     else
                     {
-                        pictureBoxDiode.Image = (Image)Properties.Resources.ResourceManager.GetObject(pictures[2]);
+                        isLedEnabled = true;
                         metronomeBeat2.Play();
                         currentSound = 0;
                     }
-                pictureBoxDiode.Image = (Image)Properties.Resources.ResourceManager.GetObject(pictures[0]);
-            }
-        }
-        public class LedFlash
-        {
-            public void ledFlash(String choice)
-            {
-                FormMetronome formMetronome = Application.OpenForms.OfType<FormMetronome>().FirstOrDefault();
-                if (formMetronome != null)
-                    formMetronome.pictureBoxDiode.Image = (Image)Properties.Resources.ResourceManager.GetObject(choice);
             }
         }
 
@@ -120,9 +129,8 @@ namespace Sound_teacher
             else if (bpm > 168 && bpm <= 199) labelMetronomeTempo.Text = tempoNames[8];
             else labelMetronomeTempo.Text = tempoNames[9];
         }
-        private void comboBoxSetBpm(object sender, EventArgs e)
+        private void radioButtonSetBpm(object sender, EventArgs e)
         {
-           // RadioButton checkedCombobox = (RadioButton)sender;
             numericUpDownMetronomeBPM.Value = System.Convert.ToInt32(((RadioButton)sender).Text);
         }
     }

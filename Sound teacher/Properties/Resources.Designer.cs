@@ -293,6 +293,56 @@ namespace Sound_teacher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap FretBoard_NewFretBoardButton {
+            get {
+                object obj = ResourceManager.GetObject("FretBoard_NewFretBoardButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FretBoard_StartButton {
+            get {
+                object obj = ResourceManager.GetObject("FretBoard_StartButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FretBoard_StartFretBoardButton {
+            get {
+                object obj = ResourceManager.GetObject("FretBoard_StartFretBoardButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FretBoard_StopButton {
+            get {
+                object obj = ResourceManager.GetObject("FretBoard_StopButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FretBoard_StopFretBoardButton {
+            get {
+                object obj = ResourceManager.GetObject("FretBoard_StopFretBoardButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap FSmall {
             get {
                 object obj = ResourceManager.GetObject("FSmall", resourceCulture);
@@ -383,9 +433,9 @@ namespace Sound_teacher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap MetronomeBackGroupBox {
+        internal static System.Drawing.Bitmap MainForm_ExitButton {
             get {
-                object obj = ResourceManager.GetObject("MetronomeBackGroupBox", resourceCulture);
+                object obj = ResourceManager.GetObject("MainForm_ExitButton", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -393,9 +443,79 @@ namespace Sound_teacher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap MetronomeComboBoxGrayBackground {
+        internal static System.Drawing.Bitmap MainForm_FretBoardButton {
             get {
-                object obj = ResourceManager.GetObject("MetronomeComboBoxGrayBackground", resourceCulture);
+                object obj = ResourceManager.GetObject("MainForm_FretBoardButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MainForm_MetronomeButton {
+            get {
+                object obj = ResourceManager.GetObject("MainForm_MetronomeButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MainForm_StartButton {
+            get {
+                object obj = ResourceManager.GetObject("MainForm_StartButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MainForm_StopButton {
+            get {
+                object obj = ResourceManager.GetObject("MainForm_StopButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MainForm_TunerButton {
+            get {
+                object obj = ResourceManager.GetObject("MainForm_TunerButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MainLayout {
+            get {
+                object obj = ResourceManager.GetObject("MainLayout", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MainLayoutExtended {
+            get {
+                object obj = ResourceManager.GetObject("MainLayoutExtended", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MetronomeBackGroupBox {
+            get {
+                object obj = ResourceManager.GetObject("MetronomeBackGroupBox", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -413,9 +533,9 @@ namespace Sound_teacher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap RadioButtonGray {
+        internal static System.Drawing.Bitmap ST {
             get {
-                object obj = ResourceManager.GetObject("RadioButtonGray", resourceCulture);
+                object obj = ResourceManager.GetObject("ST", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
