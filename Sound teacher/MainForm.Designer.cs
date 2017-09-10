@@ -352,8 +352,10 @@
             this.Controls.Add(this.pictureBoxSound);
             this.Controls.Add(this.buttonChangeSound);
             this.Controls.Add(this.progressBar1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Sound Teacher";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownChangeSound)).EndInit();
             this.panelMainFormNotificationSound.ResumeLayout(false);

@@ -11,3 +11,5 @@ D:\VisualProjects\Sound teacher\Sound teacher\obj\Debug\Sound_teacher.FormFretBo
 D:\VisualProjects\Sound teacher\Sound teacher\obj\Debug\Sound_teacher.FormMetronome.resources
 D:\VisualProjects\Sound teacher\Sound teacher\obj\Debug\Sound_teacher.FormTuner.resources
 D:\VisualProjects\Sound teacher\Sound teacher\bin\Debug\Microsoft.Xna.Framework.dll
+D:\VisualProjects\Sound teacher\Sound teacher\bin\Debug\NAudio.dll
+D:\VisualProjects\Sound teacher\Sound teacher\obj\Debug\Sound teacher.csproj.CoreCompileInputs.cache

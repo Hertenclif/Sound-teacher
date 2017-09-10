@@ -2709,9 +2709,12 @@
             this.Controls.Add(this.pictureBox_11);
             this.Controls.Add(this.pictureBox_10);
             this.Controls.Add(this.labelFretboardImage);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Location = new System.Drawing.Point(0, 506);
             this.Name = "FormFretBoard";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Sound Teacher FretBoard";
             this.Load += new System.EventHandler(this.FormFretBoard_Load);
             this.groupBoxFretBoardSounds.ResumeLayout(false);

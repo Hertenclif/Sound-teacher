@@ -133,5 +133,14 @@ namespace Sound_teacher
         {
             numericUpDownMetronomeBPM.Value = System.Convert.ToInt32(((RadioButton)sender).Text);
         }
+
+        private void hScrollBarMetronomeBPS_Scroll(object sender, EventArgs e)
+        {
+            numericUpDownMetronomeBPM.Value = hScrollBarMetronomeBPS.Value;
+            currentSound = 0;
+            timerMetronomeBPM.Interval = 360;
+            tempoNamesDisplay(numericUpDownMetronomeBPM.Value);
+
+        }
     }
 }

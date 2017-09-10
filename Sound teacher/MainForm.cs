@@ -18,7 +18,7 @@ namespace Sound_teacher
         int currentSound = 0, previousSound = 0, timeLeft, notificationChoice = 0, octave = 2;
         Random randomSound = new Random();
         ClassNotificatioNSound classNotificationSound = new ClassNotificatioNSound();
-
+        
         public MainForm()
         {
             InitializeComponent();

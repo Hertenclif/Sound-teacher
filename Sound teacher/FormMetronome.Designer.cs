@@ -86,9 +86,11 @@
             this.comboBoxMetronomeMetrum2 = new System.Windows.Forms.ComboBox();
             this.timerMetronomeLedFlash = new System.Windows.Forms.Timer(this.components);
             this.pictureBoxDiode = new System.Windows.Forms.PictureBox();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMetronomeBPM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDiode)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.SuspendLayout();
             // 
             // timerMetronomeBPM
@@ -748,6 +750,18 @@
             this.pictureBoxDiode.TabIndex = 28;
             this.pictureBoxDiode.TabStop = false;
             // 
+            // trackBar1
+            // 
+            this.trackBar1.AutoSize = false;
+            this.trackBar1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.trackBar1.LargeChange = 10;
+            this.trackBar1.Location = new System.Drawing.Point(373, 17);
+            this.trackBar1.Maximum = 360;
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(144, 23);
+            this.trackBar1.TabIndex = 29;
+            this.trackBar1.Value = 1;
+            // 
             // FormMetronome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -755,6 +769,7 @@
             this.AutoSize = true;
             this.BackgroundImage = global::Sound_teacher.Properties.Resources.MetronomeFrame;
             this.ClientSize = new System.Drawing.Size(552, 208);
+            this.Controls.Add(this.trackBar1);
             this.Controls.Add(this.labelTimeTick);
             this.Controls.Add(this.comboBoxMetronomeMetrum2);
             this.Controls.Add(this.comboBoxMetronomeMetrum1);
@@ -765,12 +780,16 @@
             this.Controls.Add(this.numericUpDownMetronomeBPM);
             this.Controls.Add(this.buttonMetronomeStartStop);
             this.Controls.Add(this.pictureBoxDiode);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Location = new System.Drawing.Point(399, 0);
             this.Name = "FormMetronome";
-            this.Text = "FormMetronome";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.Text = "Sound Teacher Metronome";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMetronomeBPM)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDiode)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -833,5 +852,6 @@
         private System.Windows.Forms.ComboBox comboBoxMetronomeMetrum1;
         private System.Windows.Forms.ComboBox comboBoxMetronomeMetrum2;
         private System.Windows.Forms.Timer timerMetronomeLedFlash;
+        private System.Windows.Forms.TrackBar trackBar1;
     }
 }
