@@ -118,9 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="G" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\MainFormRes\MainFormImg\SoundImg\G.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Fretboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\FretBoardRes\FretBoardImg\FormImg\Fretboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -130,8 +127,8 @@
   <data name="CSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\FretBoardRes\FretBoardImg\SoundImg\CSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="D" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\MainFormRes\MainFormImg\SoundImg\D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MainForm_FretBoardButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormImg\FormImg\MainForm_FretBoardButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ButtonStartMedium" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\MetronomeRes\MetronomeImg\MetronomeForm\ButtonStartMedium.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,8 +136,11 @@
   <data name="Dis" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\MainFormRes\MainFormImg\SoundImg\Dis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MetronomeBackGroupBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\MetronomeRes\MetronomeImg\MetronomeForm\MetronomeBackGroupBox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="DisSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\FretBoardRes\FretBoardImg\SoundImg\DisSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TunerBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\TunerRes\TunerImg\FormImg\TunerBack.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MainLayout" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\MainFormRes\MainFormImg\FormImg\MainLayout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,8 +160,8 @@
   <data name="GisSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\FretBoardRes\FretBoardImg\SoundImg\GisSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LEDRed" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\MetronomeRes\MetronomeImg\MetronomeForm\LEDRed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormImg\SoundImg\D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Cis" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\MainFormRes\MainFormImg\SoundImg\Cis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -178,17 +178,17 @@
   <data name="MetronomeFrame" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\MetronomeRes\MetronomeImg\MetronomeForm\MetronomeFrame.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Ais" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\MainFormRes\MainFormImg\SoundImg\Ais.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MainForm_MetronomeButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormImg\FormImg\MainForm_MetronomeButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DisSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\FretBoardRes\FretBoardImg\SoundImg\DisSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="DSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\FretBoardRes\FretBoardImg\SoundImg\DSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MainForm_StartButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\MainFormRes\MainFormImg\FormImg\MainForm_StartButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\FretBoardRes\FretBoardImg\SoundImg\DSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="G" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormImg\SoundImg\G.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ButtonStopMedium" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\MetronomeRes\MetronomeImg\MetronomeForm\ButtonStopMedium.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -201,6 +201,12 @@
   </data>
   <data name="FretBoard_StopFretBoardButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\FretBoardRes\FretBoardImg\FormImg\FretBoard_StopFretBoardButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Ais" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormImg\SoundImg\Ais.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LEDRed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MetronomeRes\MetronomeImg\MetronomeForm\LEDRed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FisSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\FretBoardRes\FretBoardImg\SoundImg\FisSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -220,8 +226,8 @@
   <data name="MainForm_TunerButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\MainFormRes\MainFormImg\FormImg\MainForm_TunerButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MainForm_FretBoardButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\MainFormRes\MainFormImg\FormImg\MainForm_FretBoardButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MetronomeBackGroupBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MetronomeRes\MetronomeImg\MetronomeForm\MetronomeBackGroupBox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="A" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\MainFormRes\MainFormImg\SoundImg\A.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -229,14 +235,14 @@
   <data name="E" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\MainFormRes\MainFormImg\SoundImg\E.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FretBoard_StartFretBoardButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\FretBoardRes\FretBoardImg\FormImg\FretBoard_StartFretBoardButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="MainLayoutExtended" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormImg\FormImg\MainLayoutExtended.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\FretBoardRes\FretBoardImg\SoundImg\FSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MainForm_MetronomeButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\MainFormRes\MainFormImg\FormImg\MainForm_MetronomeButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FretBoard_StartFretBoardButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\FretBoardRes\FretBoardImg\FormImg\FretBoard_StartFretBoardButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DGrayFrame" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\MetronomeRes\MetronomeImg\MetronomeForm\DGrayFrame.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -259,7 +265,7 @@
   <data name="F" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\MainFormRes\MainFormImg\SoundImg\F.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MainLayoutExtended" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\MainFormRes\MainFormImg\FormImg\MainLayoutExtended.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="TunerBarSounds" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\TunerRes\TunerImg\FormImg\TunerBarSounds.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

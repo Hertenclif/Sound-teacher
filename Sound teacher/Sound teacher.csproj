@@ -271,6 +271,8 @@
     <None Include="resources\MainFormRes\MainFormImg\SoundImg\Gis.png" />
     <None Include="resources\MainFormRes\MainFormImg\SoundImg\ST.png" />
     <None Include="resources\MainFormRes\MainFormImg\FormImg\MainLayoutExtended.png" />
+    <None Include="resources\TunerRes\TunerImg\FormImg\TunerBack.JPG" />
+    <None Include="resources\TunerRes\TunerImg\FormImg\TunerBarSounds.png" />
     <Content Include="STL.ico" />
     <Content Include="STLogo.ico" />
   </ItemGroup>
