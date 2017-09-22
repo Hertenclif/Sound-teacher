@@ -79,18 +79,19 @@
             this.buttonMetronomeStartStop = new System.Windows.Forms.Button();
             this.labelTimeTick = new System.Windows.Forms.Label();
             this.numericUpDownMetronomeBPM = new System.Windows.Forms.NumericUpDown();
-            this.hScrollBarMetronomeBPS = new System.Windows.Forms.HScrollBar();
             this.labelMetronomeTempo = new System.Windows.Forms.Label();
             this.labelMetronomeMetrum = new System.Windows.Forms.Label();
             this.comboBoxMetronomeMetrum1 = new System.Windows.Forms.ComboBox();
             this.comboBoxMetronomeMetrum2 = new System.Windows.Forms.ComboBox();
             this.timerMetronomeLedFlash = new System.Windows.Forms.Timer(this.components);
             this.pictureBoxDiode = new System.Windows.Forms.PictureBox();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.trackBarMetronomeBPS = new System.Windows.Forms.TrackBar();
+            this.buttonTunerExit = new System.Windows.Forms.Button();
+            this.labelTrackBarImg = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMetronomeBPM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDiode)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarMetronomeBPS)).BeginInit();
             this.SuspendLayout();
             // 
             // timerMetronomeBPM
@@ -148,7 +149,7 @@
             this.panel1.Controls.Add(this.radioButtonMetronome56);
             this.panel1.Controls.Add(this.radioButtonMetronome52);
             this.panel1.Controls.Add(this.radioButtonMetronome54);
-            this.panel1.Location = new System.Drawing.Point(23, 42);
+            this.panel1.Location = new System.Drawing.Point(23, 44);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(506, 95);
             this.panel1.TabIndex = 8;
@@ -601,9 +602,9 @@
             // 
             this.buttonMetronomeStartStop.BackgroundImage = global::Sound_teacher.Properties.Resources.ButtonStartMedium;
             this.buttonMetronomeStartStop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonMetronomeStartStop.Location = new System.Drawing.Point(440, 150);
+            this.buttonMetronomeStartStop.Location = new System.Drawing.Point(349, 147);
             this.buttonMetronomeStartStop.Name = "buttonMetronomeStartStop";
-            this.buttonMetronomeStartStop.Size = new System.Drawing.Size(85, 39);
+            this.buttonMetronomeStartStop.Size = new System.Drawing.Size(85, 66);
             this.buttonMetronomeStartStop.TabIndex = 27;
             this.buttonMetronomeStartStop.Tag = "off";
             this.buttonMetronomeStartStop.Click += new System.EventHandler(this.buttonMetronomeStartStop_Click);
@@ -613,7 +614,7 @@
             this.labelTimeTick.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.labelTimeTick.ForeColor = System.Drawing.Color.White;
             this.labelTimeTick.Image = global::Sound_teacher.Properties.Resources.DGrayFrame;
-            this.labelTimeTick.Location = new System.Drawing.Point(410, 142);
+            this.labelTimeTick.Location = new System.Drawing.Point(28, 147);
             this.labelTimeTick.Name = "labelTimeTick";
             this.labelTimeTick.Size = new System.Drawing.Size(24, 21);
             this.labelTimeTick.TabIndex = 0;
@@ -622,7 +623,9 @@
             // 
             // numericUpDownMetronomeBPM
             // 
-            this.numericUpDownMetronomeBPM.Location = new System.Drawing.Point(373, 169);
+            this.numericUpDownMetronomeBPM.BackColor = System.Drawing.Color.Black;
+            this.numericUpDownMetronomeBPM.ForeColor = System.Drawing.Color.White;
+            this.numericUpDownMetronomeBPM.Location = new System.Drawing.Point(285, 148);
             this.numericUpDownMetronomeBPM.Maximum = new decimal(new int[] {
             360,
             0,
@@ -634,7 +637,7 @@
             0,
             0});
             this.numericUpDownMetronomeBPM.Name = "numericUpDownMetronomeBPM";
-            this.numericUpDownMetronomeBPM.Size = new System.Drawing.Size(61, 20);
+            this.numericUpDownMetronomeBPM.Size = new System.Drawing.Size(49, 20);
             this.numericUpDownMetronomeBPM.TabIndex = 26;
             this.numericUpDownMetronomeBPM.Value = new decimal(new int[] {
             1,
@@ -643,24 +646,13 @@
             0});
             this.numericUpDownMetronomeBPM.ValueChanged += new System.EventHandler(this.numericUpDownMetronomeBPM_ValueChanged);
             // 
-            // hScrollBarMetronomeBPS
-            // 
-            this.hScrollBarMetronomeBPS.Location = new System.Drawing.Point(23, 169);
-            this.hScrollBarMetronomeBPS.Maximum = 360;
-            this.hScrollBarMetronomeBPS.Minimum = 1;
-            this.hScrollBarMetronomeBPS.Name = "hScrollBarMetronomeBPS";
-            this.hScrollBarMetronomeBPS.Size = new System.Drawing.Size(347, 19);
-            this.hScrollBarMetronomeBPS.TabIndex = 25;
-            this.hScrollBarMetronomeBPS.Value = 1;
-            this.hScrollBarMetronomeBPS.Scroll += new System.Windows.Forms.ScrollEventHandler(this.hScrollBarMetronomeBPS_Scroll);
-            // 
             // labelMetronomeTempo
             // 
             this.labelMetronomeTempo.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.labelMetronomeTempo.ForeColor = System.Drawing.Color.White;
-            this.labelMetronomeTempo.Location = new System.Drawing.Point(311, 145);
+            this.labelMetronomeTempo.Location = new System.Drawing.Point(67, 151);
             this.labelMetronomeTempo.Name = "labelMetronomeTempo";
-            this.labelMetronomeTempo.Size = new System.Drawing.Size(100, 15);
+            this.labelMetronomeTempo.Size = new System.Drawing.Size(80, 18);
             this.labelMetronomeTempo.TabIndex = 24;
             this.labelMetronomeTempo.Text = "Sound";
             // 
@@ -668,11 +660,11 @@
             // 
             this.labelMetronomeMetrum.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.labelMetronomeMetrum.ForeColor = System.Drawing.Color.White;
-            this.labelMetronomeMetrum.Location = new System.Drawing.Point(18, 145);
+            this.labelMetronomeMetrum.Location = new System.Drawing.Point(134, 151);
             this.labelMetronomeMetrum.Name = "labelMetronomeMetrum";
             this.labelMetronomeMetrum.Size = new System.Drawing.Size(100, 23);
             this.labelMetronomeMetrum.TabIndex = 23;
-            this.labelMetronomeMetrum.Text = "Metrum:                /";
+            this.labelMetronomeMetrum.Text = "Metrum:               /";
             // 
             // comboBoxMetronomeMetrum1
             // 
@@ -712,7 +704,7 @@
             "30",
             "31",
             "32"});
-            this.comboBoxMetronomeMetrum1.Location = new System.Drawing.Point(64, 142);
+            this.comboBoxMetronomeMetrum1.Location = new System.Drawing.Point(180, 147);
             this.comboBoxMetronomeMetrum1.Name = "comboBoxMetronomeMetrum1";
             this.comboBoxMetronomeMetrum1.Size = new System.Drawing.Size(36, 21);
             this.comboBoxMetronomeMetrum1.TabIndex = 21;
@@ -730,7 +722,7 @@
             "8",
             "16",
             "32"});
-            this.comboBoxMetronomeMetrum2.Location = new System.Drawing.Point(122, 142);
+            this.comboBoxMetronomeMetrum2.Location = new System.Drawing.Point(230, 147);
             this.comboBoxMetronomeMetrum2.Name = "comboBoxMetronomeMetrum2";
             this.comboBoxMetronomeMetrum2.Size = new System.Drawing.Size(36, 21);
             this.comboBoxMetronomeMetrum2.TabIndex = 22;
@@ -744,23 +736,47 @@
             // pictureBoxDiode
             // 
             this.pictureBoxDiode.Image = global::Sound_teacher.Properties.Resources.LEDGrey;
-            this.pictureBoxDiode.Location = new System.Drawing.Point(297, 145);
+            this.pictureBoxDiode.Location = new System.Drawing.Point(53, 151);
             this.pictureBoxDiode.Name = "pictureBoxDiode";
             this.pictureBoxDiode.Size = new System.Drawing.Size(12, 12);
             this.pictureBoxDiode.TabIndex = 28;
             this.pictureBoxDiode.TabStop = false;
             // 
-            // trackBar1
+            // trackBarMetronomeBPS
             // 
-            this.trackBar1.AutoSize = false;
-            this.trackBar1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.trackBar1.LargeChange = 10;
-            this.trackBar1.Location = new System.Drawing.Point(373, 17);
-            this.trackBar1.Maximum = 360;
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(144, 23);
-            this.trackBar1.TabIndex = 29;
-            this.trackBar1.Value = 1;
+            this.trackBarMetronomeBPS.AutoSize = false;
+            this.trackBarMetronomeBPS.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.trackBarMetronomeBPS.LargeChange = 10;
+            this.trackBarMetronomeBPS.Location = new System.Drawing.Point(24, 174);
+            this.trackBarMetronomeBPS.Maximum = 360;
+            this.trackBarMetronomeBPS.Minimum = 1;
+            this.trackBarMetronomeBPS.Name = "trackBarMetronomeBPS";
+            this.trackBarMetronomeBPS.Size = new System.Drawing.Size(320, 23);
+            this.trackBarMetronomeBPS.TabIndex = 25;
+            this.trackBarMetronomeBPS.TabStop = false;
+            this.trackBarMetronomeBPS.Value = 1;
+            this.trackBarMetronomeBPS.Scroll += new System.EventHandler(this.trackBarMetronomeBPS_Scroll);
+            // 
+            // buttonTunerExit
+            // 
+            this.buttonTunerExit.BackgroundImage = global::Sound_teacher.Properties.Resources.ButtonExitMedium;
+            this.buttonTunerExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonTunerExit.Location = new System.Drawing.Point(440, 148);
+            this.buttonTunerExit.Name = "buttonTunerExit";
+            this.buttonTunerExit.Size = new System.Drawing.Size(85, 65);
+            this.buttonTunerExit.TabIndex = 29;
+            this.buttonTunerExit.Tag = "off";
+            this.buttonTunerExit.Click += new System.EventHandler(this.buttonTunerExit_Click);
+            // 
+            // labelTrackBarImg
+            // 
+            this.labelTrackBarImg.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.labelTrackBarImg.ForeColor = System.Drawing.Color.White;
+            this.labelTrackBarImg.Image = global::Sound_teacher.Properties.Resources.MetronomeBar;
+            this.labelTrackBarImg.Location = new System.Drawing.Point(30, 190);
+            this.labelTrackBarImg.Name = "labelTrackBarImg";
+            this.labelTrackBarImg.Size = new System.Drawing.Size(318, 24);
+            this.labelTrackBarImg.TabIndex = 30;
             // 
             // FormMetronome
             // 
@@ -768,28 +784,29 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackgroundImage = global::Sound_teacher.Properties.Resources.MetronomeFrame;
-            this.ClientSize = new System.Drawing.Size(552, 208);
-            this.Controls.Add(this.trackBar1);
+            this.ClientSize = new System.Drawing.Size(552, 234);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.labelTimeTick);
             this.Controls.Add(this.comboBoxMetronomeMetrum2);
             this.Controls.Add(this.comboBoxMetronomeMetrum1);
             this.Controls.Add(this.labelMetronomeMetrum);
             this.Controls.Add(this.labelMetronomeTempo);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.hScrollBarMetronomeBPS);
             this.Controls.Add(this.numericUpDownMetronomeBPM);
-            this.Controls.Add(this.buttonMetronomeStartStop);
             this.Controls.Add(this.pictureBoxDiode);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Controls.Add(this.buttonMetronomeStartStop);
+            this.Controls.Add(this.labelTrackBarImg);
+            this.Controls.Add(this.buttonTunerExit);
+            this.Controls.Add(this.trackBarMetronomeBPS);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Location = new System.Drawing.Point(399, 0);
+            this.Location = new System.Drawing.Point(383, 0);
             this.Name = "FormMetronome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Sound Teacher Metronome";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMetronomeBPM)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDiode)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBarMetronomeBPS)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -845,13 +862,14 @@
         private System.Windows.Forms.Button buttonMetronomeStartStop;
         private System.Windows.Forms.Label labelTimeTick;
         private System.Windows.Forms.NumericUpDown numericUpDownMetronomeBPM;
-        private System.Windows.Forms.HScrollBar hScrollBarMetronomeBPS;
         private System.Windows.Forms.Label labelMetronomeTempo;
         private System.Windows.Forms.Label labelMetronomeMetrum;
         private System.Windows.Forms.RadioButton radioButtonMetronome40;
         private System.Windows.Forms.ComboBox comboBoxMetronomeMetrum1;
         private System.Windows.Forms.ComboBox comboBoxMetronomeMetrum2;
         private System.Windows.Forms.Timer timerMetronomeLedFlash;
-        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.TrackBar trackBarMetronomeBPS;
+        private System.Windows.Forms.Button buttonTunerExit;
+        private System.Windows.Forms.Label labelTrackBarImg;
     }
 }

@@ -61,12 +61,13 @@
             // 
             this.buttonChangeSound.BackColor = System.Drawing.SystemColors.WindowText;
             this.buttonChangeSound.BackgroundImage = global::Sound_teacher.Properties.Resources.MainForm_StartButton;
+            this.buttonChangeSound.FlatAppearance.BorderSize = 0;
             this.buttonChangeSound.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonChangeSound.ForeColor = System.Drawing.SystemColors.Window;
             this.buttonChangeSound.Location = new System.Drawing.Point(21, 398);
             this.buttonChangeSound.Name = "buttonChangeSound";
-            this.buttonChangeSound.Size = new System.Drawing.Size(105, 21);
-            this.buttonChangeSound.TabIndex = 1;
+            this.buttonChangeSound.Size = new System.Drawing.Size(103, 21);
+            this.buttonChangeSound.TabIndex = 0;
             this.buttonChangeSound.UseVisualStyleBackColor = false;
             this.buttonChangeSound.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -111,7 +112,7 @@
             0});
             this.numericUpDownChangeSound.Name = "numericUpDownChangeSound";
             this.numericUpDownChangeSound.Size = new System.Drawing.Size(104, 20);
-            this.numericUpDownChangeSound.TabIndex = 5;
+            this.numericUpDownChangeSound.TabIndex = 1;
             this.numericUpDownChangeSound.Value = new decimal(new int[] {
             1,
             0,
@@ -128,7 +129,7 @@
             this.buttonMainFormMetronome.Location = new System.Drawing.Point(255, 154);
             this.buttonMainFormMetronome.Name = "buttonMainFormMetronome";
             this.buttonMainFormMetronome.Size = new System.Drawing.Size(109, 62);
-            this.buttonMainFormMetronome.TabIndex = 7;
+            this.buttonMainFormMetronome.TabIndex = 3;
             this.buttonMainFormMetronome.UseVisualStyleBackColor = false;
             this.buttonMainFormMetronome.Click += new System.EventHandler(this.buttonMainFormMetronome_Click);
             // 
@@ -140,9 +141,10 @@
             this.buttonMainFormOpen.Location = new System.Drawing.Point(255, 290);
             this.buttonMainFormOpen.Name = "buttonMainFormOpen";
             this.buttonMainFormOpen.Size = new System.Drawing.Size(109, 62);
-            this.buttonMainFormOpen.TabIndex = 8;
+            this.buttonMainFormOpen.TabIndex = 5;
             this.buttonMainFormOpen.Text = "I don\'t know, but certainly sth great";
             this.buttonMainFormOpen.UseVisualStyleBackColor = false;
+            this.buttonMainFormOpen.Click += new System.EventHandler(this.buttonMainFormOpen_Click);
             // 
             // buttonMainFormExit
             // 
@@ -153,7 +155,7 @@
             this.buttonMainFormExit.Location = new System.Drawing.Point(255, 356);
             this.buttonMainFormExit.Name = "buttonMainFormExit";
             this.buttonMainFormExit.Size = new System.Drawing.Size(109, 62);
-            this.buttonMainFormExit.TabIndex = 9;
+            this.buttonMainFormExit.TabIndex = 6;
             this.buttonMainFormExit.UseVisualStyleBackColor = false;
             this.buttonMainFormExit.Click += new System.EventHandler(this.buttonMainFormExit_Click);
             // 
@@ -166,7 +168,7 @@
             this.buttonMainFormOpenTuner.Location = new System.Drawing.Point(255, 222);
             this.buttonMainFormOpenTuner.Name = "buttonMainFormOpenTuner";
             this.buttonMainFormOpenTuner.Size = new System.Drawing.Size(109, 62);
-            this.buttonMainFormOpenTuner.TabIndex = 10;
+            this.buttonMainFormOpenTuner.TabIndex = 4;
             this.buttonMainFormOpenTuner.UseVisualStyleBackColor = false;
             this.buttonMainFormOpenTuner.Click += new System.EventHandler(this.buttonMainFormOpenTuner_Click);
             // 
@@ -190,7 +192,7 @@
             this.radioButtonMainFormNoSound.Location = new System.Drawing.Point(275, -1);
             this.radioButtonMainFormNoSound.Name = "radioButtonMainFormNoSound";
             this.radioButtonMainFormNoSound.Size = new System.Drawing.Size(54, 17);
-            this.radioButtonMainFormNoSound.TabIndex = 3;
+            this.radioButtonMainFormNoSound.TabIndex = 10;
             this.radioButtonMainFormNoSound.Text = "Muted";
             this.radioButtonMainFormNoSound.UseVisualStyleBackColor = false;
             this.radioButtonMainFormNoSound.CheckedChanged += new System.EventHandler(this.radioButtonMainFormNoSound_CheckedChanged);
@@ -204,7 +206,7 @@
             this.radioButtonMainFormRealSound.Location = new System.Drawing.Point(188, -1);
             this.radioButtonMainFormRealSound.Name = "radioButtonMainFormRealSound";
             this.radioButtonMainFormRealSound.Size = new System.Drawing.Size(80, 17);
-            this.radioButtonMainFormRealSound.TabIndex = 2;
+            this.radioButtonMainFormRealSound.TabIndex = 9;
             this.radioButtonMainFormRealSound.Text = "Real Sound";
             this.radioButtonMainFormRealSound.UseVisualStyleBackColor = false;
             this.radioButtonMainFormRealSound.CheckedChanged += new System.EventHandler(this.radioButtonMainFormRealSound_CheckedChanged);
@@ -218,7 +220,7 @@
             this.radioButtonMainFormspeechSound.Location = new System.Drawing.Point(86, -1);
             this.radioButtonMainFormspeechSound.Name = "radioButtonMainFormspeechSound";
             this.radioButtonMainFormspeechSound.Size = new System.Drawing.Size(95, 17);
-            this.radioButtonMainFormspeechSound.TabIndex = 1;
+            this.radioButtonMainFormspeechSound.TabIndex = 8;
             this.radioButtonMainFormspeechSound.Text = "Speech Sound";
             this.radioButtonMainFormspeechSound.UseVisualStyleBackColor = false;
             this.radioButtonMainFormspeechSound.CheckedChanged += new System.EventHandler(this.radioButtonMainFormspeechSound_CheckedChanged);
@@ -233,7 +235,7 @@
             this.radioButtonMainFormTickSound.Location = new System.Drawing.Point(0, -1);
             this.radioButtonMainFormTickSound.Name = "radioButtonMainFormTickSound";
             this.radioButtonMainFormTickSound.Size = new System.Drawing.Size(79, 17);
-            this.radioButtonMainFormTickSound.TabIndex = 0;
+            this.radioButtonMainFormTickSound.TabIndex = 7;
             this.radioButtonMainFormTickSound.TabStop = true;
             this.radioButtonMainFormTickSound.Text = "Tick Sound";
             this.radioButtonMainFormTickSound.UseVisualStyleBackColor = false;
@@ -259,7 +261,7 @@
             this.radioButtonMainFormOctave5.Location = new System.Drawing.Point(254, -2);
             this.radioButtonMainFormOctave5.Name = "radioButtonMainFormOctave5";
             this.radioButtonMainFormOctave5.Size = new System.Drawing.Size(77, 17);
-            this.radioButtonMainFormOctave5.TabIndex = 3;
+            this.radioButtonMainFormOctave5.TabIndex = 14;
             this.radioButtonMainFormOctave5.Tag = "RadioButtonOctave";
             this.radioButtonMainFormOctave5.Text = "5th Octave";
             this.radioButtonMainFormOctave5.UseVisualStyleBackColor = false;
@@ -274,7 +276,7 @@
             this.radioButtonMainFormOctave4.Location = new System.Drawing.Point(169, -2);
             this.radioButtonMainFormOctave4.Name = "radioButtonMainFormOctave4";
             this.radioButtonMainFormOctave4.Size = new System.Drawing.Size(77, 17);
-            this.radioButtonMainFormOctave4.TabIndex = 2;
+            this.radioButtonMainFormOctave4.TabIndex = 13;
             this.radioButtonMainFormOctave4.Text = "4th Octave";
             this.radioButtonMainFormOctave4.UseVisualStyleBackColor = false;
             this.radioButtonMainFormOctave4.CheckedChanged += new System.EventHandler(this.octave_changed);
@@ -288,7 +290,7 @@
             this.radioButtonMainFormOctave3.Location = new System.Drawing.Point(86, -2);
             this.radioButtonMainFormOctave3.Name = "radioButtonMainFormOctave3";
             this.radioButtonMainFormOctave3.Size = new System.Drawing.Size(77, 17);
-            this.radioButtonMainFormOctave3.TabIndex = 1;
+            this.radioButtonMainFormOctave3.TabIndex = 12;
             this.radioButtonMainFormOctave3.Text = "3rd Octave";
             this.radioButtonMainFormOctave3.UseVisualStyleBackColor = false;
             this.radioButtonMainFormOctave3.CheckedChanged += new System.EventHandler(this.octave_changed);
@@ -304,7 +306,7 @@
             this.radioButtonMainFormOctave2.Location = new System.Drawing.Point(0, -2);
             this.radioButtonMainFormOctave2.Name = "radioButtonMainFormOctave2";
             this.radioButtonMainFormOctave2.Size = new System.Drawing.Size(80, 17);
-            this.radioButtonMainFormOctave2.TabIndex = 0;
+            this.radioButtonMainFormOctave2.TabIndex = 11;
             this.radioButtonMainFormOctave2.TabStop = true;
             this.radioButtonMainFormOctave2.Text = "2nd Octave";
             this.radioButtonMainFormOctave2.UseVisualStyleBackColor = false;
@@ -319,7 +321,7 @@
             this.buttonMainFormOpenFretBoard.Location = new System.Drawing.Point(255, 86);
             this.buttonMainFormOpenFretBoard.Name = "buttonMainFormOpenFretBoard";
             this.buttonMainFormOpenFretBoard.Size = new System.Drawing.Size(109, 62);
-            this.buttonMainFormOpenFretBoard.TabIndex = 6;
+            this.buttonMainFormOpenFretBoard.TabIndex = 2;
             this.buttonMainFormOpenFretBoard.UseVisualStyleBackColor = false;
             this.buttonMainFormOpenFretBoard.Click += new System.EventHandler(this.buttonOpenFretBoard_Click);
             // 
@@ -352,7 +354,7 @@
             this.Controls.Add(this.pictureBoxSound);
             this.Controls.Add(this.buttonChangeSound);
             this.Controls.Add(this.progressBar1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;

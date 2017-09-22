@@ -1,7 +1,6 @@
 D:\VisualProjects\Sound teacher\Sound teacher\bin\Debug\Sound teacher.exe.config
 D:\VisualProjects\Sound teacher\Sound teacher\bin\Debug\Sound teacher.exe
 D:\VisualProjects\Sound teacher\Sound teacher\bin\Debug\Sound teacher.pdb
-D:\VisualProjects\Sound teacher\Sound teacher\obj\Debug\Sound teacher.csprojResolveAssemblyReference.cache
 D:\VisualProjects\Sound teacher\Sound teacher\obj\Debug\Sound_teacher.MainForm.resources
 D:\VisualProjects\Sound teacher\Sound teacher\obj\Debug\Sound_teacher.Properties.Resources.resources
 D:\VisualProjects\Sound teacher\Sound teacher\obj\Debug\Sound teacher.csproj.GenerateResource.Cache
@@ -13,3 +12,5 @@ D:\VisualProjects\Sound teacher\Sound teacher\obj\Debug\Sound_teacher.FormTuner.
 D:\VisualProjects\Sound teacher\Sound teacher\bin\Debug\Microsoft.Xna.Framework.dll
 D:\VisualProjects\Sound teacher\Sound teacher\bin\Debug\NAudio.dll
 D:\VisualProjects\Sound teacher\Sound teacher\obj\Debug\Sound teacher.csproj.CoreCompileInputs.cache
+D:\VisualProjects\Sound teacher\Sound teacher\obj\Debug\Sound_teacher.FormSthGreat.resources
+D:\VisualProjects\Sound teacher\Sound teacher\obj\Debug\Sound teacher.csprojResolveAssemblyReference.cache

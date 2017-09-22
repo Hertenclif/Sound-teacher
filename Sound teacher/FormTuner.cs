@@ -27,11 +27,11 @@ namespace Sound_teacher
             523.25, 554.37, 587.33, 622.25, 659.25, 698.46, 739.99, 783.99, 830.61, 880.00, 932.33, 987.77
         };
         String[] soundsArray = new String[] {
-            "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B",
-            "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B",
-            "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B",
-            "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B",
-            "C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"
+            "T_C", "T_Cis", "T_D", "T_Dis", "T_E", "T_F", "T_Fis", "T_G", "T_Gis", "T_A", "T_Ais", "T_B",
+            "T_C", "T_Cis", "T_D", "T_Dis", "T_E", "T_F", "T_Fis", "T_G", "T_Gis", "T_A", "T_Ais", "T_B",
+            "C", "Cis", "D", "Dis", "E", "F", "Fis", "G", "Gis", "A", "Ais", "B",
+            "C", "Cis", "D", "Dis", "E", "F", "Fis", "G", "Gis", "A", "Ais", "B",
+            "C", "Cis", "D", "Dis", "E", "F", "Fis", "G", "Gis", "A", "Ais", "B"
         };
         public void record()
         {
@@ -114,9 +114,8 @@ namespace Sound_teacher
             {
                 if (PerformFFT && FftCalculated != null)
                 {
-                    // Remember the window function! There are many others as well.
                     fftBuffer[fftPos].X = (float)(value * FastFourierTransform.HammingWindow(fftPos, fftLength));
-                    fftBuffer[fftPos].Y = 0; // This is always zero with audio.
+                    fftBuffer[fftPos].Y = 0;
                     fftPos++;
                     if (fftPos >= fftLength)
                     {
@@ -172,7 +171,11 @@ namespace Sound_teacher
                 }
                 if (currentSoundFrequency >= soundValue - 1.9 && currentSoundFrequency <= soundValue + 1.9)
                 {
-                    labelTunerSound.Text = "" + soundsArray[Array.IndexOf(freqArray, soundValue)];
+                    labelTunerSoundImg.Image = (System.Drawing.Image)Properties.Resources.ResourceManager.GetObject(soundsArray[Array.IndexOf(freqArray, soundValue)]);
+
+                    if (currentSoundFrequency >= soundValue - 0.5 && currentSoundFrequency <= soundValue + 0.5) labelTunerArrows.Image = (System.Drawing.Image)Properties.Resources.ResourceManager.GetObject("TunerArrowsOK");
+                    else if (currentSoundFrequency > soundValue + 0.5) labelTunerArrows.Image = (System.Drawing.Image)Properties.Resources.ResourceManager.GetObject("TunerArrowsHigh");
+                    else if (currentSoundFrequency < soundValue - 0.5) labelTunerArrows.Image = (System.Drawing.Image)Properties.Resources.ResourceManager.GetObject("TunerArrowsLow");
                 }
             }
             currentSoundFrequency *= 1000;
@@ -185,7 +188,7 @@ namespace Sound_teacher
 
             }
 
-            labelFrequency.Text = "CURRENT FREQUENCY: " + currentFrequency;
+            labelTunerFrequency.Text = "" + currentFrequency;
         }
 
         private void buttonStartTuner_Click(object sender, EventArgs e)
@@ -195,6 +198,9 @@ namespace Sound_teacher
                 waveIn.StopRecording();
                 rec = false;
                 buttonStartTuner.Text = "START!";
+                labelTunerSoundImg.Image = (System.Drawing.Image)Properties.Resources.ResourceManager.GetObject("T_ST");
+                labelTunerArrows.Image = (System.Drawing.Image)Properties.Resources.ResourceManager.GetObject("TunerArrowsNeutral");
+                labelTunerFrequency.Text = "";
             }
             else
             {
@@ -205,9 +211,20 @@ namespace Sound_teacher
         }
         private void FormTuner_FormClosed(object sender, FormClosedEventArgs e)
         {
-            waveIn.StopRecording();
-            rec = false;
+            try
+            {
+                waveIn.StopRecording();
+                rec = false;
+            }
+            catch (Exception disp)
+            {
+
+            }
         }
-        
+
+        private void buttonTunerExit_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

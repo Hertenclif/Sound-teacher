@@ -80,7 +80,7 @@ namespace Sound_teacher
                     else if (comboBoxMetronomeMetrum2.Text == "16") bpm /= 4;
                     else if (comboBoxMetronomeMetrum2.Text == "32") bpm /= 8;
                     timerMetronomeBPM.Interval = bpm;
-                    hScrollBarMetronomeBPS.Value = System.Convert.ToInt32(numericUpDownMetronomeBPM.Text);
+                    trackBarMetronomeBPS.Value = System.Convert.ToInt32(numericUpDownMetronomeBPM.Text);
                 }
                 catch (Exception exception)
                 {
@@ -100,25 +100,18 @@ namespace Sound_teacher
                     }
             }
         }
-
-        private void hScrollBarMetronomeBPS_Scroll(object sender, ScrollEventArgs e)
-        {
-            numericUpDownMetronomeBPM.Value = hScrollBarMetronomeBPS.Value;
-            currentSound = 0;
-            timerMetronomeBPM.Interval = 360;
-            tempoNamesDisplay(numericUpDownMetronomeBPM.Value);
-        }
+        
 
         private void numericUpDownMetronomeBPM_ValueChanged(object sender, EventArgs e)
         {
-            hScrollBarMetronomeBPS.Value = System.Convert.ToInt32(numericUpDownMetronomeBPM.Value);
+            trackBarMetronomeBPS.Value = System.Convert.ToInt32(numericUpDownMetronomeBPM.Value);
             currentSound = 0;
             timerMetronomeBPM.Interval = 360;
             tempoNamesDisplay(numericUpDownMetronomeBPM.Value);
         }
         private void tempoNamesDisplay(decimal bpm)
         {
-            if (bpm < 40) labelMetronomeTempo.Text = tempoNames[0];
+            if (bpm <= 40) labelMetronomeTempo.Text = tempoNames[0];
             else if (bpm > 40 && bpm <= 60) labelMetronomeTempo.Text = tempoNames[1];
             else if (bpm > 60 && bpm <= 66) labelMetronomeTempo.Text = tempoNames[2];
             else if (bpm > 66 && bpm <= 76) labelMetronomeTempo.Text = tempoNames[3];
@@ -134,9 +127,14 @@ namespace Sound_teacher
             numericUpDownMetronomeBPM.Value = System.Convert.ToInt32(((RadioButton)sender).Text);
         }
 
-        private void hScrollBarMetronomeBPS_Scroll(object sender, EventArgs e)
+        private void buttonTunerExit_Click(object sender, EventArgs e)
         {
-            numericUpDownMetronomeBPM.Value = hScrollBarMetronomeBPS.Value;
+            this.Hide();
+        }
+
+        private void trackBarMetronomeBPS_Scroll(object sender, EventArgs e)
+        {
+            numericUpDownMetronomeBPM.Value = trackBarMetronomeBPS.Value;
             currentSound = 0;
             timerMetronomeBPM.Interval = 360;
             tempoNamesDisplay(numericUpDownMetronomeBPM.Value);

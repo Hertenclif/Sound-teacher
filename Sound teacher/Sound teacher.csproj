@@ -71,6 +71,12 @@
     <Compile Include="FormMetronome.Designer.cs">
       <DependentUpon>FormMetronome.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormSthGreat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSthGreat.Designer.cs">
+      <DependentUpon>FormSthGreat.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormTuner.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMetronome.resx">
       <DependentUpon>FormMetronome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSthGreat.resx">
+      <DependentUpon>FormSthGreat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormTuner.resx">
       <DependentUpon>FormTuner.cs</DependentUpon>
@@ -273,6 +282,26 @@
     <None Include="resources\MainFormRes\MainFormImg\FormImg\MainLayoutExtended.png" />
     <None Include="resources\TunerRes\TunerImg\FormImg\TunerBack.JPG" />
     <None Include="resources\TunerRes\TunerImg\FormImg\TunerBarSounds.png" />
+    <None Include="resources\MetronomeRes\MetronomeImg\MetronomeForm\ButtonExitMedium.png" />
+    <None Include="resources\MetronomeRes\MetronomeImg\MetronomeForm\MetronomeBar.png" />
+    <None Include="resources\StGr\FunnyBackground.jpg" />
+    <None Include="resources\TunerRes\TunerImg\SoundImg\T_A.png" />
+    <None Include="resources\TunerRes\TunerImg\SoundImg\T_Ais.png" />
+    <None Include="resources\TunerRes\TunerImg\SoundImg\T_B.png" />
+    <None Include="resources\TunerRes\TunerImg\SoundImg\T_C.png" />
+    <None Include="resources\TunerRes\TunerImg\SoundImg\T_Cis.png" />
+    <None Include="resources\TunerRes\TunerImg\SoundImg\T_D.png" />
+    <None Include="resources\TunerRes\TunerImg\SoundImg\T_Dis.png" />
+    <None Include="resources\TunerRes\TunerImg\SoundImg\T_E.png" />
+    <None Include="resources\TunerRes\TunerImg\SoundImg\T_F.png" />
+    <None Include="resources\TunerRes\TunerImg\SoundImg\T_Fis.png" />
+    <None Include="resources\TunerRes\TunerImg\SoundImg\T_G.png" />
+    <None Include="resources\TunerRes\TunerImg\SoundImg\T_Gis.png" />
+    <None Include="resources\TunerRes\TunerImg\SoundImg\T_ST.png" />
+    <None Include="resources\TunerRes\TunerImg\FormImg\TunerArrowsNeutral.JPG" />
+    <None Include="resources\TunerRes\TunerImg\FormImg\TunerArrowsHigh.JPG" />
+    <None Include="resources\TunerRes\TunerImg\FormImg\TunerArrowsLow.JPG" />
+    <None Include="resources\TunerRes\TunerImg\FormImg\TunerArrowsOK.JPG" />
     <Content Include="STL.ico" />
     <Content Include="STLogo.ico" />
   </ItemGroup>

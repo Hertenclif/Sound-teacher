@@ -15,10 +15,19 @@ namespace Sound_teacher
     {
         String[] soundImageNames = new String[] {"A", "Ais", "B", "C", "Cis", "D", "Dis", "E", "F", "Fis", "G", "Gis"};
         String[] pictures = new String[] { "MainForm_StartButton", "MainForm_StopButton", "ST" };
+        bool[] activeForms = new bool[] { false, false, false, false };
         int currentSound = 0, previousSound = 0, timeLeft, notificationChoice = 0, octave = 2;
         Random randomSound = new Random();
         ClassNotificatioNSound classNotificationSound = new ClassNotificatioNSound();
-        
+
+        //forms
+        FormFretBoard fretBoardWindow = new FormFretBoard();
+        FormMetronome metronomeWindow = new FormMetronome();
+        FormTuner tunerWindow = new FormTuner();
+
+
+
+        //initialize
         public MainForm()
         {
             InitializeComponent();
@@ -88,14 +97,20 @@ namespace Sound_teacher
 
         private void buttonOpenFretBoard_Click(object sender, EventArgs e)
         {
-            FormFretBoard fretBoardWindow = new FormFretBoard();
-            fretBoardWindow.Show();
+            if (fretBoardWindow.Visible) fretBoardWindow.Hide();
+            else fretBoardWindow.Show();
         }
 
         private void buttonMainFormMetronome_Click(object sender, EventArgs e)
         {
-            FormMetronome metronomeWindow = new FormMetronome();
-            metronomeWindow.Show();
+            if (metronomeWindow.Visible) metronomeWindow.Hide();
+            else metronomeWindow.Show();
+        }
+
+        private void buttonMainFormOpenTuner_Click(object sender, EventArgs e)
+        {
+            if (tunerWindow.Visible) tunerWindow.Hide();
+            else tunerWindow.Show();
         }
 
         private void buttonMainFormExit_Click(object sender, EventArgs e)
@@ -103,37 +118,37 @@ namespace Sound_teacher
             this.Close();
         }
 
-        private void buttonMainFormOpenTuner_Click(object sender, EventArgs e)
-        {
-            FormTuner tunerWindow = new FormTuner();
-            tunerWindow.Show();
-        }
-
         private void radioButtonMainFormTickSound_CheckedChanged(object sender, EventArgs e)
         {
             notificationChoice = 0;
             this.BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject("MainLayout");
-            this.Height = 506;
+            this.Height = 467;
+        }
+
+        private void buttonMainFormOpen_Click(object sender, EventArgs e)
+        {
+            FormSthGreat sthGreatWindow = new FormSthGreat();
+            sthGreatWindow.Show();
         }
 
         private void radioButtonMainFormspeechSound_CheckedChanged(object sender, EventArgs e)
         {
             notificationChoice = 1;
             this.BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject("MainLayout");
-            this.Height = 506;
+            this.Height = 467;
         }
 
         private void radioButtonMainFormRealSound_CheckedChanged(object sender, EventArgs e)
         {
             notificationChoice = 2;
             this.BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject("MainLayoutExtended");
-            this.Height = 540;
+            this.Height = 498;
         }
 
         private void radioButtonMainFormNoSound_CheckedChanged(object sender, EventArgs e)
         {
             this.BackgroundImage = (Image)Properties.Resources.ResourceManager.GetObject("MainLayout");
-            this.Height = 506;
+            this.Height = 467;
         }
         private void octave_changed(object sender, EventArgs e)
         {

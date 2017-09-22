@@ -92,11 +92,6 @@ namespace Sound_teacher
 
         }
 
-        private void FormFretBoard_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void groupBoxFretBoardSounds_Enter(object sender, EventArgs e)
         {
 
