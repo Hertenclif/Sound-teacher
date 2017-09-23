@@ -28,9 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.buttonStartTuner = new System.Windows.Forms.Button();
-            this.timerTunerRecord = new System.Windows.Forms.Timer(this.components);
             this.labelTunerFrequency = new System.Windows.Forms.Label();
             this.trackBarFrequency = new System.Windows.Forms.TrackBar();
             this.radioButtonMicrophone = new System.Windows.Forms.RadioButton();
@@ -180,7 +178,6 @@
         #endregion
 
         private System.Windows.Forms.Button buttonStartTuner;
-        private System.Windows.Forms.Timer timerTunerRecord;
         private System.Windows.Forms.Label labelTunerFrequency;
         private System.Windows.Forms.TrackBar trackBarFrequency;
         private System.Windows.Forms.RadioButton radioButtonMicrophone;

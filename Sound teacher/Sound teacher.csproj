@@ -89,7 +89,6 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="PassSoundSingleton.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormFretBoard.resx">
@@ -302,6 +301,7 @@
     <None Include="resources\TunerRes\TunerImg\FormImg\TunerArrowsHigh.JPG" />
     <None Include="resources\TunerRes\TunerImg\FormImg\TunerArrowsLow.JPG" />
     <None Include="resources\TunerRes\TunerImg\FormImg\TunerArrowsOK.JPG" />
+    <None Include="resources\MainFormRes\MainFormImg\FormImg\MainForm_FForwardButton.png" />
     <Content Include="STL.ico" />
     <Content Include="STLogo.ico" />
   </ItemGroup>

@@ -463,6 +463,16 @@ namespace Sound_teacher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap MainForm_FForwardButton {
+            get {
+                object obj = ResourceManager.GetObject("MainForm_FForwardButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MainForm_FretBoardButton {
             get {
                 object obj = ResourceManager.GetObject("MainForm_FretBoardButton", resourceCulture);

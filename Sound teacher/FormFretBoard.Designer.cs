@@ -28,50 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormFretBoard));
-            this.timerFretBoardChangeImages = new System.Windows.Forms.Timer(this.components);
             this.comboBoxScaleChoice = new System.Windows.Forms.ComboBox();
-            this.groupBoxFretBoardSounds = new System.Windows.Forms.GroupBox();
-            this.checkBoxFretBoardGis = new System.Windows.Forms.CheckBox();
-            this.checkBoxFretBoardFis = new System.Windows.Forms.CheckBox();
-            this.checkBoxFretBoardDis = new System.Windows.Forms.CheckBox();
-            this.checkBoxFretBoardNone = new System.Windows.Forms.CheckBox();
-            this.checkBoxFretBoardAll = new System.Windows.Forms.CheckBox();
-            this.checkBoxFretBoardCis = new System.Windows.Forms.CheckBox();
-            this.checkBoxFretBoardAis = new System.Windows.Forms.CheckBox();
-            this.checkBoxFretBoardG = new System.Windows.Forms.CheckBox();
-            this.checkBoxFretBoardF = new System.Windows.Forms.CheckBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.checkBox15 = new System.Windows.Forms.CheckBox();
-            this.checkBox16 = new System.Windows.Forms.CheckBox();
-            this.checkBox17 = new System.Windows.Forms.CheckBox();
-            this.checkBox18 = new System.Windows.Forms.CheckBox();
-            this.checkBox19 = new System.Windows.Forms.CheckBox();
-            this.checkBox20 = new System.Windows.Forms.CheckBox();
-            this.checkBox21 = new System.Windows.Forms.CheckBox();
-            this.checkBox22 = new System.Windows.Forms.CheckBox();
-            this.checkBox23 = new System.Windows.Forms.CheckBox();
-            this.checkBox24 = new System.Windows.Forms.CheckBox();
-            this.checkBox25 = new System.Windows.Forms.CheckBox();
-            this.checkBox26 = new System.Windows.Forms.CheckBox();
-            this.checkBox27 = new System.Windows.Forms.CheckBox();
-            this.checkBox28 = new System.Windows.Forms.CheckBox();
-            this.checkBoxFretBoardE = new System.Windows.Forms.CheckBox();
-            this.checkBoxFretBoardD = new System.Windows.Forms.CheckBox();
-            this.checkBoxFretBoardC = new System.Windows.Forms.CheckBox();
-            this.checkBoxFretBoardB = new System.Windows.Forms.CheckBox();
-            this.checkBoxFretBoardA = new System.Windows.Forms.CheckBox();
             this.labelDisplaySounds = new System.Windows.Forms.Label();
-            this.timerCheckAdditional = new System.Windows.Forms.Timer(this.components);
             this.checkBoxFretBoardShowNextTo = new System.Windows.Forms.CheckBox();
             this.numericUpDownChangeSound = new System.Windows.Forms.NumericUpDown();
             this.labelFretBoardScale = new System.Windows.Forms.Label();
-            this.buttonFretBoardOpenMetronome = new System.Windows.Forms.Button();
-            this.buttonFretBoardOpenTuner = new System.Windows.Forms.Button();
             this.pictureBox_38 = new System.Windows.Forms.PictureBox();
             this.buttonStartExternal = new System.Windows.Forms.Button();
-            this.buttonFretBoardNew = new System.Windows.Forms.Button();
             this.buttonFretBoardStartStop = new System.Windows.Forms.Button();
             this.pictureBox_54 = new System.Windows.Forms.PictureBox();
             this.pictureBox_45 = new System.Windows.Forms.PictureBox();
@@ -223,23 +187,21 @@
             this.pictureBox_11 = new System.Windows.Forms.PictureBox();
             this.pictureBox_10 = new System.Windows.Forms.PictureBox();
             this.labelFretboardImage = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.checkBox10 = new System.Windows.Forms.CheckBox();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
-            this.checkBox12 = new System.Windows.Forms.CheckBox();
-            this.checkBox13 = new System.Windows.Forms.CheckBox();
-            this.checkBox14 = new System.Windows.Forms.CheckBox();
-            this.groupBoxFretBoardSounds.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.groupBoxFretBoard = new System.Windows.Forms.GroupBox();
+            this.checkBoxFretBoardGis = new System.Windows.Forms.CheckBox();
+            this.checkBoxFretBoardFis = new System.Windows.Forms.CheckBox();
+            this.checkBoxFretBoardDis = new System.Windows.Forms.CheckBox();
+            this.checkBoxFretBoardNone = new System.Windows.Forms.CheckBox();
+            this.checkBoxFretBoardAll = new System.Windows.Forms.CheckBox();
+            this.checkBoxFretBoardCis = new System.Windows.Forms.CheckBox();
+            this.checkBoxFretBoardAis = new System.Windows.Forms.CheckBox();
+            this.checkBoxFretBoardG = new System.Windows.Forms.CheckBox();
+            this.checkBoxFretBoardF = new System.Windows.Forms.CheckBox();
+            this.checkBoxFretBoardE = new System.Windows.Forms.CheckBox();
+            this.checkBoxFretBoardD = new System.Windows.Forms.CheckBox();
+            this.checkBoxFretBoardC = new System.Windows.Forms.CheckBox();
+            this.checkBoxFretBoardB = new System.Windows.Forms.CheckBox();
+            this.checkBoxFretBoardA = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownChangeSound)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_38)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_54)).BeginInit();
@@ -391,12 +353,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_10)).BeginInit();
-            this.groupBox1.SuspendLayout();
+            this.groupBoxFretBoard.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // timerFretBoardChangeImages
-            // 
-            this.timerFretBoardChangeImages.Tick += new System.EventHandler(this.timerFretBoardChangeImages_Tick);
             // 
             // comboBoxScaleChoice
             // 
@@ -423,385 +381,24 @@
             this.comboBoxScaleChoice.Name = "comboBoxScaleChoice";
             this.comboBoxScaleChoice.Size = new System.Drawing.Size(129, 21);
             this.comboBoxScaleChoice.TabIndex = 151;
-            this.comboBoxScaleChoice.SelectedIndexChanged += new System.EventHandler(this.comboBoxSoundChoice_SelectedIndexChanged);
-            // 
-            // groupBoxFretBoardSounds
-            // 
-            this.groupBoxFretBoardSounds.BackColor = System.Drawing.SystemColors.WindowText;
-            this.groupBoxFretBoardSounds.Controls.Add(this.checkBoxFretBoardGis);
-            this.groupBoxFretBoardSounds.Controls.Add(this.checkBoxFretBoardFis);
-            this.groupBoxFretBoardSounds.Controls.Add(this.checkBoxFretBoardDis);
-            this.groupBoxFretBoardSounds.Controls.Add(this.checkBoxFretBoardNone);
-            this.groupBoxFretBoardSounds.Controls.Add(this.checkBoxFretBoardAll);
-            this.groupBoxFretBoardSounds.Controls.Add(this.checkBoxFretBoardCis);
-            this.groupBoxFretBoardSounds.Controls.Add(this.checkBoxFretBoardAis);
-            this.groupBoxFretBoardSounds.Controls.Add(this.checkBoxFretBoardG);
-            this.groupBoxFretBoardSounds.Controls.Add(this.checkBoxFretBoardF);
-            this.groupBoxFretBoardSounds.Controls.Add(this.groupBox2);
-            this.groupBoxFretBoardSounds.Controls.Add(this.checkBoxFretBoardE);
-            this.groupBoxFretBoardSounds.Controls.Add(this.checkBoxFretBoardD);
-            this.groupBoxFretBoardSounds.Controls.Add(this.checkBoxFretBoardC);
-            this.groupBoxFretBoardSounds.Controls.Add(this.checkBoxFretBoardB);
-            this.groupBoxFretBoardSounds.Controls.Add(this.checkBoxFretBoardA);
-            this.groupBoxFretBoardSounds.ForeColor = System.Drawing.SystemColors.Window;
-            this.groupBoxFretBoardSounds.Location = new System.Drawing.Point(597, 463);
-            this.groupBoxFretBoardSounds.Name = "groupBoxFretBoardSounds";
-            this.groupBoxFretBoardSounds.Size = new System.Drawing.Size(384, 57);
-            this.groupBoxFretBoardSounds.TabIndex = 153;
-            this.groupBoxFretBoardSounds.TabStop = false;
-            this.groupBoxFretBoardSounds.Enter += new System.EventHandler(this.groupBoxFretBoardSounds_Enter);
-            // 
-            // checkBoxFretBoardGis
-            // 
-            this.checkBoxFretBoardGis.AutoSize = true;
-            this.checkBoxFretBoardGis.Location = new System.Drawing.Point(277, 36);
-            this.checkBoxFretBoardGis.Name = "checkBoxFretBoardGis";
-            this.checkBoxFretBoardGis.Size = new System.Drawing.Size(41, 17);
-            this.checkBoxFretBoardGis.TabIndex = 13;
-            this.checkBoxFretBoardGis.Tag = "CBoxSound";
-            this.checkBoxFretBoardGis.Text = "G#";
-            this.checkBoxFretBoardGis.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxFretBoardFis
-            // 
-            this.checkBoxFretBoardFis.AutoSize = true;
-            this.checkBoxFretBoardFis.Location = new System.Drawing.Point(230, 36);
-            this.checkBoxFretBoardFis.Name = "checkBoxFretBoardFis";
-            this.checkBoxFretBoardFis.Size = new System.Drawing.Size(39, 17);
-            this.checkBoxFretBoardFis.TabIndex = 12;
-            this.checkBoxFretBoardFis.Tag = "CBoxSound";
-            this.checkBoxFretBoardFis.Text = "F#";
-            this.checkBoxFretBoardFis.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxFretBoardDis
-            // 
-            this.checkBoxFretBoardDis.AutoSize = true;
-            this.checkBoxFretBoardDis.Location = new System.Drawing.Point(139, 36);
-            this.checkBoxFretBoardDis.Name = "checkBoxFretBoardDis";
-            this.checkBoxFretBoardDis.Size = new System.Drawing.Size(41, 17);
-            this.checkBoxFretBoardDis.TabIndex = 11;
-            this.checkBoxFretBoardDis.Tag = "CBoxSound";
-            this.checkBoxFretBoardDis.Text = "D#";
-            this.checkBoxFretBoardDis.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxFretBoardNone
-            // 
-            this.checkBoxFretBoardNone.AutoSize = true;
-            this.checkBoxFretBoardNone.Location = new System.Drawing.Point(324, 36);
-            this.checkBoxFretBoardNone.Name = "checkBoxFretBoardNone";
-            this.checkBoxFretBoardNone.Size = new System.Drawing.Size(52, 17);
-            this.checkBoxFretBoardNone.TabIndex = 10;
-            this.checkBoxFretBoardNone.Text = "None";
-            this.checkBoxFretBoardNone.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxFretBoardAll
-            // 
-            this.checkBoxFretBoardAll.AutoSize = true;
-            this.checkBoxFretBoardAll.Location = new System.Drawing.Point(324, 13);
-            this.checkBoxFretBoardAll.Name = "checkBoxFretBoardAll";
-            this.checkBoxFretBoardAll.Size = new System.Drawing.Size(37, 17);
-            this.checkBoxFretBoardAll.TabIndex = 9;
-            this.checkBoxFretBoardAll.Text = "All";
-            this.checkBoxFretBoardAll.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxFretBoardCis
-            // 
-            this.checkBoxFretBoardCis.AutoSize = true;
-            this.checkBoxFretBoardCis.Location = new System.Drawing.Point(92, 36);
-            this.checkBoxFretBoardCis.Name = "checkBoxFretBoardCis";
-            this.checkBoxFretBoardCis.Size = new System.Drawing.Size(40, 17);
-            this.checkBoxFretBoardCis.TabIndex = 8;
-            this.checkBoxFretBoardCis.Tag = "CBoxSound";
-            this.checkBoxFretBoardCis.Text = "C#";
-            this.checkBoxFretBoardCis.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxFretBoardAis
-            // 
-            this.checkBoxFretBoardAis.AutoSize = true;
-            this.checkBoxFretBoardAis.Location = new System.Drawing.Point(0, 36);
-            this.checkBoxFretBoardAis.Name = "checkBoxFretBoardAis";
-            this.checkBoxFretBoardAis.Size = new System.Drawing.Size(40, 17);
-            this.checkBoxFretBoardAis.TabIndex = 7;
-            this.checkBoxFretBoardAis.Tag = "CBoxSound";
-            this.checkBoxFretBoardAis.Text = "A#";
-            this.checkBoxFretBoardAis.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxFretBoardG
-            // 
-            this.checkBoxFretBoardG.AutoSize = true;
-            this.checkBoxFretBoardG.Location = new System.Drawing.Point(277, 13);
-            this.checkBoxFretBoardG.Name = "checkBoxFretBoardG";
-            this.checkBoxFretBoardG.Size = new System.Drawing.Size(34, 17);
-            this.checkBoxFretBoardG.TabIndex = 6;
-            this.checkBoxFretBoardG.Tag = "CBoxSound";
-            this.checkBoxFretBoardG.Text = "G";
-            this.checkBoxFretBoardG.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxFretBoardF
-            // 
-            this.checkBoxFretBoardF.AutoSize = true;
-            this.checkBoxFretBoardF.Location = new System.Drawing.Point(230, 13);
-            this.checkBoxFretBoardF.Name = "checkBoxFretBoardF";
-            this.checkBoxFretBoardF.Size = new System.Drawing.Size(32, 17);
-            this.checkBoxFretBoardF.TabIndex = 5;
-            this.checkBoxFretBoardF.Tag = "CBoxSound";
-            this.checkBoxFretBoardF.Text = "F";
-            this.checkBoxFretBoardF.UseVisualStyleBackColor = true;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.BackColor = System.Drawing.SystemColors.WindowText;
-            this.groupBox2.Controls.Add(this.checkBox15);
-            this.groupBox2.Controls.Add(this.checkBox16);
-            this.groupBox2.Controls.Add(this.checkBox17);
-            this.groupBox2.Controls.Add(this.checkBox18);
-            this.groupBox2.Controls.Add(this.checkBox19);
-            this.groupBox2.Controls.Add(this.checkBox20);
-            this.groupBox2.Controls.Add(this.checkBox21);
-            this.groupBox2.Controls.Add(this.checkBox22);
-            this.groupBox2.Controls.Add(this.checkBox23);
-            this.groupBox2.Controls.Add(this.checkBox24);
-            this.groupBox2.Controls.Add(this.checkBox25);
-            this.groupBox2.Controls.Add(this.checkBox26);
-            this.groupBox2.Controls.Add(this.checkBox27);
-            this.groupBox2.Controls.Add(this.checkBox28);
-            this.groupBox2.ForeColor = System.Drawing.SystemColors.Window;
-            this.groupBox2.Location = new System.Drawing.Point(1, 0);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(384, 57);
-            this.groupBox2.TabIndex = 153;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Enter += new System.EventHandler(this.groupBoxFretBoardSounds_Enter);
-            // 
-            // checkBox15
-            // 
-            this.checkBox15.AutoSize = true;
-            this.checkBox15.Location = new System.Drawing.Point(277, 36);
-            this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(41, 17);
-            this.checkBox15.TabIndex = 13;
-            this.checkBox15.Tag = "CBoxSound";
-            this.checkBox15.Text = "G#";
-            this.checkBox15.UseVisualStyleBackColor = true;
-            // 
-            // checkBox16
-            // 
-            this.checkBox16.AutoSize = true;
-            this.checkBox16.Location = new System.Drawing.Point(230, 36);
-            this.checkBox16.Name = "checkBox16";
-            this.checkBox16.Size = new System.Drawing.Size(39, 17);
-            this.checkBox16.TabIndex = 12;
-            this.checkBox16.Tag = "CBoxSound";
-            this.checkBox16.Text = "F#";
-            this.checkBox16.UseVisualStyleBackColor = true;
-            // 
-            // checkBox17
-            // 
-            this.checkBox17.AutoSize = true;
-            this.checkBox17.Location = new System.Drawing.Point(139, 36);
-            this.checkBox17.Name = "checkBox17";
-            this.checkBox17.Size = new System.Drawing.Size(41, 17);
-            this.checkBox17.TabIndex = 11;
-            this.checkBox17.Tag = "CBoxSound";
-            this.checkBox17.Text = "D#";
-            this.checkBox17.UseVisualStyleBackColor = true;
-            // 
-            // checkBox18
-            // 
-            this.checkBox18.AutoSize = true;
-            this.checkBox18.Location = new System.Drawing.Point(324, 36);
-            this.checkBox18.Name = "checkBox18";
-            this.checkBox18.Size = new System.Drawing.Size(52, 17);
-            this.checkBox18.TabIndex = 10;
-            this.checkBox18.Text = "None";
-            this.checkBox18.UseVisualStyleBackColor = true;
-            // 
-            // checkBox19
-            // 
-            this.checkBox19.AutoSize = true;
-            this.checkBox19.Location = new System.Drawing.Point(324, 13);
-            this.checkBox19.Name = "checkBox19";
-            this.checkBox19.Size = new System.Drawing.Size(37, 17);
-            this.checkBox19.TabIndex = 9;
-            this.checkBox19.Text = "All";
-            this.checkBox19.UseVisualStyleBackColor = true;
-            // 
-            // checkBox20
-            // 
-            this.checkBox20.AutoSize = true;
-            this.checkBox20.Location = new System.Drawing.Point(92, 36);
-            this.checkBox20.Name = "checkBox20";
-            this.checkBox20.Size = new System.Drawing.Size(40, 17);
-            this.checkBox20.TabIndex = 8;
-            this.checkBox20.Tag = "CBoxSound";
-            this.checkBox20.Text = "C#";
-            this.checkBox20.UseVisualStyleBackColor = true;
-            // 
-            // checkBox21
-            // 
-            this.checkBox21.AutoSize = true;
-            this.checkBox21.Location = new System.Drawing.Point(0, 36);
-            this.checkBox21.Name = "checkBox21";
-            this.checkBox21.Size = new System.Drawing.Size(40, 17);
-            this.checkBox21.TabIndex = 7;
-            this.checkBox21.Tag = "CBoxSound";
-            this.checkBox21.Text = "A#";
-            this.checkBox21.UseVisualStyleBackColor = true;
-            // 
-            // checkBox22
-            // 
-            this.checkBox22.AutoSize = true;
-            this.checkBox22.Location = new System.Drawing.Point(277, 13);
-            this.checkBox22.Name = "checkBox22";
-            this.checkBox22.Size = new System.Drawing.Size(34, 17);
-            this.checkBox22.TabIndex = 6;
-            this.checkBox22.Tag = "CBoxSound";
-            this.checkBox22.Text = "G";
-            this.checkBox22.UseVisualStyleBackColor = true;
-            // 
-            // checkBox23
-            // 
-            this.checkBox23.AutoSize = true;
-            this.checkBox23.Location = new System.Drawing.Point(230, 13);
-            this.checkBox23.Name = "checkBox23";
-            this.checkBox23.Size = new System.Drawing.Size(32, 17);
-            this.checkBox23.TabIndex = 5;
-            this.checkBox23.Tag = "CBoxSound";
-            this.checkBox23.Text = "F";
-            this.checkBox23.UseVisualStyleBackColor = true;
-            // 
-            // checkBox24
-            // 
-            this.checkBox24.AutoSize = true;
-            this.checkBox24.Location = new System.Drawing.Point(185, 13);
-            this.checkBox24.Name = "checkBox24";
-            this.checkBox24.Size = new System.Drawing.Size(33, 17);
-            this.checkBox24.TabIndex = 4;
-            this.checkBox24.Tag = "CBoxSound";
-            this.checkBox24.Text = "E";
-            this.checkBox24.UseVisualStyleBackColor = true;
-            // 
-            // checkBox25
-            // 
-            this.checkBox25.AutoSize = true;
-            this.checkBox25.Location = new System.Drawing.Point(139, 13);
-            this.checkBox25.Name = "checkBox25";
-            this.checkBox25.Size = new System.Drawing.Size(34, 17);
-            this.checkBox25.TabIndex = 3;
-            this.checkBox25.Tag = "CBoxSound";
-            this.checkBox25.Text = "D";
-            this.checkBox25.UseVisualStyleBackColor = true;
-            // 
-            // checkBox26
-            // 
-            this.checkBox26.AutoSize = true;
-            this.checkBox26.Location = new System.Drawing.Point(92, 13);
-            this.checkBox26.Name = "checkBox26";
-            this.checkBox26.Size = new System.Drawing.Size(33, 17);
-            this.checkBox26.TabIndex = 2;
-            this.checkBox26.Tag = "CBoxSound";
-            this.checkBox26.Text = "C";
-            this.checkBox26.UseVisualStyleBackColor = true;
-            // 
-            // checkBox27
-            // 
-            this.checkBox27.AutoSize = true;
-            this.checkBox27.Location = new System.Drawing.Point(46, 13);
-            this.checkBox27.Name = "checkBox27";
-            this.checkBox27.Size = new System.Drawing.Size(33, 17);
-            this.checkBox27.TabIndex = 1;
-            this.checkBox27.Tag = "CBoxSound";
-            this.checkBox27.Text = "B";
-            this.checkBox27.UseVisualStyleBackColor = true;
-            // 
-            // checkBox28
-            // 
-            this.checkBox28.AutoSize = true;
-            this.checkBox28.Location = new System.Drawing.Point(0, 13);
-            this.checkBox28.Name = "checkBox28";
-            this.checkBox28.Size = new System.Drawing.Size(33, 17);
-            this.checkBox28.TabIndex = 0;
-            this.checkBox28.Tag = "CBoxSound";
-            this.checkBox28.Text = "A";
-            this.checkBox28.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxFretBoardE
-            // 
-            this.checkBoxFretBoardE.AutoSize = true;
-            this.checkBoxFretBoardE.Location = new System.Drawing.Point(185, 13);
-            this.checkBoxFretBoardE.Name = "checkBoxFretBoardE";
-            this.checkBoxFretBoardE.Size = new System.Drawing.Size(33, 17);
-            this.checkBoxFretBoardE.TabIndex = 4;
-            this.checkBoxFretBoardE.Tag = "CBoxSound";
-            this.checkBoxFretBoardE.Text = "E";
-            this.checkBoxFretBoardE.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxFretBoardD
-            // 
-            this.checkBoxFretBoardD.AutoSize = true;
-            this.checkBoxFretBoardD.Location = new System.Drawing.Point(139, 13);
-            this.checkBoxFretBoardD.Name = "checkBoxFretBoardD";
-            this.checkBoxFretBoardD.Size = new System.Drawing.Size(34, 17);
-            this.checkBoxFretBoardD.TabIndex = 3;
-            this.checkBoxFretBoardD.Tag = "CBoxSound";
-            this.checkBoxFretBoardD.Text = "D";
-            this.checkBoxFretBoardD.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxFretBoardC
-            // 
-            this.checkBoxFretBoardC.AutoSize = true;
-            this.checkBoxFretBoardC.Location = new System.Drawing.Point(92, 13);
-            this.checkBoxFretBoardC.Name = "checkBoxFretBoardC";
-            this.checkBoxFretBoardC.Size = new System.Drawing.Size(33, 17);
-            this.checkBoxFretBoardC.TabIndex = 2;
-            this.checkBoxFretBoardC.Tag = "CBoxSound";
-            this.checkBoxFretBoardC.Text = "C";
-            this.checkBoxFretBoardC.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxFretBoardB
-            // 
-            this.checkBoxFretBoardB.AutoSize = true;
-            this.checkBoxFretBoardB.Location = new System.Drawing.Point(46, 13);
-            this.checkBoxFretBoardB.Name = "checkBoxFretBoardB";
-            this.checkBoxFretBoardB.Size = new System.Drawing.Size(33, 17);
-            this.checkBoxFretBoardB.TabIndex = 1;
-            this.checkBoxFretBoardB.Tag = "CBoxSound";
-            this.checkBoxFretBoardB.Text = "B";
-            this.checkBoxFretBoardB.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxFretBoardA
-            // 
-            this.checkBoxFretBoardA.AutoSize = true;
-            this.checkBoxFretBoardA.Location = new System.Drawing.Point(0, 13);
-            this.checkBoxFretBoardA.Name = "checkBoxFretBoardA";
-            this.checkBoxFretBoardA.Size = new System.Drawing.Size(33, 17);
-            this.checkBoxFretBoardA.TabIndex = 0;
-            this.checkBoxFretBoardA.Tag = "CBoxSound";
-            this.checkBoxFretBoardA.Text = "A";
-            this.checkBoxFretBoardA.UseVisualStyleBackColor = true;
             // 
             // labelDisplaySounds
             // 
             this.labelDisplaySounds.AutoSize = true;
             this.labelDisplaySounds.BackColor = System.Drawing.SystemColors.WindowText;
             this.labelDisplaySounds.ForeColor = System.Drawing.SystemColors.Window;
-            this.labelDisplaySounds.Location = new System.Drawing.Point(500, 466);
+            this.labelDisplaySounds.Location = new System.Drawing.Point(500, 475);
             this.labelDisplaySounds.Name = "labelDisplaySounds";
             this.labelDisplaySounds.Size = new System.Drawing.Size(81, 13);
             this.labelDisplaySounds.TabIndex = 154;
             this.labelDisplaySounds.Text = "Display sounds:";
-            // 
-            // timerCheckAdditional
-            // 
-            this.timerCheckAdditional.Enabled = true;
-            this.timerCheckAdditional.Tick += new System.EventHandler(this.timerCheckAdditional_Tick);
             // 
             // checkBoxFretBoardShowNextTo
             // 
             this.checkBoxFretBoardShowNextTo.AutoSize = true;
             this.checkBoxFretBoardShowNextTo.BackColor = System.Drawing.SystemColors.WindowText;
             this.checkBoxFretBoardShowNextTo.ForeColor = System.Drawing.SystemColors.Window;
-            this.checkBoxFretBoardShowNextTo.Location = new System.Drawing.Point(503, 494);
+            this.checkBoxFretBoardShowNextTo.Location = new System.Drawing.Point(503, 503);
             this.checkBoxFretBoardShowNextTo.Name = "checkBoxFretBoardShowNextTo";
             this.checkBoxFretBoardShowNextTo.Size = new System.Drawing.Size(88, 17);
             this.checkBoxFretBoardShowNextTo.TabIndex = 14;
@@ -841,30 +438,6 @@
             this.labelFretBoardScale.TabIndex = 158;
             this.labelFretBoardScale.Text = "Scale:";
             // 
-            // buttonFretBoardOpenMetronome
-            // 
-            this.buttonFretBoardOpenMetronome.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.buttonFretBoardOpenMetronome.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonFretBoardOpenMetronome.ForeColor = System.Drawing.SystemColors.Window;
-            this.buttonFretBoardOpenMetronome.Location = new System.Drawing.Point(1425, 464);
-            this.buttonFretBoardOpenMetronome.Name = "buttonFretBoardOpenMetronome";
-            this.buttonFretBoardOpenMetronome.Size = new System.Drawing.Size(109, 62);
-            this.buttonFretBoardOpenMetronome.TabIndex = 161;
-            this.buttonFretBoardOpenMetronome.UseVisualStyleBackColor = false;
-            this.buttonFretBoardOpenMetronome.Click += new System.EventHandler(this.buttonFretBoardOpenMetronome_Click);
-            // 
-            // buttonFretBoardOpenTuner
-            // 
-            this.buttonFretBoardOpenTuner.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.buttonFretBoardOpenTuner.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonFretBoardOpenTuner.ForeColor = System.Drawing.SystemColors.Window;
-            this.buttonFretBoardOpenTuner.Location = new System.Drawing.Point(1591, 464);
-            this.buttonFretBoardOpenTuner.Name = "buttonFretBoardOpenTuner";
-            this.buttonFretBoardOpenTuner.Size = new System.Drawing.Size(108, 62);
-            this.buttonFretBoardOpenTuner.TabIndex = 160;
-            this.buttonFretBoardOpenTuner.UseVisualStyleBackColor = false;
-            this.buttonFretBoardOpenTuner.Click += new System.EventHandler(this.buttonFretBoardOpenTuner_Click);
-            // 
             // pictureBox_38
             // 
             this.pictureBox_38.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -891,19 +464,6 @@
             this.buttonStartExternal.UseVisualStyleBackColor = false;
             this.buttonStartExternal.Click += new System.EventHandler(this.buttonStartExternal_Click);
             // 
-            // buttonFretBoardNew
-            // 
-            this.buttonFretBoardNew.BackColor = System.Drawing.SystemColors.WindowText;
-            this.buttonFretBoardNew.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonFretBoardNew.ForeColor = System.Drawing.SystemColors.Window;
-            this.buttonFretBoardNew.Image = global::Sound_teacher.Properties.Resources.FretBoard_NewFretBoardButton;
-            this.buttonFretBoardNew.Location = new System.Drawing.Point(142, 500);
-            this.buttonFretBoardNew.Name = "buttonFretBoardNew";
-            this.buttonFretBoardNew.Size = new System.Drawing.Size(104, 28);
-            this.buttonFretBoardNew.TabIndex = 155;
-            this.buttonFretBoardNew.UseVisualStyleBackColor = false;
-            this.buttonFretBoardNew.Click += new System.EventHandler(this.buttonFretBoardNew_Click);
-            // 
             // buttonFretBoardStartStop
             // 
             this.buttonFretBoardStartStop.BackColor = System.Drawing.SystemColors.WindowText;
@@ -914,8 +474,9 @@
             this.buttonFretBoardStartStop.Name = "buttonFretBoardStartStop";
             this.buttonFretBoardStartStop.Size = new System.Drawing.Size(104, 28);
             this.buttonFretBoardStartStop.TabIndex = 149;
+            this.buttonFretBoardStartStop.Tag = "off";
             this.buttonFretBoardStartStop.UseVisualStyleBackColor = false;
-            this.buttonFretBoardStartStop.Click += new System.EventHandler(this.button1_Click);
+            this.buttonFretBoardStartStop.Click += new System.EventHandler(this.buttonStopFretboard_Click);
             // 
             // pictureBox_54
             // 
@@ -2752,199 +2313,208 @@
             this.labelFretboardImage.Size = new System.Drawing.Size(1731, 551);
             this.labelFretboardImage.TabIndex = 150;
             // 
-            // groupBox1
+            // groupBoxFretBoard
             // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.WindowText;
-            this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Controls.Add(this.checkBox2);
-            this.groupBox1.Controls.Add(this.checkBox3);
-            this.groupBox1.Controls.Add(this.checkBox4);
-            this.groupBox1.Controls.Add(this.checkBox5);
-            this.groupBox1.Controls.Add(this.checkBox6);
-            this.groupBox1.Controls.Add(this.checkBox7);
-            this.groupBox1.Controls.Add(this.checkBox8);
-            this.groupBox1.Controls.Add(this.checkBox9);
-            this.groupBox1.Controls.Add(this.checkBox10);
-            this.groupBox1.Controls.Add(this.checkBox11);
-            this.groupBox1.Controls.Add(this.checkBox12);
-            this.groupBox1.Controls.Add(this.checkBox13);
-            this.groupBox1.Controls.Add(this.checkBox14);
-            this.groupBox1.ForeColor = System.Drawing.SystemColors.Window;
-            this.groupBox1.Location = new System.Drawing.Point(598, 463);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(384, 57);
-            this.groupBox1.TabIndex = 153;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Enter += new System.EventHandler(this.groupBoxFretBoardSounds_Enter);
+            this.groupBoxFretBoard.BackColor = System.Drawing.SystemColors.WindowText;
+            this.groupBoxFretBoard.Controls.Add(this.checkBoxFretBoardGis);
+            this.groupBoxFretBoard.Controls.Add(this.checkBoxFretBoardFis);
+            this.groupBoxFretBoard.Controls.Add(this.checkBoxFretBoardDis);
+            this.groupBoxFretBoard.Controls.Add(this.checkBoxFretBoardNone);
+            this.groupBoxFretBoard.Controls.Add(this.checkBoxFretBoardAll);
+            this.groupBoxFretBoard.Controls.Add(this.checkBoxFretBoardCis);
+            this.groupBoxFretBoard.Controls.Add(this.checkBoxFretBoardAis);
+            this.groupBoxFretBoard.Controls.Add(this.checkBoxFretBoardG);
+            this.groupBoxFretBoard.Controls.Add(this.checkBoxFretBoardF);
+            this.groupBoxFretBoard.Controls.Add(this.checkBoxFretBoardE);
+            this.groupBoxFretBoard.Controls.Add(this.checkBoxFretBoardD);
+            this.groupBoxFretBoard.Controls.Add(this.checkBoxFretBoardC);
+            this.groupBoxFretBoard.Controls.Add(this.checkBoxFretBoardB);
+            this.groupBoxFretBoard.Controls.Add(this.checkBoxFretBoardA);
+            this.groupBoxFretBoard.ForeColor = System.Drawing.SystemColors.Window;
+            this.groupBoxFretBoard.Location = new System.Drawing.Point(597, 466);
+            this.groupBoxFretBoard.Name = "groupBoxFretBoard";
+            this.groupBoxFretBoard.Size = new System.Drawing.Size(384, 57);
+            this.groupBoxFretBoard.TabIndex = 153;
+            this.groupBoxFretBoard.TabStop = false;
             // 
-            // checkBox1
+            // checkBoxFretBoardGis
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(282, 36);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(41, 17);
-            this.checkBox1.TabIndex = 13;
-            this.checkBox1.Tag = "CBoxSound";
-            this.checkBox1.Text = "G#";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBoxFretBoardGis.AutoSize = true;
+            this.checkBoxFretBoardGis.Location = new System.Drawing.Point(282, 36);
+            this.checkBoxFretBoardGis.Name = "checkBoxFretBoardGis";
+            this.checkBoxFretBoardGis.Size = new System.Drawing.Size(41, 17);
+            this.checkBoxFretBoardGis.TabIndex = 13;
+            this.checkBoxFretBoardGis.Tag = "GisBoxSound";
+            this.checkBoxFretBoardGis.Text = "G#";
+            this.checkBoxFretBoardGis.UseVisualStyleBackColor = true;
+            this.checkBoxFretBoardGis.CheckedChanged += new System.EventHandler(this.checkBoxFretBoard_CheckedChanged);
             // 
-            // checkBox2
+            // checkBoxFretBoardFis
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(235, 36);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(39, 17);
-            this.checkBox2.TabIndex = 12;
-            this.checkBox2.Tag = "CBoxSound";
-            this.checkBox2.Text = "F#";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBoxFretBoardFis.AutoSize = true;
+            this.checkBoxFretBoardFis.Location = new System.Drawing.Point(235, 36);
+            this.checkBoxFretBoardFis.Name = "checkBoxFretBoardFis";
+            this.checkBoxFretBoardFis.Size = new System.Drawing.Size(39, 17);
+            this.checkBoxFretBoardFis.TabIndex = 12;
+            this.checkBoxFretBoardFis.Tag = "FisBoxSound";
+            this.checkBoxFretBoardFis.Text = "F#";
+            this.checkBoxFretBoardFis.UseVisualStyleBackColor = true;
+            this.checkBoxFretBoardFis.CheckedChanged += new System.EventHandler(this.checkBoxFretBoard_CheckedChanged);
             // 
-            // checkBox3
+            // checkBoxFretBoardDis
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(144, 36);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(41, 17);
-            this.checkBox3.TabIndex = 11;
-            this.checkBox3.Tag = "CBoxSound";
-            this.checkBox3.Text = "D#";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.checkBoxFretBoardDis.AutoSize = true;
+            this.checkBoxFretBoardDis.Location = new System.Drawing.Point(144, 36);
+            this.checkBoxFretBoardDis.Name = "checkBoxFretBoardDis";
+            this.checkBoxFretBoardDis.Size = new System.Drawing.Size(41, 17);
+            this.checkBoxFretBoardDis.TabIndex = 11;
+            this.checkBoxFretBoardDis.Tag = "DisBoxSound";
+            this.checkBoxFretBoardDis.Text = "D#";
+            this.checkBoxFretBoardDis.UseVisualStyleBackColor = true;
+            this.checkBoxFretBoardDis.CheckedChanged += new System.EventHandler(this.checkBoxFretBoard_CheckedChanged);
             // 
-            // checkBox4
+            // checkBoxFretBoardNone
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(329, 36);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(52, 17);
-            this.checkBox4.TabIndex = 10;
-            this.checkBox4.Text = "None";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBoxFretBoardNone.AutoSize = true;
+            this.checkBoxFretBoardNone.Location = new System.Drawing.Point(329, 36);
+            this.checkBoxFretBoardNone.Name = "checkBoxFretBoardNone";
+            this.checkBoxFretBoardNone.Size = new System.Drawing.Size(52, 17);
+            this.checkBoxFretBoardNone.TabIndex = 10;
+            this.checkBoxFretBoardNone.Text = "None";
+            this.checkBoxFretBoardNone.UseVisualStyleBackColor = true;
+            this.checkBoxFretBoardNone.CheckedChanged += new System.EventHandler(this.checkBoxFretBoard_CheckedChanged);
             // 
-            // checkBox5
+            // checkBoxFretBoardAll
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(329, 13);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(37, 17);
-            this.checkBox5.TabIndex = 9;
-            this.checkBox5.Text = "All";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.checkBoxFretBoardAll.AutoSize = true;
+            this.checkBoxFretBoardAll.Location = new System.Drawing.Point(329, 13);
+            this.checkBoxFretBoardAll.Name = "checkBoxFretBoardAll";
+            this.checkBoxFretBoardAll.Size = new System.Drawing.Size(37, 17);
+            this.checkBoxFretBoardAll.TabIndex = 9;
+            this.checkBoxFretBoardAll.Text = "All";
+            this.checkBoxFretBoardAll.UseVisualStyleBackColor = true;
+            this.checkBoxFretBoardAll.CheckedChanged += new System.EventHandler(this.checkBoxFretBoard_CheckedChanged);
             // 
-            // checkBox6
+            // checkBoxFretBoardCis
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Location = new System.Drawing.Point(97, 36);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(40, 17);
-            this.checkBox6.TabIndex = 8;
-            this.checkBox6.Tag = "CBoxSound";
-            this.checkBox6.Text = "C#";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.checkBoxFretBoardCis.AutoSize = true;
+            this.checkBoxFretBoardCis.Location = new System.Drawing.Point(97, 36);
+            this.checkBoxFretBoardCis.Name = "checkBoxFretBoardCis";
+            this.checkBoxFretBoardCis.Size = new System.Drawing.Size(40, 17);
+            this.checkBoxFretBoardCis.TabIndex = 8;
+            this.checkBoxFretBoardCis.Tag = "CisBoxSound";
+            this.checkBoxFretBoardCis.Text = "C#";
+            this.checkBoxFretBoardCis.UseVisualStyleBackColor = true;
+            this.checkBoxFretBoardCis.CheckedChanged += new System.EventHandler(this.checkBoxFretBoard_CheckedChanged);
             // 
-            // checkBox7
+            // checkBoxFretBoardAis
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Location = new System.Drawing.Point(5, 36);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(40, 17);
-            this.checkBox7.TabIndex = 7;
-            this.checkBox7.Tag = "CBoxSound";
-            this.checkBox7.Text = "A#";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.checkBoxFretBoardAis.AutoSize = true;
+            this.checkBoxFretBoardAis.Location = new System.Drawing.Point(5, 36);
+            this.checkBoxFretBoardAis.Name = "checkBoxFretBoardAis";
+            this.checkBoxFretBoardAis.Size = new System.Drawing.Size(40, 17);
+            this.checkBoxFretBoardAis.TabIndex = 7;
+            this.checkBoxFretBoardAis.Tag = "AisBoxSound";
+            this.checkBoxFretBoardAis.Text = "A#";
+            this.checkBoxFretBoardAis.UseVisualStyleBackColor = true;
+            this.checkBoxFretBoardAis.CheckedChanged += new System.EventHandler(this.checkBoxFretBoard_CheckedChanged);
             // 
-            // checkBox8
+            // checkBoxFretBoardG
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Location = new System.Drawing.Point(282, 13);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(34, 17);
-            this.checkBox8.TabIndex = 6;
-            this.checkBox8.Tag = "CBoxSound";
-            this.checkBox8.Text = "G";
-            this.checkBox8.UseVisualStyleBackColor = true;
+            this.checkBoxFretBoardG.AutoSize = true;
+            this.checkBoxFretBoardG.Location = new System.Drawing.Point(282, 13);
+            this.checkBoxFretBoardG.Name = "checkBoxFretBoardG";
+            this.checkBoxFretBoardG.Size = new System.Drawing.Size(34, 17);
+            this.checkBoxFretBoardG.TabIndex = 6;
+            this.checkBoxFretBoardG.Tag = "GBoxSound";
+            this.checkBoxFretBoardG.Text = "G";
+            this.checkBoxFretBoardG.UseVisualStyleBackColor = true;
+            this.checkBoxFretBoardG.CheckedChanged += new System.EventHandler(this.checkBoxFretBoard_CheckedChanged);
             // 
-            // checkBox9
+            // checkBoxFretBoardF
             // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Location = new System.Drawing.Point(235, 13);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(32, 17);
-            this.checkBox9.TabIndex = 5;
-            this.checkBox9.Tag = "CBoxSound";
-            this.checkBox9.Text = "F";
-            this.checkBox9.UseVisualStyleBackColor = true;
+            this.checkBoxFretBoardF.AutoSize = true;
+            this.checkBoxFretBoardF.Location = new System.Drawing.Point(235, 13);
+            this.checkBoxFretBoardF.Name = "checkBoxFretBoardF";
+            this.checkBoxFretBoardF.Size = new System.Drawing.Size(32, 17);
+            this.checkBoxFretBoardF.TabIndex = 5;
+            this.checkBoxFretBoardF.Tag = "FBoxSound";
+            this.checkBoxFretBoardF.Text = "F";
+            this.checkBoxFretBoardF.UseVisualStyleBackColor = true;
+            this.checkBoxFretBoardF.CheckedChanged += new System.EventHandler(this.checkBoxFretBoard_CheckedChanged);
             // 
-            // checkBox10
+            // checkBoxFretBoardE
             // 
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.Location = new System.Drawing.Point(190, 13);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(33, 17);
-            this.checkBox10.TabIndex = 4;
-            this.checkBox10.Tag = "CBoxSound";
-            this.checkBox10.Text = "E";
-            this.checkBox10.UseVisualStyleBackColor = true;
+            this.checkBoxFretBoardE.AutoSize = true;
+            this.checkBoxFretBoardE.Location = new System.Drawing.Point(190, 13);
+            this.checkBoxFretBoardE.Name = "checkBoxFretBoardE";
+            this.checkBoxFretBoardE.Size = new System.Drawing.Size(33, 17);
+            this.checkBoxFretBoardE.TabIndex = 4;
+            this.checkBoxFretBoardE.Tag = "EBoxSound";
+            this.checkBoxFretBoardE.Text = "E";
+            this.checkBoxFretBoardE.UseVisualStyleBackColor = true;
+            this.checkBoxFretBoardE.CheckedChanged += new System.EventHandler(this.checkBoxFretBoard_CheckedChanged);
             // 
-            // checkBox11
+            // checkBoxFretBoardD
             // 
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.Location = new System.Drawing.Point(144, 13);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(34, 17);
-            this.checkBox11.TabIndex = 3;
-            this.checkBox11.Tag = "CBoxSound";
-            this.checkBox11.Text = "D";
-            this.checkBox11.UseVisualStyleBackColor = true;
+            this.checkBoxFretBoardD.AutoSize = true;
+            this.checkBoxFretBoardD.Location = new System.Drawing.Point(144, 13);
+            this.checkBoxFretBoardD.Name = "checkBoxFretBoardD";
+            this.checkBoxFretBoardD.Size = new System.Drawing.Size(34, 17);
+            this.checkBoxFretBoardD.TabIndex = 3;
+            this.checkBoxFretBoardD.Tag = "DBoxSound";
+            this.checkBoxFretBoardD.Text = "D";
+            this.checkBoxFretBoardD.UseVisualStyleBackColor = true;
+            this.checkBoxFretBoardD.CheckedChanged += new System.EventHandler(this.checkBoxFretBoard_CheckedChanged);
             // 
-            // checkBox12
+            // checkBoxFretBoardC
             // 
-            this.checkBox12.AutoSize = true;
-            this.checkBox12.Location = new System.Drawing.Point(97, 13);
-            this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(33, 17);
-            this.checkBox12.TabIndex = 2;
-            this.checkBox12.Tag = "CBoxSound";
-            this.checkBox12.Text = "C";
-            this.checkBox12.UseVisualStyleBackColor = true;
+            this.checkBoxFretBoardC.AutoSize = true;
+            this.checkBoxFretBoardC.Location = new System.Drawing.Point(97, 13);
+            this.checkBoxFretBoardC.Name = "checkBoxFretBoardC";
+            this.checkBoxFretBoardC.Size = new System.Drawing.Size(33, 17);
+            this.checkBoxFretBoardC.TabIndex = 2;
+            this.checkBoxFretBoardC.Tag = "CBoxSound";
+            this.checkBoxFretBoardC.Text = "C";
+            this.checkBoxFretBoardC.UseVisualStyleBackColor = true;
+            this.checkBoxFretBoardC.CheckedChanged += new System.EventHandler(this.checkBoxFretBoard_CheckedChanged);
             // 
-            // checkBox13
+            // checkBoxFretBoardB
             // 
-            this.checkBox13.AutoSize = true;
-            this.checkBox13.Location = new System.Drawing.Point(51, 13);
-            this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(33, 17);
-            this.checkBox13.TabIndex = 1;
-            this.checkBox13.Tag = "CBoxSound";
-            this.checkBox13.Text = "B";
-            this.checkBox13.UseVisualStyleBackColor = true;
+            this.checkBoxFretBoardB.AutoSize = true;
+            this.checkBoxFretBoardB.Location = new System.Drawing.Point(51, 13);
+            this.checkBoxFretBoardB.Name = "checkBoxFretBoardB";
+            this.checkBoxFretBoardB.Size = new System.Drawing.Size(33, 17);
+            this.checkBoxFretBoardB.TabIndex = 1;
+            this.checkBoxFretBoardB.Tag = "BBoxSound";
+            this.checkBoxFretBoardB.Text = "B";
+            this.checkBoxFretBoardB.UseVisualStyleBackColor = true;
+            this.checkBoxFretBoardB.CheckedChanged += new System.EventHandler(this.checkBoxFretBoard_CheckedChanged);
             // 
-            // checkBox14
+            // checkBoxFretBoardA
             // 
-            this.checkBox14.AutoSize = true;
-            this.checkBox14.Location = new System.Drawing.Point(5, 13);
-            this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(33, 17);
-            this.checkBox14.TabIndex = 0;
-            this.checkBox14.Tag = "CBoxSound";
-            this.checkBox14.Text = "A";
-            this.checkBox14.UseVisualStyleBackColor = true;
+            this.checkBoxFretBoardA.AutoSize = true;
+            this.checkBoxFretBoardA.Location = new System.Drawing.Point(5, 13);
+            this.checkBoxFretBoardA.Name = "checkBoxFretBoardA";
+            this.checkBoxFretBoardA.Size = new System.Drawing.Size(33, 17);
+            this.checkBoxFretBoardA.TabIndex = 0;
+            this.checkBoxFretBoardA.Tag = "ABoxSound";
+            this.checkBoxFretBoardA.Text = "A";
+            this.checkBoxFretBoardA.UseVisualStyleBackColor = true;
+            this.checkBoxFretBoardA.CheckedChanged += new System.EventHandler(this.checkBoxFretBoard_CheckedChanged);
             // 
             // FormFretBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1731, 548);
-            this.Controls.Add(this.buttonFretBoardOpenMetronome);
-            this.Controls.Add(this.buttonFretBoardOpenTuner);
             this.Controls.Add(this.pictureBox_38);
             this.Controls.Add(this.labelFretBoardScale);
             this.Controls.Add(this.numericUpDownChangeSound);
             this.Controls.Add(this.buttonStartExternal);
-            this.Controls.Add(this.buttonFretBoardNew);
             this.Controls.Add(this.checkBoxFretBoardShowNextTo);
             this.Controls.Add(this.labelDisplaySounds);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.groupBoxFretBoardSounds);
+            this.Controls.Add(this.groupBoxFretBoard);
             this.Controls.Add(this.comboBoxScaleChoice);
             this.Controls.Add(this.buttonFretBoardStartStop);
             this.Controls.Add(this.pictureBox_54);
@@ -3104,10 +2674,6 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Sound Teacher FretBoard";
-            this.groupBoxFretBoardSounds.ResumeLayout(false);
-            this.groupBoxFretBoardSounds.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownChangeSound)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_38)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_54)).EndInit();
@@ -3259,8 +2825,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_10)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.groupBoxFretBoard.ResumeLayout(false);
+            this.groupBoxFretBoard.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3418,10 +2984,15 @@
         private System.Windows.Forms.PictureBox pictureBox_45;
         private System.Windows.Forms.PictureBox pictureBox_54;
         private System.Windows.Forms.Button buttonFretBoardStartStop;
-        private System.Windows.Forms.Timer timerFretBoardChangeImages;
         private System.Windows.Forms.ComboBox comboBoxScaleChoice;
-        private System.Windows.Forms.GroupBox groupBoxFretBoardSounds;
         private System.Windows.Forms.Label labelDisplaySounds;
+        private System.Windows.Forms.CheckBox checkBoxFretBoardShowNextTo;
+        private System.Windows.Forms.Button buttonStartExternal;
+        private System.Windows.Forms.NumericUpDown numericUpDownChangeSound;
+        private System.Windows.Forms.Label labelFretBoardScale;
+        private System.Windows.Forms.PictureBox pictureBox_38;
+        private System.Windows.Forms.Label labelFretboardImage;
+        private System.Windows.Forms.GroupBox groupBoxFretBoard;
         private System.Windows.Forms.CheckBox checkBoxFretBoardGis;
         private System.Windows.Forms.CheckBox checkBoxFretBoardFis;
         private System.Windows.Forms.CheckBox checkBoxFretBoardDis;
@@ -3436,45 +3007,5 @@
         private System.Windows.Forms.CheckBox checkBoxFretBoardC;
         private System.Windows.Forms.CheckBox checkBoxFretBoardB;
         private System.Windows.Forms.CheckBox checkBoxFretBoardA;
-        private System.Windows.Forms.Timer timerCheckAdditional;
-        private System.Windows.Forms.CheckBox checkBoxFretBoardShowNextTo;
-        private System.Windows.Forms.Button buttonFretBoardNew;
-        private System.Windows.Forms.Button buttonStartExternal;
-        private System.Windows.Forms.NumericUpDown numericUpDownChangeSound;
-        private System.Windows.Forms.Label labelFretBoardScale;
-        private System.Windows.Forms.PictureBox pictureBox_38;
-        private System.Windows.Forms.Label labelFretboardImage;
-        private System.Windows.Forms.Button buttonFretBoardOpenTuner;
-        private System.Windows.Forms.Button buttonFretBoardOpenMetronome;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.CheckBox checkBox15;
-        private System.Windows.Forms.CheckBox checkBox16;
-        private System.Windows.Forms.CheckBox checkBox17;
-        private System.Windows.Forms.CheckBox checkBox18;
-        private System.Windows.Forms.CheckBox checkBox19;
-        private System.Windows.Forms.CheckBox checkBox20;
-        private System.Windows.Forms.CheckBox checkBox21;
-        private System.Windows.Forms.CheckBox checkBox22;
-        private System.Windows.Forms.CheckBox checkBox23;
-        private System.Windows.Forms.CheckBox checkBox24;
-        private System.Windows.Forms.CheckBox checkBox25;
-        private System.Windows.Forms.CheckBox checkBox26;
-        private System.Windows.Forms.CheckBox checkBox27;
-        private System.Windows.Forms.CheckBox checkBox28;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.CheckBox checkBox9;
-        private System.Windows.Forms.CheckBox checkBox10;
-        private System.Windows.Forms.CheckBox checkBox11;
-        private System.Windows.Forms.CheckBox checkBox12;
-        private System.Windows.Forms.CheckBox checkBox13;
-        private System.Windows.Forms.CheckBox checkBox14;
     }
 }

@@ -47,30 +47,6 @@ namespace Sound_teacher
             path.Play();
         }
 
-        void button1_Click(object sender, EventArgs e)
-        {
-            timeLeft = System.Convert.ToInt32(numericUpDownChangeSound.Value);
-            progressBar1.Maximum = timeLeft+1;
-            if (timerPictures.Enabled == true)
-            {
-                timerPictures.Enabled = false;
-                PassSoundSingleton.getInstance().on = false;
-                buttonChangeSound.Image = (Image)Properties.Resources.ResourceManager.GetObject(pictures[0]);
-                progressBar1.Value = 1;
-                labelSoundTimeLeft.Text = "0";
-                pictureBoxSound.Image = (Image)Properties.Resources.ResourceManager.GetObject(pictures[2]);
-
-            }
-
-            else
-            {
-                timerPictures.Enabled = true;
-                buttonChangeSound.Image = (Image)Properties.Resources.ResourceManager.GetObject(pictures[1]);
-                PassSoundSingleton.getInstance().on = true;
-                progressBar1.Value = 1;
-            }
-        }
-
         private void timerPictures_Tick(object sender, EventArgs e)
         {
             if (timeLeft == 0)
@@ -83,16 +59,21 @@ namespace Sound_teacher
                 previousSound = currentSound;
                 pictureBoxSound.Image = (Image)Properties.Resources.ResourceManager.GetObject(soundImageNames[currentSound]);
                 timeLeft = System.Convert.ToInt32(numericUpDownChangeSound.Value);
-                PassSoundSingleton.getInstance().sound = currentSound;
-                PassSoundSingleton.getInstance().change = true;
-                progressBar1.Maximum = timeLeft + 1;
-                progressBar1.Value = 1;
+                changeSoundFretBoard(soundImageNames[currentSound]);
+                progressBarMainFormTimeLeft.Maximum = timeLeft + 1;
+                progressBarMainFormTimeLeft.Value = 1;
                 if(!(radioButtonMainFormNoSound.Checked)) classNotificationSound.notificatioNSoundChosen(notificationChoice, currentSound, octave);
             }
             labelSoundTimeLeft.Text = "" + timeLeft;
             timeLeft--;
-            progressBar1.PerformStep();
+            progressBarMainFormTimeLeft.PerformStep();
             
+        }
+        private void changeSoundFretBoard(String current)
+        {
+                FormFretBoard fretBoard = Application.OpenForms.OfType<FormFretBoard>().FirstOrDefault();
+                if (fretBoard != null)
+                    fretBoard.setSoundPicture(current); 
         }
 
         private void buttonOpenFretBoard_Click(object sender, EventArgs e)
@@ -131,6 +112,35 @@ namespace Sound_teacher
             sthGreatWindow.Show();
         }
 
+        private void buttonMainFormStart_Click(object sender, EventArgs e)
+        {
+
+            timeLeft = System.Convert.ToInt32(numericUpDownChangeSound.Value);
+            progressBarMainFormTimeLeft.Maximum = timeLeft + 1;
+            if (timerPictures.Enabled == true)
+            {
+                timerPictures.Enabled = false;
+                buttonChangeSound.Image = (Image)Properties.Resources.ResourceManager.GetObject(pictures[0]);
+                progressBarMainFormTimeLeft.Value = 1;
+                labelSoundTimeLeft.Text = "0";
+                pictureBoxSound.Image = (Image)Properties.Resources.ResourceManager.GetObject(pictures[2]);
+            }
+
+            else
+            {
+                timerPictures.Enabled = true;
+                buttonChangeSound.Image = (Image)Properties.Resources.ResourceManager.GetObject(pictures[1]);
+                progressBarMainFormTimeLeft.Value = 1;
+            }
+        }
+
+        private void buttonMainFormFastForward_Click(object sender, EventArgs e)
+        {
+            progressBarMainFormTimeLeft.Value = 1;
+            timeLeft = 0;
+            labelSoundTimeLeft.Text = "0";
+
+        }
         private void radioButtonMainFormspeechSound_CheckedChanged(object sender, EventArgs e)
         {
             notificationChoice = 1;

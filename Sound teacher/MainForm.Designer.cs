@@ -33,7 +33,7 @@
             this.buttonChangeSound = new System.Windows.Forms.Button();
             this.timerPictures = new System.Windows.Forms.Timer(this.components);
             this.labelSoundTimeLeft = new System.Windows.Forms.Label();
-            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.progressBarMainFormTimeLeft = new System.Windows.Forms.ProgressBar();
             this.numericUpDownChangeSound = new System.Windows.Forms.NumericUpDown();
             this.buttonMainFormMetronome = new System.Windows.Forms.Button();
             this.buttonMainFormOpen = new System.Windows.Forms.Button();
@@ -51,6 +51,7 @@
             this.radioButtonMainFormOctave2 = new System.Windows.Forms.RadioButton();
             this.buttonMainFormOpenFretBoard = new System.Windows.Forms.Button();
             this.pictureBoxSound = new System.Windows.Forms.PictureBox();
+            this.buttonMainFormFastForward = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownChangeSound)).BeginInit();
             this.panelMainFormNotificationSound.SuspendLayout();
             this.panelMainFormOctave.SuspendLayout();
@@ -69,7 +70,7 @@
             this.buttonChangeSound.Size = new System.Drawing.Size(103, 21);
             this.buttonChangeSound.TabIndex = 0;
             this.buttonChangeSound.UseVisualStyleBackColor = false;
-            this.buttonChangeSound.Click += new System.EventHandler(this.button1_Click);
+            this.buttonChangeSound.Click += new System.EventHandler(this.buttonMainFormStart_Click);
             // 
             // timerPictures
             // 
@@ -87,18 +88,18 @@
             this.labelSoundTimeLeft.TabIndex = 3;
             this.labelSoundTimeLeft.Text = "0";
             // 
-            // progressBar1
+            // progressBarMainFormTimeLeft
             // 
-            this.progressBar1.BackColor = System.Drawing.SystemColors.WindowText;
-            this.progressBar1.ForeColor = System.Drawing.SystemColors.Window;
-            this.progressBar1.Location = new System.Drawing.Point(21, 368);
-            this.progressBar1.Maximum = 5;
-            this.progressBar1.Minimum = 1;
-            this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(198, 12);
-            this.progressBar1.Step = 1;
-            this.progressBar1.TabIndex = 4;
-            this.progressBar1.Value = 1;
+            this.progressBarMainFormTimeLeft.BackColor = System.Drawing.SystemColors.WindowText;
+            this.progressBarMainFormTimeLeft.ForeColor = System.Drawing.SystemColors.Window;
+            this.progressBarMainFormTimeLeft.Location = new System.Drawing.Point(21, 368);
+            this.progressBarMainFormTimeLeft.Maximum = 5;
+            this.progressBarMainFormTimeLeft.Minimum = 1;
+            this.progressBarMainFormTimeLeft.Name = "progressBarMainFormTimeLeft";
+            this.progressBarMainFormTimeLeft.Size = new System.Drawing.Size(198, 12);
+            this.progressBarMainFormTimeLeft.Step = 1;
+            this.progressBarMainFormTimeLeft.TabIndex = 4;
+            this.progressBarMainFormTimeLeft.Value = 1;
             // 
             // numericUpDownChangeSound
             // 
@@ -111,7 +112,7 @@
             0,
             0});
             this.numericUpDownChangeSound.Name = "numericUpDownChangeSound";
-            this.numericUpDownChangeSound.Size = new System.Drawing.Size(104, 20);
+            this.numericUpDownChangeSound.Size = new System.Drawing.Size(74, 20);
             this.numericUpDownChangeSound.TabIndex = 1;
             this.numericUpDownChangeSound.Value = new decimal(new int[] {
             1,
@@ -335,6 +336,21 @@
             this.pictureBoxSound.TabIndex = 2;
             this.pictureBoxSound.TabStop = false;
             // 
+            // buttonMainFormFastForward
+            // 
+            this.buttonMainFormFastForward.BackColor = System.Drawing.SystemColors.WindowText;
+            this.buttonMainFormFastForward.BackgroundImage = global::Sound_teacher.Properties.Resources.MainForm_FForwardButton;
+            this.buttonMainFormFastForward.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonMainFormFastForward.FlatAppearance.BorderSize = 0;
+            this.buttonMainFormFastForward.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonMainFormFastForward.ForeColor = System.Drawing.SystemColors.Window;
+            this.buttonMainFormFastForward.Location = new System.Drawing.Point(212, 397);
+            this.buttonMainFormFastForward.Name = "buttonMainFormFastForward";
+            this.buttonMainFormFastForward.Size = new System.Drawing.Size(24, 24);
+            this.buttonMainFormFastForward.TabIndex = 13;
+            this.buttonMainFormFastForward.UseVisualStyleBackColor = false;
+            this.buttonMainFormFastForward.Click += new System.EventHandler(this.buttonMainFormFastForward_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -342,6 +358,7 @@
             this.BackColor = System.Drawing.SystemColors.WindowText;
             this.BackgroundImage = global::Sound_teacher.Properties.Resources.MainLayout;
             this.ClientSize = new System.Drawing.Size(383, 467);
+            this.Controls.Add(this.buttonMainFormFastForward);
             this.Controls.Add(this.panelMainFormOctave);
             this.Controls.Add(this.panelMainFormNotificationSound);
             this.Controls.Add(this.buttonMainFormOpenTuner);
@@ -353,7 +370,7 @@
             this.Controls.Add(this.labelSoundTimeLeft);
             this.Controls.Add(this.pictureBoxSound);
             this.Controls.Add(this.buttonChangeSound);
-            this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.progressBarMainFormTimeLeft);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
@@ -376,7 +393,7 @@
         private System.Windows.Forms.PictureBox pictureBoxSound;
         private System.Windows.Forms.Timer timerPictures;
         private System.Windows.Forms.Label labelSoundTimeLeft;
-        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.ProgressBar progressBarMainFormTimeLeft;
         private System.Windows.Forms.NumericUpDown numericUpDownChangeSound;
         private System.Windows.Forms.Button buttonMainFormOpenFretBoard;
         private System.Windows.Forms.Button buttonMainFormMetronome;
@@ -393,6 +410,7 @@
         private System.Windows.Forms.RadioButton radioButtonMainFormOctave4;
         private System.Windows.Forms.RadioButton radioButtonMainFormOctave3;
         private System.Windows.Forms.RadioButton radioButtonMainFormOctave2;
+        private System.Windows.Forms.Button buttonMainFormFastForward;
     }
 }
 
