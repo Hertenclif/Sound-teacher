@@ -129,6 +129,7 @@ namespace Sound_teacher
 
         private void buttonTunerExit_Click(object sender, EventArgs e)
         {
+            buttonMetronomeStartStop_Click(sender, e);
             this.Hide();
         }
 

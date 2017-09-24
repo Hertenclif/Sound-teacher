@@ -73,7 +73,13 @@ namespace Sound_teacher
         {
                 FormFretBoard fretBoard = Application.OpenForms.OfType<FormFretBoard>().FirstOrDefault();
                 if (fretBoard != null)
-                    fretBoard.setSoundPicture(current); 
+                    fretBoard.setSoundPicture(current);
+        }
+        private void notifyFretBoardStartStop(bool onOff)
+        {
+            FormFretBoard fretBoard = Application.OpenForms.OfType<FormFretBoard>().FirstOrDefault();
+            if (fretBoard != null)
+                fretBoard.notificationStartStopButton(onOff);
         }
 
         private void buttonOpenFretBoard_Click(object sender, EventArgs e)
@@ -124,6 +130,7 @@ namespace Sound_teacher
                 progressBarMainFormTimeLeft.Value = 1;
                 labelSoundTimeLeft.Text = "0";
                 pictureBoxSound.Image = (Image)Properties.Resources.ResourceManager.GetObject(pictures[2]);
+                notifyFretBoardStartStop(true);
             }
 
             else
@@ -131,6 +138,7 @@ namespace Sound_teacher
                 timerPictures.Enabled = true;
                 buttonChangeSound.Image = (Image)Properties.Resources.ResourceManager.GetObject(pictures[1]);
                 progressBarMainFormTimeLeft.Value = 1;
+                notifyFretBoardStartStop(false);
             }
         }
 

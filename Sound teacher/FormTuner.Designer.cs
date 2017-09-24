@@ -141,7 +141,7 @@
             this.buttonTunerExit.Name = "buttonTunerExit";
             this.buttonTunerExit.Size = new System.Drawing.Size(98, 56);
             this.buttonTunerExit.TabIndex = 1;
-            this.buttonTunerExit.Text = "Start!";
+            this.buttonTunerExit.Text = "Exit";
             this.buttonTunerExit.UseVisualStyleBackColor = true;
             this.buttonTunerExit.Click += new System.EventHandler(this.buttonTunerExit_Click);
             // 

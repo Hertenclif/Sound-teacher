@@ -12,14 +12,20 @@ namespace Sound_teacher
         bool startStopFretBoardFlag = true;
         String[] fretBoardSounds = new String[] { "A", "Ais", "B", "C", "Cis", "D", "Dis", "E", "F", "Fis", "G", "Gis" };
         String[] fretBoardSoundImageNames = new String[] { "FretBoardA", "FretBoardAis", "FretBoardB", "FretBoardC", "FretBoardCis", "FretBoardD", "FretBoardDis", "FretBoardE", "FretBoardF", "FretBoardFis", "FretBoardG", "FretBoardGis" };
-        String[] pictures = new String[] { "FretBoard_StartButton", "FretBoard_StopButton", "FretBoard_StartFretBoardButton", "FretBoard_StopFretBoardButton", "FretBoard_NewFretBoard" };
+        String[] pictures = new String[] { "FretBoard_StartButton", "FretBoard_StopButton", "FretBoard_StartFretBoardButton", "FretBoard_StopFretBoardButton"};
         String previousSound = "A", currentSound = "";
 
         public FormFretBoard()
         {
             InitializeComponent();
         }
+
         public void setSoundPicture(String current)
+        {
+            setSoundPictureFretBoard(current);
+        }
+
+        private void setSoundPictureFretBoard(String current)
         {
             currentSound = current;
             if (buttonFretBoardStartStop.Tag == "off")
@@ -44,12 +50,25 @@ namespace Sound_teacher
                         showSound(fretBoardSounds[Array.IndexOf(fretBoardSounds, current) - 1]);
                         showSound(fretBoardSounds[Array.IndexOf(fretBoardSounds, current) + 1]);
                     }
-                    
+
                 }
                 previousSound = current;
             }
+        }
+        public void notificationStartStopButton(bool onOff)
+        {
+            if (onOff)
+            {
+                buttonStartExternal.Image = (Image)Properties.Resources.ResourceManager.GetObject(pictures[0]);
+            }
+            else
+            {
+                buttonStartExternal.Image = (Image)Properties.Resources.ResourceManager.GetObject(pictures[1]);
+            }
 
         }
+
+
 
         private void buttonStopFretboard_Click(object sender, EventArgs e)
         {

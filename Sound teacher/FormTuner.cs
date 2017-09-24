@@ -224,6 +224,7 @@ namespace Sound_teacher
 
         private void buttonTunerExit_Click(object sender, EventArgs e)
         {
+            buttonStartTuner_Click(sender, e);
             this.Hide();
         }
     }
