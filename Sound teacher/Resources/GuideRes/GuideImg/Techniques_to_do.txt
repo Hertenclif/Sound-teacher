@@ -1,0 +1,16 @@
+pick
+fingerstyle
+powerchord
+Barre
+tremolo
+palm mute
+
+Flageolet natural 
+Flageolet artificial
+Vibrato
+Bend
+Slide
+Legato
+Hammer-on
+Pull-off
+

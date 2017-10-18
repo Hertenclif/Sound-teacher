@@ -59,51 +59,204 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClassNotificatioNSound.cs" />
-    <Compile Include="FormFretBoard.cs">
+    <Compile Include="GuideForms\FormGuideBasicChords.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormFretBoard.Designer.cs">
+    <Compile Include="GuideForms\FormGuideBasicChords.Designer.cs">
+      <DependentUpon>FormGuideBasicChords.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuideForms\FormGuideBasicExercises.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuideForms\FormGuideBasicExercises.Designer.cs">
+      <DependentUpon>FormGuideBasicExercises.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuideForms\FormGuideTips.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuideForms\FormGuideTips.Designer.cs">
+      <DependentUpon>FormGuideTips.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\FormFretBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\FormFretBoard.Designer.cs">
       <DependentUpon>FormFretBoard.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormMetronome.cs">
+    <Compile Include="GuideForms\FormGuideTechniques.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormMetronome.Designer.cs">
+    <Compile Include="GuideForms\FormGuideTechniques.Designer.cs">
+      <DependentUpon>FormGuideTechniques.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuideForms\FormGuideGuitar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuideForms\FormGuideGuitar.Designer.cs">
+      <DependentUpon>FormGuideGuitar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuideForms\GuideInnerForms\GuideGuitarForms\FormGuideGuitarAcoustic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuideForms\GuideInnerForms\GuideGuitarForms\FormGuideGuitarAcoustic.Designer.cs">
+      <DependentUpon>FormGuideGuitarAcoustic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuideForms\GuideInnerForms\GuideGuitarForms\FormGuideGuitarClassicalNeck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuideForms\GuideInnerForms\GuideGuitarForms\FormGuideGuitarClassicalNeck.Designer.cs">
+      <DependentUpon>FormGuideGuitarClassicalNeck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuideForms\GuideInnerForms\GuideGuitarForms\FormGuideGuitarCalssicalHead.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuideForms\GuideInnerForms\GuideGuitarForms\FormGuideGuitarCalssicalHead.Designer.cs">
+      <DependentUpon>FormGuideGuitarCalssicalHead.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuideForms\GuideInnerForms\GuideGuitarForms\FormGuideGuitarClassical.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuideForms\GuideInnerForms\GuideGuitarForms\FormGuideGuitarClassical.Designer.cs">
+      <DependentUpon>FormGuideGuitarClassical.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuideForms\GuideInnerForms\GuideGuitarForms\FormGuideGuitarElectric.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuideForms\GuideInnerForms\GuideGuitarForms\FormGuideGuitarElectric.Designer.cs">
+      <DependentUpon>FormGuideGuitarElectric.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuideForms\GuideInnerForms\GuideGuitarForms\FormGuideGuitarAcousticBody.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuideForms\GuideInnerForms\GuideGuitarForms\FormGuideGuitarAcousticBody.Designer.cs">
+      <DependentUpon>FormGuideGuitarAcousticBody.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuideForms\GuideInnerForms\GuideGuitarForms\FormGuideGuitarClassicalBody.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuideForms\GuideInnerForms\GuideGuitarForms\FormGuideGuitarClassicalBody.Designer.cs">
+      <DependentUpon>FormGuideGuitarClassicalBody.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuideForms\GuideInnerForms\GuideGuitarForms\FormGuideGuitarElectricBody.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuideForms\GuideInnerForms\GuideGuitarForms\FormGuideGuitarElectricBody.Designer.cs">
+      <DependentUpon>FormGuideGuitarElectricBody.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuideForms\GuideInnerForms\GuideGuitarForms\FormGuideGuitarAcousticNeck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuideForms\GuideInnerForms\GuideGuitarForms\FormGuideGuitarAcousticNeck.Designer.cs">
+      <DependentUpon>FormGuideGuitarAcousticNeck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuideForms\GuideInnerForms\GuideGuitarForms\FormGuideGuitarAcousticHead.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuideForms\GuideInnerForms\GuideGuitarForms\FormGuideGuitarAcousticHead.Designer.cs">
+      <DependentUpon>FormGuideGuitarAcousticHead.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuideForms\GuideInnerForms\GuideGuitarForms\FormGuideGuitarElectricNeck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuideForms\GuideInnerForms\GuideGuitarForms\FormGuideGuitarElectricNeck.Designer.cs">
+      <DependentUpon>FormGuideGuitarElectricNeck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GuideForms\GuideInnerForms\GuideGuitarForms\FormGuideGuitarElectricHead.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GuideForms\GuideInnerForms\GuideGuitarForms\FormGuideGuitarElectricHead.Designer.cs">
+      <DependentUpon>FormGuideGuitarElectricHead.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForms\FormMetronome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForms\FormMetronome.Designer.cs">
       <DependentUpon>FormMetronome.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormSthGreat.cs">
+    <Compile Include="MainForms\FormGuide.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormSthGreat.Designer.cs">
-      <DependentUpon>FormSthGreat.cs</DependentUpon>
+    <Compile Include="MainForms\FormGuide.Designer.cs">
+      <DependentUpon>FormGuide.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormTuner.cs">
+    <Compile Include="MainForms\FormTuner.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormTuner.Designer.cs">
+    <Compile Include="MainForms\FormTuner.Designer.cs">
       <DependentUpon>FormTuner.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainForm.cs">
+    <Compile Include="MainForms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
+    <Compile Include="MainForms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormFretBoard.resx">
+    <EmbeddedResource Include="GuideForms\FormGuideBasicChords.resx">
+      <DependentUpon>FormGuideBasicChords.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuideForms\FormGuideBasicExercises.resx">
+      <DependentUpon>FormGuideBasicExercises.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuideForms\FormGuideGuitar.resx">
+      <DependentUpon>FormGuideGuitar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuideForms\FormGuideTips.resx">
+      <DependentUpon>FormGuideTips.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\FormFretBoard.resx">
       <DependentUpon>FormFretBoard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormMetronome.resx">
+    <EmbeddedResource Include="GuideForms\FormGuideTechniques.resx">
+      <DependentUpon>FormGuideTechniques.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuideForms\GuideInnerForms\GuideGuitarForms\FormGuideGuitarAcoustic.resx">
+      <DependentUpon>FormGuideGuitarAcoustic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuideForms\GuideInnerForms\GuideGuitarForms\FormGuideGuitarClassicalNeck.resx">
+      <DependentUpon>FormGuideGuitarClassicalNeck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuideForms\GuideInnerForms\GuideGuitarForms\FormGuideGuitarCalssicalHead.resx">
+      <DependentUpon>FormGuideGuitarCalssicalHead.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuideForms\GuideInnerForms\GuideGuitarForms\FormGuideGuitarClassical.resx">
+      <DependentUpon>FormGuideGuitarClassical.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuideForms\GuideInnerForms\GuideGuitarForms\FormGuideGuitarElectric.resx">
+      <DependentUpon>FormGuideGuitarElectric.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuideForms\GuideInnerForms\GuideGuitarForms\FormGuideGuitarAcousticBody.resx">
+      <DependentUpon>FormGuideGuitarAcousticBody.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuideForms\GuideInnerForms\GuideGuitarForms\FormGuideGuitarClassicalBody.resx">
+      <DependentUpon>FormGuideGuitarClassicalBody.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuideForms\GuideInnerForms\GuideGuitarForms\FormGuideGuitarElectricBody.resx">
+      <DependentUpon>FormGuideGuitarElectricBody.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuideForms\GuideInnerForms\GuideGuitarForms\FormGuideGuitarAcousticNeck.resx">
+      <DependentUpon>FormGuideGuitarAcousticNeck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuideForms\GuideInnerForms\GuideGuitarForms\FormGuideGuitarAcousticHead.resx">
+      <DependentUpon>FormGuideGuitarAcousticHead.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuideForms\GuideInnerForms\GuideGuitarForms\FormGuideGuitarElectricNeck.resx">
+      <DependentUpon>FormGuideGuitarElectricNeck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GuideForms\GuideInnerForms\GuideGuitarForms\FormGuideGuitarElectricHead.resx">
+      <DependentUpon>FormGuideGuitarElectricHead.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForms\FormMetronome.resx">
       <DependentUpon>FormMetronome.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormSthGreat.resx">
-      <DependentUpon>FormSthGreat.cs</DependentUpon>
+    <EmbeddedResource Include="MainForms\FormGuide.resx">
+      <DependentUpon>FormGuide.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormTuner.resx">
+    <EmbeddedResource Include="MainForms\FormTuner.resx">
       <DependentUpon>FormTuner.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
+    <EmbeddedResource Include="MainForms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -302,9 +455,74 @@
     <None Include="resources\TunerRes\TunerImg\FormImg\TunerArrowsLow.JPG" />
     <None Include="resources\TunerRes\TunerImg\FormImg\TunerArrowsOK.JPG" />
     <None Include="resources\MainFormRes\MainFormImg\FormImg\MainForm_FForwardButton.png" />
+    <None Include="resources\FretBoardRes\FretBoardImg\FormImg\FretBoard_ExitButton.png" />
+    <None Include="resources\FretBoardRes\FretBoardImg\FormImg\FretBoard_HelpButton.png" />
+    <None Include="resources\TunerRes\TunerImg\FormImg\TunerButtonExit.png" />
+    <None Include="resources\TunerRes\TunerImg\FormImg\TunerButtonStart.png" />
+    <None Include="resources\TunerRes\TunerImg\FormImg\TunerButtonStop.png" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\FunnyBackground.jpg" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideBackground.jpg" />
+    <None Include="resources\MainFormRes\MainFormImg\FormImg\MainForm_GuideButton.png" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideGuitarBackground.jpg" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideGuitarImage.jpg" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideGuitarBody.jpg" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideGuitarHead.jpg" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideGuitarNeck.jpg" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideButtonClose.jpg" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideButtonClose.png" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideGuitarElectricBody.jpg" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideGuitarElectricHead.jpg" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideGuitarElectricNeck.jpg" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideGuitarElectric.jpg" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideGuitarAcoustic.JPG" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideGuitarAcousticcBody.jpg" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideGuitarAcousticNeck.JPG" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideGuitarClassical.JPG" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideGuitarClassicalBody.jpg" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideGuitarClassicalHead.jpg" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideGuitarClassicalNeck.jpg" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideGuitarAcousticHead.jpg" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideGuitar.jpg" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideInnerBackground.jpg" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideBasicChordsA.jpg" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideBasicChordsAm.jpg" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideBasicChordsBm.jpg" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideBasicChordsC.jpg" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideBasicChordsD.jpg" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideBasicChordsDm.jpg" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideBasicChordsE.jpg" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideBasicChordsEm.jpg" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideBasicChordsF.jpg" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideBasicChordsG.jpg" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideBasicChordsHand.jpg" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideTechniquesPalmMute.jpg" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideTechniquesPick.jpg" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideTechniquesPowerchord.jpg" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideTechniquesSlide.jpg" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideTechniquesTremolo.jpg" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideTechniquesPick.gif" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideTechniquesSlide.gif" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideTechniquesPalmMute.gif" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideTechniquesTremolo.gif" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideBasicExercisesAaT1.gif" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideBasicExercisesAaT2.gif" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideBasicExercisesAaT3.gif" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideBasicExercisesCharmonic.gif" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideTipsBend.gif" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideTipsEasyGrip.gif" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideTipsEasyTremolo.gif" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideTipsRelax.gif" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideTipsLowLift.JPG" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideButtonBasicChords.jpg" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideButtonBasicExercises.jpg" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideButtonExit.jpg" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideButtonGuitarTheory.jpg" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideButtonTechniques.jpg" />
+    <None Include="resources\GuideRes\GuideImg\FormImg\GuideButtonTips.jpg" />
     <Content Include="STL.ico" />
     <Content Include="STLogo.ico" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

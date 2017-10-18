@@ -303,6 +303,26 @@ namespace Sound_teacher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap FretBoard_ExitButton {
+            get {
+                object obj = ResourceManager.GetObject("FretBoard_ExitButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap FretBoard_HelpButton {
+            get {
+                object obj = ResourceManager.GetObject("FretBoard_HelpButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap FretBoard_NewFretBoardButton {
             get {
                 object obj = ResourceManager.GetObject("FretBoard_NewFretBoardButton", resourceCulture);
@@ -363,16 +383,6 @@ namespace Sound_teacher.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap FunnyBackground {
-            get {
-                object obj = ResourceManager.GetObject("FunnyBackground", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap G {
             get {
                 object obj = ResourceManager.GetObject("G", resourceCulture);
@@ -406,6 +416,466 @@ namespace Sound_teacher.Properties {
         internal static System.Drawing.Bitmap GSmall {
             get {
                 object obj = ResourceManager.GetObject("GSmall", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideBackground {
+            get {
+                object obj = ResourceManager.GetObject("GuideBackground", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideBasicChordsA {
+            get {
+                object obj = ResourceManager.GetObject("GuideBasicChordsA", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideBasicChordsAm {
+            get {
+                object obj = ResourceManager.GetObject("GuideBasicChordsAm", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideBasicChordsBm {
+            get {
+                object obj = ResourceManager.GetObject("GuideBasicChordsBm", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideBasicChordsC {
+            get {
+                object obj = ResourceManager.GetObject("GuideBasicChordsC", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideBasicChordsD {
+            get {
+                object obj = ResourceManager.GetObject("GuideBasicChordsD", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideBasicChordsDm {
+            get {
+                object obj = ResourceManager.GetObject("GuideBasicChordsDm", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideBasicChordsE {
+            get {
+                object obj = ResourceManager.GetObject("GuideBasicChordsE", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideBasicChordsEm {
+            get {
+                object obj = ResourceManager.GetObject("GuideBasicChordsEm", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideBasicChordsF {
+            get {
+                object obj = ResourceManager.GetObject("GuideBasicChordsF", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideBasicChordsG {
+            get {
+                object obj = ResourceManager.GetObject("GuideBasicChordsG", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideBasicChordsHand {
+            get {
+                object obj = ResourceManager.GetObject("GuideBasicChordsHand", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideBasicExercisesAaT1 {
+            get {
+                object obj = ResourceManager.GetObject("GuideBasicExercisesAaT1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideBasicExercisesAaT2 {
+            get {
+                object obj = ResourceManager.GetObject("GuideBasicExercisesAaT2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideBasicExercisesAaT3 {
+            get {
+                object obj = ResourceManager.GetObject("GuideBasicExercisesAaT3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideBasicExercisesCharmonic {
+            get {
+                object obj = ResourceManager.GetObject("GuideBasicExercisesCharmonic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideButtonBasicChords {
+            get {
+                object obj = ResourceManager.GetObject("GuideButtonBasicChords", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideButtonBasicExercises {
+            get {
+                object obj = ResourceManager.GetObject("GuideButtonBasicExercises", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideButtonClose {
+            get {
+                object obj = ResourceManager.GetObject("GuideButtonClose", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideButtonExit {
+            get {
+                object obj = ResourceManager.GetObject("GuideButtonExit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideButtonGuitarTheory {
+            get {
+                object obj = ResourceManager.GetObject("GuideButtonGuitarTheory", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideButtonTechniques {
+            get {
+                object obj = ResourceManager.GetObject("GuideButtonTechniques", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideButtonTips {
+            get {
+                object obj = ResourceManager.GetObject("GuideButtonTips", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideGuitarAcoustic {
+            get {
+                object obj = ResourceManager.GetObject("GuideGuitarAcoustic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideGuitarAcousticcBody {
+            get {
+                object obj = ResourceManager.GetObject("GuideGuitarAcousticcBody", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideGuitarAcousticHead {
+            get {
+                object obj = ResourceManager.GetObject("GuideGuitarAcousticHead", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideGuitarAcousticNeck {
+            get {
+                object obj = ResourceManager.GetObject("GuideGuitarAcousticNeck", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideGuitarClassical {
+            get {
+                object obj = ResourceManager.GetObject("GuideGuitarClassical", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideGuitarClassicalBody {
+            get {
+                object obj = ResourceManager.GetObject("GuideGuitarClassicalBody", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideGuitarClassicalHead {
+            get {
+                object obj = ResourceManager.GetObject("GuideGuitarClassicalHead", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideGuitarClassicalNeck {
+            get {
+                object obj = ResourceManager.GetObject("GuideGuitarClassicalNeck", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideGuitarElectric {
+            get {
+                object obj = ResourceManager.GetObject("GuideGuitarElectric", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideGuitarElectricBody {
+            get {
+                object obj = ResourceManager.GetObject("GuideGuitarElectricBody", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideGuitarElectricHead {
+            get {
+                object obj = ResourceManager.GetObject("GuideGuitarElectricHead", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideGuitarElectricNeck {
+            get {
+                object obj = ResourceManager.GetObject("GuideGuitarElectricNeck", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideInnerBackground {
+            get {
+                object obj = ResourceManager.GetObject("GuideInnerBackground", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideTechniquesPalmMute {
+            get {
+                object obj = ResourceManager.GetObject("GuideTechniquesPalmMute", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideTechniquesPick {
+            get {
+                object obj = ResourceManager.GetObject("GuideTechniquesPick", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideTechniquesPowerchord {
+            get {
+                object obj = ResourceManager.GetObject("GuideTechniquesPowerchord", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideTechniquesSlide {
+            get {
+                object obj = ResourceManager.GetObject("GuideTechniquesSlide", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideTechniquesTremolo {
+            get {
+                object obj = ResourceManager.GetObject("GuideTechniquesTremolo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideTipsBend {
+            get {
+                object obj = ResourceManager.GetObject("GuideTipsBend", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideTipsEasyGrip {
+            get {
+                object obj = ResourceManager.GetObject("GuideTipsEasyGrip", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideTipsEasyTremolo {
+            get {
+                object obj = ResourceManager.GetObject("GuideTipsEasyTremolo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideTipsLowLift {
+            get {
+                object obj = ResourceManager.GetObject("GuideTipsLowLift", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap GuideTipsRelax {
+            get {
+                object obj = ResourceManager.GetObject("GuideTipsRelax", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -476,6 +946,16 @@ namespace Sound_teacher.Properties {
         internal static System.Drawing.Bitmap MainForm_FretBoardButton {
             get {
                 object obj = ResourceManager.GetObject("MainForm_FretBoardButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MainForm_GuideButton {
+            get {
+                object obj = ResourceManager.GetObject("MainForm_GuideButton", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -766,6 +1246,36 @@ namespace Sound_teacher.Properties {
         internal static System.Drawing.Bitmap TunerBarSounds {
             get {
                 object obj = ResourceManager.GetObject("TunerBarSounds", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TunerButtonExit {
+            get {
+                object obj = ResourceManager.GetObject("TunerButtonExit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TunerButtonStart {
+            get {
+                object obj = ResourceManager.GetObject("TunerButtonStart", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TunerButtonStop {
+            get {
+                object obj = ResourceManager.GetObject("TunerButtonStop", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

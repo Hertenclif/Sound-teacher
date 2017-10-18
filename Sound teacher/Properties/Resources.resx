@@ -118,11 +118,20 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="MetronomeBackGroupBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MetronomeRes\MetronomeImg\MetronomeForm\MetronomeBackGroupBox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="T_C" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\TunerRes\TunerImg\SoundImg\T_C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\FretBoardRes\FretBoardImg\SoundImg\FSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GuideGuitarElectric" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideGuitarElectric.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GuideBasicChordsF" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideBasicChordsF.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GuideBasicChordsEm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideBasicChordsEm.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MainLayout" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\MainFormRes\MainFormImg\FormImg\MainLayout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -130,26 +139,50 @@
   <data name="Ais" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\MainFormRes\MainFormImg\SoundImg\Ais.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TunerArrowsOK" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\TunerRes\TunerImg\FormImg\TunerArrowsOK.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GuideTipsEasyGrip" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideTipsEasyGrip.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Fretboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\FretBoardRes\FretBoardImg\FormImg\Fretboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="TunerButtonStart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\TunerRes\TunerImg\FormImg\TunerButtonStart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Cis" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\MainFormRes\MainFormImg\SoundImg\Cis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FretBoard_StartFretBoardButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\FretBoardRes\FretBoardImg\FormImg\FretBoard_StartFretBoardButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="TunerArrowsHigh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\TunerRes\TunerImg\FormImg\TunerArrowsHigh.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TunerArrowsOK" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\TunerRes\TunerImg\FormImg\TunerArrowsOK.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MainForm_GuideButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormImg\FormImg\MainForm_GuideButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Dis" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\MainFormRes\MainFormImg\SoundImg\Dis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="GuideBasicExercisesAaT2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideBasicExercisesAaT2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GuideBasicChordsA" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideBasicChordsA.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GuideTipsEasyTremolo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideTipsEasyTremolo.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="MainLayoutExtended" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\MainFormRes\MainFormImg\FormImg\MainLayoutExtended.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="GuideGuitarAcousticcBody" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideGuitarAcousticcBody.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MainForm_FForwardButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormImg\FormImg\MainForm_FForwardButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="FretBoard_StartButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\FretBoardRes\FretBoardImg\FormImg\FretBoard_StartButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="E" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormImg\SoundImg\E.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MetronomeFrame" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\MetronomeRes\MetronomeImg\MetronomeForm\MetronomeFrame.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,6 +205,9 @@
   <data name="MainForm_StopButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\MainFormRes\MainFormImg\FormImg\MainForm_StopButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="GuideGuitarClassicalNeck" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideGuitarClassicalNeck.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="GSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\FretBoardRes\FretBoardImg\SoundImg\GSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -181,11 +217,20 @@
   <data name="CisSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\FretBoardRes\FretBoardImg\SoundImg\CisSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="T_D" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\TunerRes\TunerImg\SoundImg\T_D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="DSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\FretBoardRes\FretBoardImg\SoundImg\DSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GuideTipsLowLift" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideTipsLowLift.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GuideBasicChordsAm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideBasicChordsAm.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="T_Dis" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\TunerRes\TunerImg\SoundImg\T_Dis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GuideBasicExercisesCharmonic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideBasicExercisesCharmonic.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="T_ST" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\TunerRes\TunerImg\SoundImg\T_ST.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,8 +244,17 @@
   <data name="CSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\FretBoardRes\FretBoardImg\SoundImg\CSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="FretBoard_ExitButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\FretBoardRes\FretBoardImg\FormImg\FretBoard_ExitButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="T_G" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\TunerRes\TunerImg\SoundImg\T_G.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GuideBasicChordsE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideBasicChordsE.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GuideGuitarClassicalBody" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideGuitarClassicalBody.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="TunerArrowsNeutral" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\TunerRes\TunerImg\FormImg\TunerArrowsNeutral.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,14 +262,32 @@
   <data name="D" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\MainFormRes\MainFormImg\SoundImg\D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="GuideGuitarElectricNeck" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideGuitarElectricNeck.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="TunerArrowsLow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\TunerRes\TunerImg\FormImg\TunerArrowsLow.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GuideInnerBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideInnerBackground.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GuideBasicChordsDm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideBasicChordsDm.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="A" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\MainFormRes\MainFormImg\SoundImg\A.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="GuideBasicChordsBm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideBasicChordsBm.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ESmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\FretBoardRes\FretBoardImg\SoundImg\ESmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GuideGuitarClassical" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideGuitarClassical.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GuideButtonClose" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuideRes\GuideImg\FormImg\GuideButtonClose.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="DisSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\FretBoardRes\FretBoardImg\SoundImg\DisSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -223,11 +295,26 @@
   <data name="T_Gis" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\TunerRes\TunerImg\SoundImg\T_Gis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LEDGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\MetronomeRes\MetronomeImg\MetronomeForm\LEDGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\FretBoardRes\FretBoardImg\SoundImg\FSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="T_Cis" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\TunerRes\TunerImg\SoundImg\T_Cis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GuideTechniquesTremolo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideTechniquesTremolo.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GuideGuitarAcoustic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideGuitarAcoustic.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GuideTechniquesPowerchord" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideTechniquesPowerchord.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fretboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\FretBoardRes\FretBoardImg\FormImg\Fretboard.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GuideTipsRelax" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideTipsRelax.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GuideBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GuideRes\GuideImg\FormImg\GuideBackground.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FretBoard_NewFretBoardButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\FretBoardRes\FretBoardImg\FormImg\FretBoard_NewFretBoardButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -241,8 +328,11 @@
   <data name="MainForm_TunerButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\MainFormRes\MainFormImg\FormImg\MainForm_TunerButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TunerArrowsHigh" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\TunerRes\TunerImg\FormImg\TunerArrowsHigh.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GuideGuitarElectricHead" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideGuitarElectricHead.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GuideTechniquesPick" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideTechniquesPick.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MetronomeBar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\MetronomeRes\MetronomeImg\MetronomeForm\MetronomeBar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -259,11 +349,26 @@
   <data name="T_E" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\TunerRes\TunerImg\SoundImg\T_E.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="GuideBasicChordsG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideBasicChordsG.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ST" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\MainFormRes\MainFormImg\SoundImg\ST.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="FretBoard_HelpButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\FretBoardRes\FretBoardImg\FormImg\FretBoard_HelpButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GuideBasicChordsHand" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideBasicChordsHand.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Fis" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\MainFormRes\MainFormImg\SoundImg\Fis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GuideGuitarAcousticNeck" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideGuitarAcousticNeck.JPG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Gis" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormImg\SoundImg\Gis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ButtonExitMedium" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\MetronomeRes\MetronomeImg\MetronomeForm\ButtonExitMedium.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -271,17 +376,32 @@
   <data name="FretBoard_StopFretBoardButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\FretBoardRes\FretBoardImg\FormImg\FretBoard_StopFretBoardButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="TunerButtonExit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\TunerRes\TunerImg\FormImg\TunerButtonExit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GuideTipsBend" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideTipsBend.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="MainForm_ExitButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\MainFormRes\MainFormImg\FormImg\MainForm_ExitButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="T_Cis" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\TunerRes\TunerImg\SoundImg\T_Cis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MainForm_MetronomeButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\MainFormRes\MainFormImg\FormImg\MainForm_MetronomeButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ButtonStartMedium" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\MetronomeRes\MetronomeImg\MetronomeForm\ButtonStartMedium.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GuideBasicExercisesAaT3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideBasicExercisesAaT3.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GuideGuitarAcousticHead" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideGuitarAcousticHead.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LEDGrey" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\MetronomeRes\MetronomeImg\MetronomeForm\LEDGrey.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="T_D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\TunerRes\TunerImg\SoundImg\T_D.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FretBoard_StopButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\FretBoardRes\FretBoardImg\FormImg\FretBoard_StopButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -289,23 +409,35 @@
   <data name="GisSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\FretBoardRes\FretBoardImg\SoundImg\GisSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="ButtonStartMedium" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MetronomeRes\MetronomeImg\MetronomeForm\ButtonStartMedium.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="MainForm_StartButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\MainFormRes\MainFormImg\FormImg\MainForm_StartButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GuideTechniquesPalmMute" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideTechniquesPalmMute.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GuideBasicExercisesAaT1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideBasicExercisesAaT1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TunerButtonStop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\TunerRes\TunerImg\FormImg\TunerButtonStop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="FisSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\FretBoardRes\FretBoardImg\SoundImg\FisSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="FunnyBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\StGr\FunnyBackground.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GuideGuitarClassicalHead" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideGuitarClassicalHead.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Gis" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\MainFormRes\MainFormImg\SoundImg\Gis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GuideGuitarElectricBody" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideGuitarElectricBody.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="T_F" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\TunerRes\TunerImg\SoundImg\T_F.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\FretBoardRes\FretBoardImg\SoundImg\DSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GuideBasicChordsC" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideBasicChordsC.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="T_A" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\TunerRes\TunerImg\SoundImg\T_A.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -313,22 +445,43 @@
   <data name="C" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\MainFormRes\MainFormImg\SoundImg\C.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="GuideTechniquesSlide" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideTechniquesSlide.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ASmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\FretBoardRes\FretBoardImg\SoundImg\ASmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BSmall" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\FretBoardRes\FretBoardImg\SoundImg\BSmall.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MetronomeBackGroupBox" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\MetronomeRes\MetronomeImg\MetronomeForm\MetronomeBackGroupBox.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="FretBoard_StartFretBoardButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\FretBoardRes\FretBoardImg\FormImg\FretBoard_StartFretBoardButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="MainForm_FretBoardButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\MainFormRes\MainFormImg\FormImg\MainForm_FretBoardButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="E" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\MainFormRes\MainFormImg\SoundImg\E.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="LEDGreen" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MetronomeRes\MetronomeImg\MetronomeForm\LEDGreen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MainForm_FForwardButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\MainFormRes\MainFormImg\FormImg\MainForm_FForwardButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="GuideBasicChordsD" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuideRes\GuideImg\FormImg\GuideInnerFormsImg\GuideBasicChordsD.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GuideButtonBasicChords" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuideRes\GuideImg\FormImg\GuideButtonBasicChords.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GuideButtonBasicExercises" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuideRes\GuideImg\FormImg\GuideButtonBasicExercises.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GuideButtonExit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuideRes\GuideImg\FormImg\GuideButtonExit.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GuideButtonGuitarTheory" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuideRes\GuideImg\FormImg\GuideButtonGuitarTheory.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GuideButtonTechniques" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuideRes\GuideImg\FormImg\GuideButtonTechniques.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GuideButtonTips" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\GuideRes\GuideImg\FormImg\GuideButtonTips.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
