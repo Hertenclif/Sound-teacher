@@ -1,0 +1,33 @@
+D:\VisualProjects\Sound teacher\Sound teacher\bin\Release\Sound teacher.exe.config
+D:\VisualProjects\Sound teacher\Sound teacher\bin\Release\Sound teacher.exe
+D:\VisualProjects\Sound teacher\Sound teacher\bin\Release\Sound teacher.pdb
+D:\VisualProjects\Sound teacher\Sound teacher\bin\Release\Microsoft.Xna.Framework.dll
+D:\VisualProjects\Sound teacher\Sound teacher\bin\Release\NAudio.dll
+D:\VisualProjects\Sound teacher\Sound teacher\obj\Release\Sound teacher.csprojResolveAssemblyReference.cache
+D:\VisualProjects\Sound teacher\Sound teacher\obj\Release\Sound_teacher.FormGuideBasicChords.resources
+D:\VisualProjects\Sound teacher\Sound teacher\obj\Release\Sound_teacher.FormGuideBasicExercises.resources
+D:\VisualProjects\Sound teacher\Sound teacher\obj\Release\Sound_teacher.FormGuideGuitar.resources
+D:\VisualProjects\Sound teacher\Sound teacher\obj\Release\Sound_teacher.FormGuideTips.resources
+D:\VisualProjects\Sound teacher\Sound teacher\obj\Release\Sound_teacher.FormFretBoard.resources
+D:\VisualProjects\Sound teacher\Sound teacher\obj\Release\Sound_teacher.FormGuideTechniques.resources
+D:\VisualProjects\Sound teacher\Sound teacher\obj\Release\Sound_teacher.FormGuideGuitarAcoustic.resources
+D:\VisualProjects\Sound teacher\Sound teacher\obj\Release\Sound_teacher.FormGuideGuitarClassicalNeck.resources
+D:\VisualProjects\Sound teacher\Sound teacher\obj\Release\Sound_teacher.FormGuideGuitarClassicalHead.resources
+D:\VisualProjects\Sound teacher\Sound teacher\obj\Release\Sound_teacher.FormGuideGuitarClassical.resources
+D:\VisualProjects\Sound teacher\Sound teacher\obj\Release\Sound_teacher.FormGuideGuitarElectric.resources
+D:\VisualProjects\Sound teacher\Sound teacher\obj\Release\Sound_teacher.FormGuideGuitarAcousticBody.resources
+D:\VisualProjects\Sound teacher\Sound teacher\obj\Release\Sound_teacher.FormGuideGuitarClassicalBody.resources
+D:\VisualProjects\Sound teacher\Sound teacher\obj\Release\Sound_teacher.FormGuideGuitarElectricBody.resources
+D:\VisualProjects\Sound teacher\Sound teacher\obj\Release\Sound_teacher.FormGuideGuitarAcousticNeck.resources
+D:\VisualProjects\Sound teacher\Sound teacher\obj\Release\Sound_teacher.FormGuideGuitarAcousticHead.resources
+D:\VisualProjects\Sound teacher\Sound teacher\obj\Release\Sound_teacher.FormGuideGuitarElectricNeck.resources
+D:\VisualProjects\Sound teacher\Sound teacher\obj\Release\Sound_teacher.FormGuideGuitarElectricHead.resources
+D:\VisualProjects\Sound teacher\Sound teacher\obj\Release\Sound_teacher.FormMetronome.resources
+D:\VisualProjects\Sound teacher\Sound teacher\obj\Release\Sound_teacher.FormGuide.resources
+D:\VisualProjects\Sound teacher\Sound teacher\obj\Release\Sound_teacher.FormTuner.resources
+D:\VisualProjects\Sound teacher\Sound teacher\obj\Release\Sound_teacher.MainForm.resources
+D:\VisualProjects\Sound teacher\Sound teacher\obj\Release\Sound_teacher.Properties.Resources.resources
+D:\VisualProjects\Sound teacher\Sound teacher\obj\Release\Sound teacher.csproj.GenerateResource.Cache
+D:\VisualProjects\Sound teacher\Sound teacher\obj\Release\Sound teacher.csproj.CoreCompileInputs.cache
+D:\VisualProjects\Sound teacher\Sound teacher\obj\Release\Sound teacher.exe
+D:\VisualProjects\Sound teacher\Sound teacher\obj\Release\Sound teacher.pdb

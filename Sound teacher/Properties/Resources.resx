@@ -484,4 +484,211 @@
   <data name="GuideButtonTips" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\GuideRes\GuideImg\FormImg\GuideButtonTips.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="A2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\A2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="A3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\A3.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="A4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\A4.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="A5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\A5.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Ais2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\Ais2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Ais3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\Ais3.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Ais4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\Ais4.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Ais5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\Ais5.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Ais_speech" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\SpeechSounds\Ais_speech.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="A_speech" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\SpeechSounds\A_speech.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="B2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\B2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="B3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\B3.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="B4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\B4.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="B5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\B5.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="B_speech" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\SpeechSounds\B_speech.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\C2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\C3.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\C4.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\C5.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Cis2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\Cis2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Cis3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\Cis3.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Cis4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\Cis4.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Cis5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\Cis5.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Cis_speech" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\SpeechSounds\Cis_speech.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="C_speech" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\SpeechSounds\C_speech.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="D2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\D2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="D3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\D3.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="D4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\D4.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="D5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\D5.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Dis2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\Dis2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Dis3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\Dis3.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Dis4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\Dis4.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Dis5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\Dis5.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Dis_speech" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\SpeechSounds\Dis_speech.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="D_speech" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\SpeechSounds\D_speech.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="E2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\E2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="E3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\E3.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="E4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\E4.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="E5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\E5.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="E_speech" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\SpeechSounds\E_speech.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="F2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\F2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="F3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\F3.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="F4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\F4.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="F5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\F5.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Fis2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\Fis2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Fis3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\Fis3.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Fis4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\Fis4.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Fis5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\Fis5.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Fis_speech" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\SpeechSounds\Fis_speech.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="F_speech" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\SpeechSounds\F_speech.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="G2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\G2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="G3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\G3.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="G4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\G4.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="G5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\G5.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Gis2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\Gis2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Gis3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\Gis3.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Gis4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\Gis4.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Gis5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\RealSounds\Gis5.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Gis_speech" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\SpeechSounds\Gis_speech.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="G_speech" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\SpeechSounds\G_speech.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="MainFomrChangeSound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MainFormRes\MainFormSounds\OtherSounds\MainFomrChangeSound.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="metronomeBit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MetronomeRes\MetronomeSounds\metronomeBit.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="metronomeBit2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\MetronomeRes\MetronomeSounds\metronomeBit2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Tuner_A" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\TunerRes\TunerSounds\Tuner_A.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Tuner_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\TunerRes\TunerSounds\Tuner_B.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Tuner_D" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\TunerRes\TunerSounds\Tuner_D.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Tuner_E" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\TunerRes\TunerSounds\Tuner_E.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Tuner_Ee" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\TunerRes\TunerSounds\Tuner_Ee.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Tuner_G" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\TunerRes\TunerSounds\Tuner_G.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

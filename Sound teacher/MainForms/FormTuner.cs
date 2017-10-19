@@ -25,6 +25,7 @@ namespace Sound_teacher
         
         private SampleAggregator sampleAggregator = new SampleAggregator(fftLength);
         static String[] beepSoundsNames = new String[] { "Tuner_E", "Tuner_A", "Tuner_D", "Tuner_G", "Tuner_B", "Tuner_Ee" };
+        System.IO.Stream strSound;
         static double[] freqArray = new double[] {
             32.70, 34.65, 36.71, 38.89, 41.20, 43.65, 46.25, 49.00, 51.91, 55.00, 58.27, 61.74,
             65.41, 69.30, 73.42, 77.78, 82.41, 87.31, 92.50, 98.00, 103.83, 110.00, 116.54, 123.47
@@ -41,12 +42,20 @@ namespace Sound_teacher
 
             if (radioButtonMicrophone.Checked)
             {
-                waveIn = new WasapiCapture();
-                SAMPLERATE = 43910;
+                try
+                {
+                    waveIn = new WasapiCapture();
+                    SAMPLERATE = 43910;
 
-                waveIn.DataAvailable += OnDataAvailable;
+                    waveIn.DataAvailable += OnDataAvailable;
 
-                waveIn.StartRecording();
+                    waveIn.StartRecording();
+                }
+                catch (Exception e)
+                {
+                    MessageBox.Show("BRAK PODLACZONEGO MIKROFONU!!");
+                    radioButtonSoundCard.Checked = true;
+                }
             }
             if (radioButtonSoundCard.Checked)
             {
@@ -236,7 +245,8 @@ namespace Sound_teacher
             if (radioButtonTunerConstantG4.Checked) currentBeep = 3;
             if (radioButtonTunerConstantB4.Checked) currentBeep = 4;
             if (radioButtonTunerConstantE5.Checked) currentBeep = 5;
-            SoundPlayer beepSoundWav = new SoundPlayer(@"d:\VisualProjects\Sound teacher\Sound teacher\Resources\TunerRes\TunerSounds\" + beepSoundsNames[currentBeep] + ".wav");
+            strSound = Properties.Resources.ResourceManager.GetStream(beepSoundsNames[currentBeep]);
+            SoundPlayer beepSoundWav = new SoundPlayer(strSound);
             if (radioButtonTunerConstantNone.Checked)
             {
                 timerBeepBeep.Enabled = false;

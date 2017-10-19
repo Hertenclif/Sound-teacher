@@ -14,8 +14,10 @@ namespace Sound_teacher
 {
     public partial class FormMetronome : Form
     {
-        SoundPlayer metronomeBeat = new SoundPlayer(@"d:\VisualProjects\Sound teacher\Sound teacher\Resources\MetronomeRes\MetronomeSounds\metronomeBit.wav");
-        SoundPlayer metronomeBeat2 = new SoundPlayer(@"d:\VisualProjects\Sound teacher\Sound teacher\Resources\MetronomeRes\MetronomeSounds\metronomeBit2.wav");
+        static System.IO.Stream metronomeBeat = Properties.Resources.metronomeBit;
+        static System.IO.Stream metronomeBeat2 = Properties.Resources.metronomeBit2;
+        SoundPlayer playmetronomeBeat = new SoundPlayer(metronomeBeat);
+        SoundPlayer playmetronomeBeat2 = new SoundPlayer(metronomeBeat2);
         String[] pictures = new String[] { "LEDGrey", "LEDRed", "LEDGreen",  "LEDBlue", "ButtonStartMedium", "ButtonStopMedium" };
         String[] tempoNames = new String[] { "Grave", "Largo", "Lento", "Adagio", "Andante", "Moderato", "Allegretto", "Allegro", "Presto", "Prestissimo" };
         bool isLedEnabled = false;
@@ -86,18 +88,25 @@ namespace Sound_teacher
                 {
                     bpm = 1;
                 }
+                try
+                {
                     labelTimeTick.Text = System.Convert.ToString(currentSound);
                     if (currentSound < System.Convert.ToInt32(comboBoxMetronomeMetrum1.Text))
                     {
                         isLedEnabled = true;
-                        metronomeBeat.Play();
+                        playmetronomeBeat.Play();
                     }
                     else
                     {
                         isLedEnabled = true;
-                        metronomeBeat2.Play();
+                        playmetronomeBeat2.Play();
                         currentSound = 0;
                     }
+                }
+                catch (Exception dispo)
+                {
+
+                }
             }
         }
         
