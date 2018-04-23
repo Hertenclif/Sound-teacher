@@ -200,6 +200,8 @@
             this.pictureBox_11 = new System.Windows.Forms.PictureBox();
             this.pictureBox_10 = new System.Windows.Forms.PictureBox();
             this.labelFretboardImage = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownChangeSound)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox_38)).BeginInit();
@@ -2480,11 +2482,28 @@
             this.labelFretboardImage.Size = new System.Drawing.Size(1731, 560);
             this.labelFretboardImage.TabIndex = 150;
             // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(0, -1);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(311, 91);
+            this.label1.TabIndex = 163;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(430, 436);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 13);
+            this.label2.TabIndex = 164;
+            // 
             // FormFretBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1731, 559);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.buttonFretBoardExit);
             this.Controls.Add(this.pictureBox_38);
@@ -2980,5 +2999,7 @@
         private System.Windows.Forms.CheckBox checkBoxFretBoardC;
         private System.Windows.Forms.CheckBox checkBoxFretBoardB;
         private System.Windows.Forms.CheckBox checkBoxFretBoardA;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

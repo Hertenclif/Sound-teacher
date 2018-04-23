@@ -360,6 +360,7 @@
     <None Include="resources\GSmall.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ToDo.txt" />
     <None Include="resources\MetronomeFrame.png" />
     <None Include="resources\StartButtonMedium.png" />
     <None Include="resources\LEDGreen.png" />

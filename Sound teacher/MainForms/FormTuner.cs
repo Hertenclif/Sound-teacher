@@ -20,15 +20,15 @@ namespace Sound_teacher
         private bool rec = false;
         private IWaveIn waveIn;
         private static int fftLength = 8192;
-        private int SAMPLERATE = 0;
+        private int SAMPLERATE = 48000;
         short currentBeep = 0;
         
         private SampleAggregator sampleAggregator = new SampleAggregator(fftLength);
         static String[] beepSoundsNames = new String[] { "Tuner_E", "Tuner_A", "Tuner_D", "Tuner_G", "Tuner_B", "Tuner_Ee" };
         System.IO.Stream strSound;
         static double[] freqArray = new double[] {
-            32.70, 34.65, 36.71, 38.89, 41.20, 43.65, 46.25, 49.00, 51.91, 55.00, 58.27, 61.74,
-            65.41, 69.30, 73.42, 77.78, 82.41, 87.31, 92.50, 98.00, 103.83, 110.00, 116.54, 123.47
+            32.70, 34.65, 36.71, 38.89, 41.20, 43.65, 46.25, 49.00, 51.91, 55.50, 58.27, 61.74,
+            65.41, 69.30, 73.42, 77.78, 82.41, 87.31, 92.50, 98.00, 103.83, 111.00, 116.54, 123.47
         };
         static String[] soundsArray = new String[] {
             "T_C", "T_Cis", "T_D", "T_Dis", "T_E", "T_F", "T_Fis", "T_G", "T_Gis", "T_A", "T_Ais", "T_B",
@@ -45,26 +45,26 @@ namespace Sound_teacher
                 try
                 {
                     waveIn = new WasapiCapture();
-                    SAMPLERATE = 43910;
-
                     waveIn.DataAvailable += OnDataAvailable;
-
                     waveIn.StartRecording();
+                    rec = true;
+                    buttonStartTuner.Image = (System.Drawing.Image)Properties.Resources.ResourceManager.GetObject("TunerButtonStop");
                 }
                 catch (Exception e)
                 {
                     MessageBox.Show("BRAK PODLACZONEGO MIKROFONU!!");
                     radioButtonSoundCard.Checked = true;
+                    rec = false;
+                    return;
                 }
             }
             if (radioButtonSoundCard.Checked)
             {
                 waveIn = new WasapiLoopbackCapture();
-                SAMPLERATE = 48000;
-
                 waveIn.DataAvailable += OnDataAvailable;
-
                 waveIn.StartRecording();
+                rec = true;
+                buttonStartTuner.Image = (System.Drawing.Image)Properties.Resources.ResourceManager.GetObject("TunerButtonStop");
             }
         }
 
@@ -149,7 +149,7 @@ namespace Sound_teacher
             {
                 float real = e.Result[i].X;
                 float imaginary = e.Result[i].Y;
-                magnitudes[i] = (float)(10 * Math.Log10(Math.Sqrt((real * real) + (imaginary * imaginary))));
+                magnitudes[i] = (float)(100 * Math.Log10(Math.Sqrt((real * real) + (imaginary * imaginary))));
             }
 
             float max_mag = float.MinValue;
@@ -186,12 +186,12 @@ namespace Sound_teacher
             {
                 trackBarFrequency.Value = System.Convert.ToInt32(currentSoundFrequency);
             }
-            catch (Exception dispo)
+            catch
             {
 
             }
 
-            labelTunerFrequency.Text = "" + currentFrequency;
+            //labelTunerFrequency.Text = "" + currentFrequency;
         }
 
         private void buttonStartTuner_Click(object sender, EventArgs e)
@@ -208,8 +208,6 @@ namespace Sound_teacher
             else
             {
                 record();
-                rec = true;
-                buttonStartTuner.Image = (System.Drawing.Image)Properties.Resources.ResourceManager.GetObject("TunerButtonStop");
             }
         }
         private void FormTuner_FormClosed(object sender, FormClosedEventArgs e)
@@ -219,7 +217,7 @@ namespace Sound_teacher
                 waveIn.StopRecording();
                 rec = false;
             }
-            catch (Exception dispo)
+            catch
             {
 
             }

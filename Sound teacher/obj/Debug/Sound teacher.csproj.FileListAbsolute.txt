@@ -31,3 +31,37 @@ D:\VisualProjects\Sound teacher\Sound teacher\obj\Debug\Sound_teacher.FormGuideB
 D:\VisualProjects\Sound teacher\Sound teacher\obj\Debug\Sound_teacher.FormGuideBasicExercises.resources
 D:\VisualProjects\Sound teacher\Sound teacher\obj\Debug\Sound_teacher.FormGuideTips.resources
 D:\VisualProjects\Sound teacher\Sound teacher\obj\Debug\Sound_teacher.FormGuideGuitar.resources
+D:\Projects\Visual Projects\Sound-teacher\Sound teacher\bin\Debug\Sound teacher.exe.config
+D:\Projects\Visual Projects\Sound-teacher\Sound teacher\bin\Debug\Sound teacher.exe
+D:\Projects\Visual Projects\Sound-teacher\Sound teacher\bin\Debug\Sound teacher.pdb
+D:\Projects\Visual Projects\Sound-teacher\Sound teacher\bin\Debug\Microsoft.Xna.Framework.dll
+D:\Projects\Visual Projects\Sound-teacher\Sound teacher\bin\Debug\NAudio.dll
+D:\Projects\Visual Projects\Sound-teacher\Sound teacher\obj\Debug\Sound teacher.csprojResolveAssemblyReference.cache
+D:\Projects\Visual Projects\Sound-teacher\Sound teacher\obj\Debug\Sound_teacher.FormGuideBasicChords.resources
+D:\Projects\Visual Projects\Sound-teacher\Sound teacher\obj\Debug\Sound_teacher.FormGuideBasicExercises.resources
+D:\Projects\Visual Projects\Sound-teacher\Sound teacher\obj\Debug\Sound_teacher.FormGuideGuitar.resources
+D:\Projects\Visual Projects\Sound-teacher\Sound teacher\obj\Debug\Sound_teacher.FormGuideTips.resources
+D:\Projects\Visual Projects\Sound-teacher\Sound teacher\obj\Debug\Sound_teacher.FormFretBoard.resources
+D:\Projects\Visual Projects\Sound-teacher\Sound teacher\obj\Debug\Sound_teacher.FormGuideTechniques.resources
+D:\Projects\Visual Projects\Sound-teacher\Sound teacher\obj\Debug\Sound_teacher.FormGuideGuitarAcoustic.resources
+D:\Projects\Visual Projects\Sound-teacher\Sound teacher\obj\Debug\Sound_teacher.FormGuideGuitarClassicalNeck.resources
+D:\Projects\Visual Projects\Sound-teacher\Sound teacher\obj\Debug\Sound_teacher.FormGuideGuitarClassicalHead.resources
+D:\Projects\Visual Projects\Sound-teacher\Sound teacher\obj\Debug\Sound_teacher.FormGuideGuitarClassical.resources
+D:\Projects\Visual Projects\Sound-teacher\Sound teacher\obj\Debug\Sound_teacher.FormGuideGuitarElectric.resources
+D:\Projects\Visual Projects\Sound-teacher\Sound teacher\obj\Debug\Sound_teacher.FormGuideGuitarAcousticBody.resources
+D:\Projects\Visual Projects\Sound-teacher\Sound teacher\obj\Debug\Sound_teacher.FormGuideGuitarClassicalBody.resources
+D:\Projects\Visual Projects\Sound-teacher\Sound teacher\obj\Debug\Sound_teacher.FormGuideGuitarElectricBody.resources
+D:\Projects\Visual Projects\Sound-teacher\Sound teacher\obj\Debug\Sound_teacher.FormGuideGuitarAcousticNeck.resources
+D:\Projects\Visual Projects\Sound-teacher\Sound teacher\obj\Debug\Sound_teacher.FormGuideGuitarAcousticHead.resources
+D:\Projects\Visual Projects\Sound-teacher\Sound teacher\obj\Debug\Sound_teacher.FormGuideGuitarElectricNeck.resources
+D:\Projects\Visual Projects\Sound-teacher\Sound teacher\obj\Debug\Sound_teacher.FormGuideGuitarElectricHead.resources
+D:\Projects\Visual Projects\Sound-teacher\Sound teacher\obj\Debug\Sound_teacher.FormMetronome.resources
+D:\Projects\Visual Projects\Sound-teacher\Sound teacher\obj\Debug\Sound_teacher.FormGuide.resources
+D:\Projects\Visual Projects\Sound-teacher\Sound teacher\obj\Debug\Sound_teacher.FormTuner.resources
+D:\Projects\Visual Projects\Sound-teacher\Sound teacher\obj\Debug\Sound_teacher.MainForm.resources
+D:\Projects\Visual Projects\Sound-teacher\Sound teacher\obj\Debug\Sound_teacher.Properties.Resources.resources
+D:\Projects\Visual Projects\Sound-teacher\Sound teacher\obj\Debug\Sound teacher.csproj.GenerateResource.cache
+D:\Projects\Visual Projects\Sound-teacher\Sound teacher\obj\Debug\Sound teacher.csproj.CoreCompileInputs.cache
+D:\Projects\Visual Projects\Sound-teacher\Sound teacher\obj\Debug\Sound teacher.csproj.CopyComplete
+D:\Projects\Visual Projects\Sound-teacher\Sound teacher\obj\Debug\Sound teacher.exe
+D:\Projects\Visual Projects\Sound-teacher\Sound teacher\obj\Debug\Sound teacher.pdb
